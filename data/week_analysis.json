@@ -1,0 +1,216 @@
+{
+  "season": 2026,
+  "week": 1,
+  "generated_at": "2026-09-11T18:36:21-04:00",
+  "recommendation": "LAC",
+  "board": [
+    {
+      "team": "LAC",
+      "opponent": "ARI",
+      "home_away": "home",
+      "win_prob": 0.86,
+      "rationale": "Chargers are -550 ML (~85% implied) at home in a dome, and Arizona cut franchise QB Kyler Murray, starting backup Jacoby Brissett in Week 1 — largest mismatch on the board.",
+      "trap_flags": []
+    },
+    {
+      "team": "JAX",
+      "opponent": "CLE",
+      "home_away": "home",
+      "win_prob": 0.83,
+      "rationale": "Jaguars are -455 ML (~82% implied) at home; Cleveland is in a full rebuild under new HC Todd Monken with Deshaun Watson at QB after losing Myles Garrett in a trade.",
+      "trap_flags": []
+    },
+    {
+      "team": "DET",
+      "opponent": "NO",
+      "home_away": "home",
+      "win_prob": 0.75,
+      "rationale": "Lions are -334 ML / -6.5 at home (model puts them ~70-77% to win) over a Saints team that is a significant road underdog despite a hot 2025 close.",
+      "trap_flags": []
+    },
+    {
+      "team": "PIT",
+      "opponent": "ATL",
+      "home_away": "home",
+      "win_prob": 0.66,
+      "rationale": "Steelers -4.5/-5.5 at home get a further boost: Falcons' planned starter Tua Tagovailoa is out (oblique), leaving veteran backup Cooper Rush to make Atlanta's first start.",
+      "trap_flags": ["public/trendy overreaction to Rodgers' farewell-tour narrative (modest, doesn't change the number much)"]
+    },
+    {
+      "team": "DAL",
+      "opponent": "NYG",
+      "home_away": "away",
+      "win_prob": 0.62,
+      "rationale": "Cowboys are -162 ML road favorites; Dallas is 11-1 in the last 12 series openers vs. NYG and added two first-round defensive picks in the offseason. Giants have a new HC (John Harbaugh) and unproven Dart/Skattebo combo.",
+      "trap_flags": ["new-system uncertainty on Dallas' beefed-up defense (unproven in-season, minor)"]
+    },
+    {
+      "team": "CHI",
+      "opponent": "CAR",
+      "home_away": "away",
+      "win_prob": 0.6,
+      "rationale": "Bears are -164 ML road favorites (~62% implied) over Carolina; oddsmakers project a 24-21 Bears win.",
+      "trap_flags": []
+    },
+    {
+      "team": "LV",
+      "opponent": "MIA",
+      "home_away": "home",
+      "win_prob": 0.6,
+      "rationale": "Raiders are -3.5 favorites at home; Miami is turning to Malik Willis as its full-time starter, though model confidence is mixed (59-65% range).",
+      "trap_flags": []
+    },
+    {
+      "team": "BAL",
+      "opponent": "IND",
+      "home_away": "away",
+      "win_prob": 0.6,
+      "rationale": "Ravens are 3.5-point favorites even on the road; Lamar Jackson-led offense and an upgraded defense project a win at Lucas Oil Stadium per ESPN's expert consensus.",
+      "trap_flags": []
+    },
+    {
+      "team": "KC",
+      "opponent": "DEN",
+      "home_away": "home",
+      "win_prob": 0.58,
+      "rationale": "Chiefs are -144 ML (~59% implied) hosting Denver on Monday Night Football; closer than the historical power rating suggested, so no lopsided edge here.",
+      "trap_flags": []
+    },
+    {
+      "team": "CIN",
+      "opponent": "TB",
+      "home_away": "home",
+      "win_prob": 0.55,
+      "rationale": "Bengals are favored by 3.5 at home behind Joe Burrow, but models split 52-57% — a competitive game, not a premium survivor spot.",
+      "trap_flags": []
+    },
+    {
+      "team": "TEN",
+      "opponent": "NYJ",
+      "home_away": "home",
+      "win_prob": 0.55,
+      "rationale": "Titans are modest 1.5-point home favorites (-124 ML); young QB Cam Ward has upside but this is a close, low-total game.",
+      "trap_flags": []
+    },
+    {
+      "team": "BUF",
+      "opponent": "HOU",
+      "home_away": "away",
+      "win_prob": 0.54,
+      "rationale": "Bills are only -1.5 to -118 on the road; Houston's top-ranked defense beat Buffalo last season and projects to keep this close.",
+      "trap_flags": ["public overreaction risk if the line drifts further off Josh Allen's MVP hype rather than fundamentals"]
+    },
+    {
+      "team": "MIN",
+      "opponent": "GB",
+      "home_away": "home",
+      "win_prob": 0.52,
+      "rationale": "Vikings are only 1.5-point home favorites (-120 ML); one model actually likes Green Bay (57.6%) — a true divisional toss-up, weak survivor value.",
+      "trap_flags": []
+    },
+    {
+      "team": "IND",
+      "opponent": "BAL",
+      "home_away": "home",
+      "win_prob": 0.4,
+      "rationale": "Colts are underdogs at home against Baltimore's Lamar Jackson-led offense; not a viable pick this week.",
+      "trap_flags": []
+    },
+    {
+      "team": "GB",
+      "opponent": "MIN",
+      "home_away": "away",
+      "win_prob": 0.46,
+      "rationale": "Short road underdog per the market line, though one model favors Green Bay — too close to call for survivor purposes.",
+      "trap_flags": []
+    },
+    {
+      "team": "HOU",
+      "opponent": "BUF",
+      "home_away": "home",
+      "win_prob": 0.46,
+      "rationale": "Home underdog by the market line despite beating Buffalo last season; too close a game to burn a team on.",
+      "trap_flags": []
+    },
+    {
+      "team": "NYJ",
+      "opponent": "TEN",
+      "home_away": "away",
+      "win_prob": 0.45,
+      "rationale": "Road underdog vs. Tennessee; not a survivor-caliber spot.",
+      "trap_flags": []
+    },
+    {
+      "team": "CAR",
+      "opponent": "CHI",
+      "home_away": "home",
+      "win_prob": 0.4,
+      "rationale": "Home underdog vs. Chicago; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "TB",
+      "opponent": "CIN",
+      "home_away": "away",
+      "win_prob": 0.45,
+      "rationale": "Road underdog vs. Cincinnati; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "MIA",
+      "opponent": "LV",
+      "home_away": "away",
+      "win_prob": 0.4,
+      "rationale": "Road underdog turning to Malik Willis at QB; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "NYG",
+      "opponent": "DAL",
+      "home_away": "home",
+      "win_prob": 0.38,
+      "rationale": "Home underdog vs. Dallas under a brand-new coaching staff; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "ATL",
+      "opponent": "PIT",
+      "home_away": "away",
+      "win_prob": 0.34,
+      "rationale": "Road underdog forced into a Cooper Rush start after Tua's injury; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "WAS",
+      "opponent": "PHI",
+      "home_away": "away",
+      "win_prob": 0.37,
+      "rationale": "Road underdog missing starting LT Laremy Tunsil (torn triceps); skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "NO",
+      "opponent": "DET",
+      "home_away": "away",
+      "win_prob": 0.25,
+      "rationale": "Big road underdog with Kamara (MCL) limited; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "CLE",
+      "opponent": "JAX",
+      "home_away": "away",
+      "win_prob": 0.18,
+      "rationale": "Heavy road underdog in a full rebuild; skip.",
+      "trap_flags": []
+    },
+    {
+      "team": "ARI",
+      "opponent": "LAC",
+      "home_away": "away",
+      "win_prob": 0.14,
+      "rationale": "Heaviest underdog of the week with a backup QB on the road; skip.",
+      "trap_flags": []
+    }
+  ]
+}

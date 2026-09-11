@@ -1,0 +1,9 @@
+# nfl_data_py's own pins (pandas<2.0, numpy<2.0) have no prebuilt wheels for
+# modern Python, so we install pandas/numpy first and add nfl_data_py with
+# --no-deps to avoid the broken pin (see README for the install command).
+# Its actual runtime deps beyond pandas/numpy: appdirs, fastparquet.
+pandas>=2.0
+numpy>=1.26
+appdirs>=1.4
+fastparquet>=2023.10
+nfl_data_py==0.3.3

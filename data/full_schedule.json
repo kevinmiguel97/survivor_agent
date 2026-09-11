@@ -1,0 +1,2617 @@
+{
+  "season": 2026,
+  "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "teams": {
+    "ARI": {
+      "meta": {
+        "name": "Arizona Cardinals",
+        "conference": "NFC",
+        "division": "NFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "15": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "SF",
+          "home_away": "home"
+        }
+      }
+    },
+    "ATL": {
+      "meta": {
+        "name": "Atlanta Falcons",
+        "conference": "NFC",
+        "division": "NFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "12": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "CAR",
+          "home_away": "away"
+        }
+      }
+    },
+    "BAL": {
+      "meta": {
+        "name": "Baltimore Ravens",
+        "conference": "AFC",
+        "division": "AFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "14": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "PIT",
+          "home_away": "home"
+        }
+      }
+    },
+    "BUF": {
+      "meta": {
+        "name": "Buffalo Bills",
+        "conference": "AFC",
+        "division": "AFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "8": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        }
+      }
+    },
+    "CAR": {
+      "meta": {
+        "name": "Carolina Panthers",
+        "conference": "NFC",
+        "division": "NFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "6": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "ATL",
+          "home_away": "home"
+        }
+      }
+    },
+    "CHI": {
+      "meta": {
+        "name": "Chicago Bears",
+        "conference": "NFC",
+        "division": "NFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "11": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "MIN",
+          "home_away": "away"
+        }
+      }
+    },
+    "CIN": {
+      "meta": {
+        "name": "Cincinnati Bengals",
+        "conference": "AFC",
+        "division": "AFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "7": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "CLE",
+          "home_away": "home"
+        }
+      }
+    },
+    "CLE": {
+      "meta": {
+        "name": "Cleveland Browns",
+        "conference": "AFC",
+        "division": "AFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "12": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "CIN",
+          "home_away": "away"
+        }
+      }
+    },
+    "DAL": {
+      "meta": {
+        "name": "Dallas Cowboys",
+        "conference": "NFC",
+        "division": "NFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "15": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "WAS",
+          "home_away": "away"
+        }
+      }
+    },
+    "DEN": {
+      "meta": {
+        "name": "Denver Broncos",
+        "conference": "AFC",
+        "division": "AFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "11": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "LAC",
+          "home_away": "home"
+        }
+      }
+    },
+    "DET": {
+      "meta": {
+        "name": "Detroit Lions",
+        "conference": "NFC",
+        "division": "NFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "7": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "TB",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "GB",
+          "home_away": "away"
+        }
+      }
+    },
+    "GB": {
+      "meta": {
+        "name": "Green Bay Packers",
+        "conference": "NFC",
+        "division": "NFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "12": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "DET",
+          "home_away": "home"
+        }
+      }
+    },
+    "HOU": {
+      "meta": {
+        "name": "Houston Texans",
+        "conference": "AFC",
+        "division": "AFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "9": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "TEN",
+          "home_away": "home"
+        }
+      }
+    },
+    "IND": {
+      "meta": {
+        "name": "Indianapolis Colts",
+        "conference": "AFC",
+        "division": "AFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "PIT",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "14": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "JAX",
+          "home_away": "home"
+        }
+      }
+    },
+    "JAX": {
+      "meta": {
+        "name": "Jacksonville Jaguars",
+        "conference": "AFC",
+        "division": "AFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "8": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "IND",
+          "home_away": "away"
+        }
+      }
+    },
+    "KC": {
+      "meta": {
+        "name": "Kansas City Chiefs",
+        "conference": "AFC",
+        "division": "AFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "6": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "LV",
+          "home_away": "home"
+        }
+      }
+    },
+    "LA": {
+      "meta": {
+        "name": "Los Angeles Rams",
+        "conference": "NFC",
+        "division": "NFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "12": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "SEA",
+          "home_away": "home"
+        }
+      }
+    },
+    "LAC": {
+      "meta": {
+        "name": "Los Angeles Chargers",
+        "conference": "AFC",
+        "division": "AFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "8": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "DEN",
+          "home_away": "away"
+        }
+      }
+    },
+    "LV": {
+      "meta": {
+        "name": "Las Vegas Raiders",
+        "conference": "AFC",
+        "division": "AFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "14": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "KC",
+          "home_away": "away"
+        }
+      }
+    },
+    "MIA": {
+      "meta": {
+        "name": "Miami Dolphins",
+        "conference": "AFC",
+        "division": "AFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "7": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "NE",
+          "home_away": "away"
+        }
+      }
+    },
+    "MIN": {
+      "meta": {
+        "name": "Minnesota Vikings",
+        "conference": "NFC",
+        "division": "NFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "7": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "GB",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "DET",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "CHI",
+          "home_away": "home"
+        }
+      }
+    },
+    "NE": {
+      "meta": {
+        "name": "New England Patriots",
+        "conference": "AFC",
+        "division": "AFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "BUF",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "12": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "NYJ",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "MIA",
+          "home_away": "home"
+        }
+      }
+    },
+    "NO": {
+      "meta": {
+        "name": "New Orleans Saints",
+        "conference": "NFC",
+        "division": "NFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "9": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "TB",
+          "home_away": "home"
+        }
+      }
+    },
+    "NYG": {
+      "meta": {
+        "name": "New York Giants",
+        "conference": "NFC",
+        "division": "NFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "TEN",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "HOU",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "9": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "PHI",
+          "home_away": "home"
+        }
+      }
+    },
+    "NYJ": {
+      "meta": {
+        "name": "New York Jets",
+        "conference": "AFC",
+        "division": "AFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": "BUF",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "MIA",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "14": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "BUF",
+          "home_away": "away"
+        }
+      }
+    },
+    "PHI": {
+      "meta": {
+        "name": "Philadelphia Eagles",
+        "conference": "NFC",
+        "division": "NFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "11": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "NYG",
+          "home_away": "away"
+        }
+      }
+    },
+    "PIT": {
+      "meta": {
+        "name": "Pittsburgh Steelers",
+        "conference": "AFC",
+        "division": "AFC North"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "NE",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "CLE",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "TB",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "NO",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "10": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "BAL",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "BAL",
+          "home_away": "away"
+        }
+      }
+    },
+    "SEA": {
+      "meta": {
+        "name": "Seattle Seahawks",
+        "conference": "NFC",
+        "division": "NFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "NE",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "WAS",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "SF",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "DEN",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "KC",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "CHI",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "12": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "DAL",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "17": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "LA",
+          "home_away": "away"
+        }
+      }
+    },
+    "SF": {
+      "meta": {
+        "name": "San Francisco 49ers",
+        "conference": "NFC",
+        "division": "NFC West"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "LA",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "MIA",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "ARI",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "DEN",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "SEA",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "9": {
+          "opponent": "LV",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "LAC",
+          "home_away": "away"
+        },
+        "16": {
+          "opponent": "KC",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "ARI",
+          "home_away": "away"
+        }
+      }
+    },
+    "TB": {
+      "meta": {
+        "name": "Tampa Bay Buccaneers",
+        "conference": "NFC",
+        "division": "NFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "MIN",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "GB",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "6": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "7": {
+          "opponent": "CAR",
+          "home_away": "away"
+        },
+        "8": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "CHI",
+          "home_away": "away"
+        },
+        "10": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "11": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "CAR",
+          "home_away": "home"
+        },
+        "13": {
+          "opponent": "LAC",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "NO",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "ATL",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "NO",
+          "home_away": "away"
+        }
+      }
+    },
+    "TEN": {
+      "meta": {
+        "name": "Tennessee Titans",
+        "conference": "AFC",
+        "division": "AFC South"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "NYJ",
+          "home_away": "home"
+        },
+        "2": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "3": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "4": {
+          "opponent": "BAL",
+          "home_away": "away"
+        },
+        "5": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "IND",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": "CLE",
+          "home_away": "home"
+        },
+        "8": {
+          "opponent": "CIN",
+          "home_away": "away"
+        },
+        "9": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "10": {
+          "opponent": "JAX",
+          "home_away": "home"
+        },
+        "11": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "12": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "WAS",
+          "home_away": "home"
+        },
+        "14": {
+          "opponent": "DET",
+          "home_away": "away"
+        },
+        "15": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "LV",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "PIT",
+          "home_away": "home"
+        },
+        "18": {
+          "opponent": "HOU",
+          "home_away": "away"
+        }
+      }
+    },
+    "WAS": {
+      "meta": {
+        "name": "Washington Commanders",
+        "conference": "NFC",
+        "division": "NFC East"
+      },
+      "weeks": {
+        "1": {
+          "opponent": "PHI",
+          "home_away": "away"
+        },
+        "2": {
+          "opponent": "DAL",
+          "home_away": "away"
+        },
+        "3": {
+          "opponent": "SEA",
+          "home_away": "home"
+        },
+        "4": {
+          "opponent": "IND",
+          "home_away": "home"
+        },
+        "5": {
+          "opponent": "NYG",
+          "home_away": "home"
+        },
+        "6": {
+          "opponent": "SF",
+          "home_away": "away"
+        },
+        "7": {
+          "opponent": null,
+          "home_away": "bye"
+        },
+        "8": {
+          "opponent": "PHI",
+          "home_away": "home"
+        },
+        "9": {
+          "opponent": "LA",
+          "home_away": "home"
+        },
+        "10": {
+          "opponent": "NYG",
+          "home_away": "away"
+        },
+        "11": {
+          "opponent": "CIN",
+          "home_away": "home"
+        },
+        "12": {
+          "opponent": "ARI",
+          "home_away": "away"
+        },
+        "13": {
+          "opponent": "TEN",
+          "home_away": "away"
+        },
+        "14": {
+          "opponent": "HOU",
+          "home_away": "home"
+        },
+        "15": {
+          "opponent": "ATL",
+          "home_away": "home"
+        },
+        "16": {
+          "opponent": "MIN",
+          "home_away": "away"
+        },
+        "17": {
+          "opponent": "JAX",
+          "home_away": "away"
+        },
+        "18": {
+          "opponent": "DAL",
+          "home_away": "home"
+        }
+      }
+    }
+  }
+}
