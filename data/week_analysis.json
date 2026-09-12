@@ -29,7 +29,11 @@
       "is_largest_vegas_favorite": true,
       "trap_flags": [
         "reverse line movement — spread fell from 11.5 to 9.5-10.5 despite ~79% of public money on LAC, suggesting sharp/book skepticism"
-      ]
+      ],
+      "weather": null,
+      "head_to_head": "Chargers lead 11-5 all-time; Arizona is 1-7 on the road in this series (lone road win in 2001), though ARI won the most recent meeting 17-15 in Oct. 2024.",
+      "venue_history": "First-ever Chargers-Cardinals meeting at SoFi Stadium (opened 2020) — no venue-specific trend yet; Arizona's broader 1-7 road record vs. LAC is the closest context.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "JAX",
@@ -52,7 +56,11 @@
       "trap_flags": [
         "post-breakout trap-game narrative (surprise 13-4 season raising expectations)",
         "new-system uncertainty (Cleveland has a brand-new, unproven DC)"
-      ]
+      ],
+      "weather": "~89°F, mostly cloudy, 7% chance of rain at kickoff — hot/humid but no rain expected.",
+      "head_to_head": "JAX leads 12-8 all-time and is 5-5 at home vs. Cleveland, but the Browns have won 3 straight meetings and 5 of the last 7 played in Jacksonville.",
+      "venue_history": "EverBank Stadium's early-season heat/humidity is a documented tough draw for visitors, though Cleveland has handled it well lately (5 of last 7 there).",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "DET",
@@ -71,7 +79,11 @@
         "49.5 total prices in a shootout, not a blowout"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Series is nearly even at 13-13-1 (Saints also won a 2011 playoff meeting); Lions hold a 7-4 edge at home vs. New Orleans.",
+      "venue_history": "No notable trend — Saints' results at Ford Field have been mixed historically.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "PHI",
@@ -89,7 +101,11 @@
         "Washington missing starting LT Laremy Tunsil (torn triceps)"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "High near 81°F, low near 68°F — mild, no significant rain signal.",
+      "head_to_head": "Washington leads the overall series 91-88-6, but Philly holds a 46-42-3 edge at Lincoln Financial Field specifically; WAS won the most recent meeting there 24-17 (Jan. 2026).",
+      "venue_history": "The Linc is regarded as one of the NFL's loudest, most hostile road environments, especially in NFC East games — a real crowd-noise factor for Washington.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "PIT",
@@ -108,7 +124,11 @@
         "Multiple Steelers reportedly missed camp/preseason time; PIT's offense was middling in 2025"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "~80°F, partly cloudy/sunny, winds 5-10 mph; precipitation chance low (estimates range 0-30%).",
+      "head_to_head": "Steelers dominate 16-2-1 all-time and are 7-1 at home vs. Atlanta, riding a current 5-game win streak in the series.",
+      "venue_history": "No notable site-specific trend beyond the lopsided head-to-head itself.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "BAL",
@@ -126,7 +146,11 @@
         "Lamar Jackson missed four 2025 games to hamstring/back injuries; recent fragility is real even if 'cleared' now"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Colts lead 11-7 overall; Ravens are just ~1-5 on the road in Indianapolis specifically (vs. 5-4 hosting at home), suggesting Indy protects Lucas Oil Stadium well against Baltimore.",
+      "venue_history": "No additional dome-specific trend documented beyond that road/home split.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "DAL",
@@ -145,7 +169,11 @@
         "48.5 total implies a track meet, not a defensive stranglehold"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Evening kickoff (8:20 PM ET); chance of rain showers before kickoff, turning mostly cloudy, temp falling to ~71°F.",
+      "head_to_head": "Cowboys lead the all-time series 78-48-2 and have won 16 of the last 18 meetings overall, but at MetLife Stadium specifically the two teams have split their last 10 meetings 5-5; NYG won the most recent MetLife meeting 34-17 (Jan. 2026).",
+      "venue_history": "No strong 'Cowboys can't win at MetLife' trend — the 5-5 split there is close to even, unlike Dallas's dominant overall series record.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "CHI",
@@ -164,7 +192,11 @@
         "Caleb Williams still had real late-season turnover/pressure issues in 2025"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "High near 93°F, morning clouds clearing to sun for the early kickoff; rain not expected at game time, though thunderstorms possible later Sunday night.",
+      "head_to_head": "Bears lead 9-3 all-time and are a perfect 7-0 on the road vs. Carolina, riding a current 4-game win streak.",
+      "venue_history": "Bank of America Stadium has been Carolina's only home venue — the Bears' 7-0 road mark there is effectively the venue trend, a clean and well-documented Chicago advantage in Charlotte.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "LV",
@@ -182,7 +214,11 @@
         "Willis has a low-mistake college-backup track record (3 TD/0 INT in two seasons) paired with a strong run game"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Dolphins lead the all-time series 20-18-1; Miami has won the last 2 meetings, and Las Vegas's last regular-season home win in this series dates back to 1996, long before Allegiant Stadium existed.",
+      "venue_history": "Very limited sample at Allegiant (opened 2020) — the one documented meeting there was a 26-25 Dolphins win in Dec. 2020.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "CIN",
@@ -200,7 +236,11 @@
         "Tampa Bay retains a ball-secure Baker Mayfield, Chris Godwin, healthy Bucky Irving — still playoff-caliber"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "~84°F, partly cloudy, light wind (~3 mph SW), 8% chance of precipitation.",
+      "head_to_head": "Tampa Bay leads the all-time series 7-6, and the Bucs have actually been the better road team here, winning 5 of 8 games in Cincinnati; Cincinnati has won the last 3 meetings, however.",
+      "venue_history": "No additional notable trend found beyond that head-to-head split (Tampa's winning road record in Cincinnati).",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "KC",
@@ -218,7 +258,11 @@
         "Multiple outlets picking Denver outright"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Monday night kickoff (8:15 PM ET); ~86-87°F, humid, south wind ~9 mph, modest (0-20%) chance of a passing thunderstorm.",
+      "head_to_head": "Chiefs lead the all-time series 73-59, winning 13 of the last 17 meetings — but Denver swept the 2025 season series, including snapping a 10-year winless drought at Arrowhead (2015-2024) with a road win on their most recent visit.",
+      "venue_history": "Arrowhead is one of the NFL's loudest, most hostile road environments and has historically been brutal for Denver, which makes the Broncos' recent breakthrough win there notable.",
+      "rest_prep": "Week 1 for both — no bye/short-week edge either way; both get the extra day from the Monday slot equally."
     },
     {
       "team": "DEN",
@@ -238,7 +282,11 @@
         "Game reads as close to a coin flip either way — not a decisive survivor mismatch"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Monday night kickoff (8:15 PM ET); ~86-87°F, humid, south wind ~9 mph, modest (0-20%) chance of a passing thunderstorm.",
+      "head_to_head": "Broncos trail the all-time series 59-73 but have won 13 of the last 17 meetings — including a season sweep of KC in 2025 that snapped a 10-year Arrowhead winless drought (2015-2024).",
+      "venue_history": "Arrowhead is historically brutal for Denver, but their most recent visit broke a decade-long losing streak there — a meaningful recent counter-trend.",
+      "rest_prep": "Week 1 for both — no bye/short-week edge either way; both get the extra day from the Monday slot equally."
     },
     {
       "team": "TEN",
@@ -255,7 +303,11 @@
         "Not a decisive enough mismatch for survivor purposes"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Outdoors — not deep-researched this week (outside the debate shortlist); check forecast closer to kickoff.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "BUF",
@@ -273,7 +325,11 @@
         "Possible public overreaction to Allen MVP narrative"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Retractable roof — status/forecast not deep-researched this week.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "MIN",
@@ -289,7 +345,11 @@
         "True divisional toss-up"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "GB",
@@ -305,7 +365,11 @@
         "Too close to call for survivor purposes"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "HOU",
@@ -322,7 +386,11 @@
         "Too close a game for survivor purposes"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Retractable roof — status/forecast not deep-researched this week.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "NYJ",
@@ -338,7 +406,11 @@
         "Not a survivor-caliber spot"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Outdoors — not deep-researched this week (outside the debate shortlist); check forecast closer to kickoff.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "TB",
@@ -354,7 +426,11 @@
         "Skip for survivor purposes"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "~84°F, partly cloudy, light wind (~3 mph SW), 8% chance of precipitation.",
+      "head_to_head": "Tampa Bay leads the all-time series 7-6 and has actually been the better road team here, winning 5 of 8 games in Cincinnati — though the Bengals have won the last 3 meetings.",
+      "venue_history": "No additional notable trend beyond that head-to-head split.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "CAR",
@@ -371,7 +447,11 @@
         "Not a strong enough favorite case to pick"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "High near 93°F, morning clouds clearing to sun for the early kickoff; rain not expected at game time, though thunderstorms possible later Sunday night.",
+      "head_to_head": "Bears lead 9-3 all-time and are a perfect 7-0 on the road at Carolina's stadium, riding a current 4-game win streak — a rough historical trend for the Panthers at home in this series.",
+      "venue_history": "Bank of America Stadium has been Carolina's only home venue — Chicago's 7-0 road mark there is a clean, well-documented visitor advantage.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "MIA",
@@ -388,7 +468,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Dolphins lead the all-time series 20-18-1 and have won the last 2 meetings; Las Vegas's last regular-season home win in this series dates back to 1996.",
+      "venue_history": "Very limited sample at Allegiant Stadium (opened 2020) — the one documented meeting there was a 26-25 Dolphins win in Dec. 2020.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "NYG",
@@ -406,7 +490,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "Evening kickoff (8:20 PM ET); chance of rain showers before kickoff, turning mostly cloudy, temp falling to ~71°F.",
+      "head_to_head": "Cowboys lead the all-time series 78-48-2, but at MetLife Stadium specifically the two teams have split their last 10 meetings 5-5, and the Giants won the most recent MetLife meeting 34-17 (Jan. 2026) — a rare recent bright spot for NYG in this series.",
+      "venue_history": "No strong 'Cowboys dominate at MetLife' trend — the 5-5 home split is close to even, unlike Dallas's lopsided overall series record.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "WAS",
@@ -423,7 +511,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "High near 81°F, low near 68°F — mild, no significant rain signal.",
+      "head_to_head": "Washington leads the overall series 91-88-6 and actually won the most recent meeting at Lincoln Financial Field 24-17 (Jan. 2026), though Philly holds a 46-42-3 edge there historically.",
+      "venue_history": "The Linc is one of the NFL's loudest, most hostile road environments, especially in NFC East games — a real factor for Washington on the road.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "ATL",
@@ -440,7 +532,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "~80°F, partly cloudy/sunny, winds 5-10 mph; precipitation chance low (estimates range 0-30%).",
+      "head_to_head": "Steelers dominate 16-2-1 all-time and are 7-1 at home vs. Atlanta, riding a current 5-game win streak — a difficult historical trend for the Falcons here.",
+      "venue_history": "No notable site-specific trend beyond the lopsided head-to-head itself.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "IND",
@@ -457,7 +553,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Colts lead 11-7 overall; Indianapolis is particularly strong protecting home turf against Baltimore (~5-1 hosting), part of why the Ravens are only a modest road favorite here.",
+      "venue_history": "No additional dome-specific trend documented.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "NO",
@@ -474,7 +574,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Series is nearly even at 13-13-1; Lions hold a 7-4 edge hosting New Orleans, but the overall series is essentially a coin flip.",
+      "venue_history": "No notable trend — Saints' results at Ford Field have been mixed historically.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "CLE",
@@ -492,7 +596,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": "~89°F, mostly cloudy, 7% chance of rain at kickoff — hot/humid but no rain expected.",
+      "head_to_head": "JAX leads 12-8 all-time and is 5-5 at home vs. Cleveland, but the Browns have won 3 straight meetings and 5 of the last 7 played in Jacksonville — a real recent road advantage for CLE.",
+      "venue_history": "EverBank's heat/humidity is a documented tough draw for visitors, though Cleveland has handled it well lately (5 of last 7 there).",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     },
     {
       "team": "ARI",
@@ -509,7 +617,11 @@
         "Skip"
       ],
       "is_largest_vegas_favorite": false,
-      "trap_flags": []
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Chargers lead 11-5 all-time; Arizona is 1-7 on the road in this series (lone road win in 2001), though ARI won the most recent meeting 17-15 in Oct. 2024.",
+      "venue_history": "First-ever Chargers-Cardinals meeting at SoFi Stadium — no venue trend yet; Arizona's broader 1-7 road record in this series is the closest context.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
     }
   ],
   "trap_game_policy_note": "Trap-game status is capped at the 1-2 most credible upset risks per week (LAC, JAX this week), not a flag for every minor concern. Any trap-flagged team is automatically excluded from the recommendation, same as the largest Vegas favorite — both LAC (largest favorite) and JAX (trap game) were excluded here, so the recommendation goes to DET, the highest-probability team left standing."

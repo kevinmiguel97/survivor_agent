@@ -1,7 +1,7 @@
 ---
 name: survivor-pick
 description: This skill should be used when the user asks for their weekly NFL survivor pool pick, e.g. "who should I pick this week", "give me my survivor pick", "what's the best survivor pick for week N", or discusses this repo's survivor pool strategy.
-version: 1.3.0
+version: 1.4.0
 ---
 
 # NFL Survivor Weekly Pick
@@ -86,12 +86,18 @@ Recommends this week's survivor pick for the user's private/office pool tracked 
           "positives": ["<bullet>", "..."],
           "negatives": ["<bullet>", "..."],
           "trap_flags": ["<short tag naming which step-6 trap category applies, e.g. 'new-system uncertainty (...)'>"],
-          "is_largest_vegas_favorite": <true|false>
+          "is_largest_vegas_favorite": <true|false>,
+          "weather": "<1-2 sentence forecast, or null for a dome/fixed-roof game — see note below>",
+          "head_to_head": "<1-2 sentences: home-adjusted historic head-to-head from step 5>",
+          "venue_history": "<1-2 sentences: away team's/QB's history at this stadium/city from step 5, or 'No notable trend found' if genuinely nothing turned up>",
+          "rest_prep": "<1-2 sentences: rest/prep differential from step 5>"
         }
       ]
     }
     ```
     `trap_flags` is distinct from `negatives` even though the underlying evidence overlaps — it's reserved for the 1-2 teams per week that earned the curated "trap game" label in step 6, not a general-purpose flag for any concern. Every other team's array is empty, including ones with real, serious `negatives` — those just aren't trap games. `survivor-grid` renders `trap_flags` as a distinct "⚠ Trap risk" badge, separate from `is_largest_vegas_favorite`'s badge.
+    `weather`/`head_to_head`/`venue_history`/`rest_prep` are the step-5 research findings surfaced as their own fields — not folded into `positives`/`negatives` prose — so `survivor-grid` can show them as distinct, scannable lines per team rather than burying them in a paragraph. Populate them with real findings for shortlisted teams. `weather` is `null` for any dome/fixed-roof stadium — don't guess or note "N/A," just omit it. For non-shortlisted teams, `rest_prep` is still cheap to state honestly (usually "Week 1 for both — no bye/short week for anyone"), and `weather`/`head_to_head`/`venue_history` can be copied over for free from the shortlisted opponent in the same game (the facts are identical from either side); only mark a field as not researched when truly neither side of that game was shortlisted.
+
     Include every eligible team, not just the shortlist (non-shortlisted teams can have short 1-2 item `positives`/`negatives` lists instead of a full debate). This file is a display cache only — never used to determine pool eligibility; `data/state.json` remains the sole source of truth for that. Then mention to the user that `survivor-grid` can be refreshed to see this week's board visually.
 
 13. **Do not modify `data/state.json`.** This skill is advisory only. Only record the user's actual chosen pick (via `survivor-record`) once they confirm which team they're going with — their real choice may differ from the recommendation.
