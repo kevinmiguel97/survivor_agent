@@ -1,7 +1,7 @@
 ---
 name: survivor-grid
 description: This skill should be used when the user asks to see, generate, refresh, or update the full-season NFL schedule grid — e.g. "show me the schedule grid", "update the survivor grid", "which weeks are easy/hard for each team", "show this week's pick probabilities". Publishes a teams-x-weeks matchup grid plus this week's ranked pick outlook as a Claude Code Artifact, similar to sharpfootballanalysis.com's schedule grid.
-version: 1.1.0
+version: 1.2.0
 ---
 
 # NFL Survivor — Schedule Grid Artifact
@@ -27,7 +27,7 @@ Publishes a visual reference page with two parts:
 4. **Load required skills before writing the artifact**: load `artifact-design` (required before any artifact) and `dataviz` (for grid/table color conventions) so the page reads as a polished, theme-aware table rather than a raw data dump.
 
 5. **Build and publish the HTML Artifact:**
-   - **Outlook panel** (top of page, only if step 3 found current data): a ranked list/table of `week_analysis.json`'s `board`, sorted by `win_prob` descending — team, opponent, home/away, win probability (as a number and a simple bar), the one-line rationale, and a small warning badge for any `trap_flags`. Call out the `recommendation` team distinctly (e.g. a "Recommended" badge). If the **current pick** from step 2 exists, mark that row clearly as "Your pick" regardless of whether it's the same as the recommendation — the user's actual choice may have differed.
+   - **Outlook panel** (top of page, only if step 3 found current data): a ranked list of `week_analysis.json`'s `board`, sorted by `win_prob` descending. Per team, show: **Team** (with matchup/home-away), **Probability** (number + simple bar), a short **summary** of the final reasoning, and two side-by-side lists — **Positives** and **Negatives** (from the team's `positives`/`negatives` arrays — these come from the Advocate/Skeptic/Arbiter adversarial process in `survivor-pick`, not just a single rationale line). Badge the `recommendation` team ("Recommended"). If `analysis.largest_vegas_favorite` names this team, badge it too (e.g. "Largest favorite") and show its `note` prominently — this is the team `survivor-pick` deliberately did *not* recommend on raw favorite status alone, even though it may still top the probability list. If a team's `trap_flags` array is non-empty, badge it separately (e.g. "⚠ Trap risk", distinct color from the favorite badge) and list the actual flags in a small callout near its Negatives — trap risk and largest-favorite status are independent signals and a team can carry either, both, or neither. If the **current pick** from step 2 exists, mark that row clearly as "Your pick" regardless of whether it's the same as the recommendation — the user's actual choice may have differed.
    - **Schedule grid** (below the outlook panel): rows = the 32 teams from `full_schedule.json`, grouped by division (`meta.conference` + `meta.division`); columns = weeks 1-18; each cell = opponent abbreviation, `@` prefix for away, "BYE" for a bye week.
      - Mark **used teams'** rows/cells distinctly (e.g. a border + "USED · Wk N" badge) — these are permanently unavailable.
      - Mark the **current pick's** cell distinctly from used cells (e.g. a different accent color + "Your pick" badge) — it's provisional until the result is recorded, unlike a used team's historical result.
