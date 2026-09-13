@@ -4,6 +4,11 @@ matchups, bye teams, and season-to-date + prior-season team records.
 Time-sensitive info (odds, injuries, weather) is NOT here — that's fetched
 live via WebSearch inside the survivor-pick skill.
 
+Each matchups[] entry also carries status/home_score/away_score/winner/
+overtime — all null until the game is final, reusing the same score columns
+team_stats already relies on. This lets the same script serve both pregame
+planning (survivor-pick) and postgame lookup (survivor-record, survivor-review).
+
 Usage:
     python fetch_week_data.py --week 1 [--season 2026]
 Prints JSON to stdout.
@@ -112,6 +117,16 @@ def main():
 
     matchups = []
     for _, g in week_games.iterrows():
+        home_score = g.get("home_score")
+        away_score = g.get("away_score")
+        is_final = pd.notna(home_score) and pd.notna(away_score)
+        winner = None
+        if is_final:
+            if home_score > away_score:
+                winner = g["home_team"]
+            elif away_score > home_score:
+                winner = g["away_team"]
+            # else: tie — winner stays None
         matchups.append({
             "home_team": g["home_team"],
             "away_team": g["away_team"],
@@ -119,6 +134,11 @@ def main():
             "gametime": g.get("gametime"),
             "location": g.get("location"),
             "roof": g.get("roof") if "roof" in g else None,
+            "status": "final" if is_final else "scheduled",
+            "home_score": home_score if is_final else None,
+            "away_score": away_score if is_final else None,
+            "winner": winner,
+            "overtime": bool(g["overtime"]) if is_final and pd.notna(g.get("overtime")) else None,
         })
 
     team_stats = {}

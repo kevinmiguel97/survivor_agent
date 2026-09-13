@@ -1,0 +1,628 @@
+{
+  "season": 2026,
+  "week": 1,
+  "generated_at": "2026-09-11T19:45:00-04:00",
+  "recommendation": "DET",
+  "largest_vegas_favorite": {
+    "team": "LAC",
+    "raw_vegas_prob": 0.85,
+    "note": "Largest Vegas favorite this week (-550 ML, ~85% raw implied) — by policy we don't crown a pick on raw favorite status alone. It went through the same Advocate/Skeptic/Arbiter debate as everyone else (see its entry below) and still ranks #1 post-debate, but the recommendation goes to the next-best team instead."
+  },
+  "process_note": "Each shortlisted team's case was built by an Advocate (live research), stress-tested by an independent Skeptic subagent looking only for flaws, and resolved by an independent Arbiter subagent that weighed both sides without seeing the raw research trail. Teams outside the top-10 shortlist got a lighter single-pass positives/negatives note instead of the full three-stage debate.",
+  "board": [
+    {
+      "team": "LAC",
+      "opponent": "ARI",
+      "home_away": "home",
+      "win_prob": 0.83,
+      "summary": "The Advocate's case is essentially structural — Arizona benched its franchise QB for a game-manager backup, which is close to a fatal roster decision for Week 1. The Skeptic's injury notes are real but describe players still expected to suit up; the line movement (11.5 → 9.5-10.5 despite lopsided public money) is the one point with teeth, trimming the edge slightly without erasing it.",
+      "positives": [
+        "-550 ML (~85% raw implied) at home in a dome",
+        "Arizona benched franchise QB Kyler Murray for backup Jacoby Brissett"
+      ],
+      "negatives": [
+        "Justin Herbert nursing a plantar fasciitis issue from camp (mobility/timing risk)",
+        "EDGE Tuipulotu (hip) and LT Slater (recovering from patellar tendon tear, 'flare-up' in pads) both banged up",
+        "Spread has fallen 11.5 → 9.5-10.5 despite ~79% of money on LAC — sharp money/books less convinced than the raw line suggests",
+        "Arizona retains real skill talent (Marvin Harrison Jr., James Conner); Brissett is low-ceiling but not turnover-prone"
+      ],
+      "is_largest_vegas_favorite": true,
+      "trap_flags": [
+        "reverse line movement — spread fell from 11.5 to 9.5-10.5 despite ~79% of public money on LAC, suggesting sharp/book skepticism"
+      ],
+      "weather": null,
+      "head_to_head": "Chargers lead 11-5 all-time; Arizona is 1-7 on the road in this series (lone road win in 2001), though ARI won the most recent meeting 17-15 in Oct. 2024.",
+      "venue_history": "First-ever Chargers-Cardinals meeting at SoFi Stadium (opened 2020) — no venue-specific trend yet; Arizona's broader 1-7 road record vs. LAC is the closest context.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "JAX",
+      "opponent": "CLE",
+      "home_away": "home",
+      "win_prob": 0.8,
+      "summary": "The Skeptic's strongest thread (Verse addition, unknown new DC) mostly restates general Week 1 uncertainty rather than specifically favoring Cleveland, and 'trap game' chatter is narrative, not evidence. The core fact — a declining Deshaun Watson leading a rebuilding team with a new HC/DC on the road — still dominates, so the Advocate's number holds with only a minor discount.",
+      "positives": [
+        "-455 ML (~82% raw implied) at home",
+        "Cleveland in a full rebuild under new HC Todd Monken, having just traded away Myles Garrett",
+        "Deshaun Watson fully healthy but in visible decline"
+      ],
+      "negatives": [
+        "Cleveland got a quality DL piece (Jared Verse) back in the Garrett trade; new DC Mike Rutenberg is a total unknown",
+        "JAX's own HC publicly said he has 'no idea' what Cleveland will run defensively",
+        "Local coverage openly debating this as a trap game after a surprise 13-4 season raised expectations",
+        "Actual line (-8.5) is a field goal shy of what an 82% ML would typically imply — market hedging more than the raw number suggests"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [
+        "post-breakout trap-game narrative (surprise 13-4 season raising expectations)",
+        "new-system uncertainty (Cleveland has a brand-new, unproven DC)"
+      ],
+      "weather": "~89°F, mostly cloudy, 7% chance of rain at kickoff — hot/humid but no rain expected.",
+      "head_to_head": "JAX leads 12-8 all-time and is 5-5 at home vs. Cleveland, but the Browns have won 3 straight meetings and 5 of the last 7 played in Jacksonville.",
+      "venue_history": "EverBank Stadium's early-season heat/humidity is a documented tough draw for visitors, though Cleveland has handled it well lately (5 of last 7 there).",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "DET",
+      "opponent": "NO",
+      "home_away": "home",
+      "win_prob": 0.68,
+      "summary": "The Skeptic lands a real blow here: two starting safeties on PUP and the starting CB released is a specific, verifiable, high-impact weakness — not vague pessimism — and it's exactly the kind of hole a hot-closing Saints passing attack could exploit. Combined with a 49.5 total signaling a competitive script, the safe-floor case is meaningfully weaker than the raw -334 ML suggests.",
+      "positives": [
+        "-334 ML / -6.5 at home",
+        "Jared Goff healthy, one of the league's better offenses"
+      ],
+      "negatives": [
+        "Both starting safeties (Kerby Joseph, Brian Branch) opened on PUP; starting CB Terrion Arnold was released — secondary genuinely depleted",
+        "Lost both coordinators after 2024 (Ben Johnson to CHI, Aaron Glenn to NYJ); replacements only in year two",
+        "Saints closed 2025 hot and are veteran/division-tested despite being battered",
+        "49.5 total prices in a shootout, not a blowout"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Series is nearly even at 13-13-1 (Saints also won a 2011 playoff meeting); Lions hold a 7-4 edge at home vs. New Orleans.",
+      "venue_history": "No notable trend — Saints' results at Ford Field have been mixed historically.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "PHI",
+      "opponent": "WAS",
+      "home_away": "home",
+      "win_prob": 0.66,
+      "summary": "Solid home favorite, but discounted from a pure power-rating gap because Jayden Daniels is making his first start back from a serious elbow injury and both squads are breaking in new offensive coordinators — real variance the spread doesn't fully price in. Note: this team wasn't part of this round's formal three-stage debate (a board-generation gap caught after the fact) — treat as slightly less rigorously vetted than the other top entries and worth re-running through the full process next time.",
+      "positives": [
+        "Big home favorite (-5.5) over Washington",
+        "Coming off a strong prior season at home"
+      ],
+      "negatives": [
+        "Jayden Daniels making his first start back from a serious elbow injury — unpredictable variable",
+        "Both teams installing new offensive systems under first-year coordinators — added game-flow uncertainty",
+        "Washington missing starting LT Laremy Tunsil (torn triceps)"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "High near 81°F, low near 68°F — mild, no significant rain signal.",
+      "head_to_head": "Washington leads the overall series 91-88-6, but Philly holds a 46-42-3 edge at Lincoln Financial Field specifically; WAS won the most recent meeting there 24-17 (Jan. 2026).",
+      "venue_history": "The Linc is regarded as one of the NFL's loudest, most hostile road environments, especially in NFC East games — a real crowd-noise factor for Washington.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "PIT",
+      "opponent": "ATL",
+      "home_away": "home",
+      "win_prob": 0.61,
+      "summary": "Losing Tua for Rush does help Pittsburgh, but the Skeptic correctly notes Rush is a credible spot-starter, not a total liability, and pairs that with specific concerns (Rodgers' history of slow openers, reported camp absences, PIT's documented struggles closing out lesser teams). The line already reflects a competitive game; the debate nudges this down slightly.",
+      "positives": [
+        "-4.5/-5.5 at home",
+        "Falcons' planned starter Tua Tagovailoa is out (oblique) — Cooper Rush makes his first start for Atlanta"
+      ],
+      "negatives": [
+        "Cooper Rush is a veteran with real spot-starting experience, not a total unknown",
+        "Atlanta still has Bijan Robinson, Drake London, Kyle Pitts",
+        "Aaron Rodgers (42) has a real history of slow season-opening starts",
+        "Multiple Steelers reportedly missed camp/preseason time; PIT's offense was middling in 2025"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "~80°F, partly cloudy/sunny, winds 5-10 mph; precipitation chance low (estimates range 0-30%).",
+      "head_to_head": "Steelers dominate 16-2-1 all-time and are 7-1 at home vs. Atlanta, riding a current 5-game win streak in the series.",
+      "venue_history": "No notable site-specific trend beyond the lopsided head-to-head itself.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "BAL",
+      "opponent": "IND",
+      "home_away": "away",
+      "win_prob": 0.58,
+      "summary": "Lamar Jackson and an upgraded defense still make Baltimore the better team on paper, and that carries real weight even on the road. But Daniel Jones being fully rested off a healed Achilles (vs. the hobbled version fans saw late in 2025), plus Indianapolis's actual 8-2 start last year, is a legitimate counter that trims the edge to near a true toss-up-plus.",
+      "positives": [
+        "3.5-point favorite even on the road",
+        "Lamar Jackson-led offense and an upgraded defense"
+      ],
+      "negatives": [
+        "Daniel Jones returns fully rested from a Week 14 Achilles tear — could be more dangerous healthy",
+        "Indianapolis started 2025 at 8-2 before its second-half collapse — early-season form has been strong before",
+        "Lamar Jackson missed four 2025 games to hamstring/back injuries; recent fragility is real even if 'cleared' now"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Colts lead 11-7 overall; Ravens are just ~1-5 on the road in Indianapolis specifically (vs. 5-4 hosting at home), suggesting Indy protects Lucas Oil Stadium well against Baltimore.",
+      "venue_history": "No additional dome-specific trend documented beyond that road/home split.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "DAL",
+      "opponent": "NYG",
+      "home_away": "away",
+      "win_prob": 0.55,
+      "summary": "The Skeptic's rebuttal is the sharpest on the board: the 'two first-round picks' were compensation for trading away a 52.5-sack perennial All-Pro (Micah Parsons), meaning this defense is actively weaker, not stronger — and the 11-1 series history is essentially noise from entirely different rosters. Harbaugh is a legitimate program-builder, not a placeholder. This is close to a coin flip with real bust risk.",
+      "positives": [
+        "-162 ML road favorites",
+        "11-1 in the last 12 series openers vs. NYG"
+      ],
+      "negatives": [
+        "The added draft capital was compensation for trading away Micah Parsons — defense is rebuilding around rookies, not stacking strength",
+        "John Harbaugh is a proven program-builder, not a green first-timer, and has hyped Jaxson Dart",
+        "11-1 series trend compiled under entirely different rosters/staffs — weak evidence",
+        "48.5 total implies a track meet, not a defensive stranglehold"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Evening kickoff (8:20 PM ET); chance of rain showers before kickoff, turning mostly cloudy, temp falling to ~71°F.",
+      "head_to_head": "Cowboys lead the all-time series 78-48-2 and have won 16 of the last 18 meetings overall, but at MetLife Stadium specifically the two teams have split their last 10 meetings 5-5; NYG won the most recent MetLife meeting 34-17 (Jan. 2026).",
+      "venue_history": "No strong 'Cowboys can't win at MetLife' trend — the 5-5 split there is close to even, unlike Dallas's dominant overall series record.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "CHI",
+      "opponent": "CAR",
+      "home_away": "away",
+      "win_prob": 0.55,
+      "summary": "The Advocate's edge is thin to begin with (62% implied), and Carolina isn't the team that started 2025 poorly — a Bryce Young with real late-season/playoff success, at home, against a first-time road HC, is a legitimately live upset spot. Some books already show a tighter number than the posted ML implies.",
+      "positives": [
+        "-164 ML road favorites (~62% implied)",
+        "Oddsmakers project a 24-21 Bears win"
+      ],
+      "negatives": [
+        "Bryce Young improved markedly down the stretch in 2025 (23 TD) and beat the Rams in the playoffs — real momentum",
+        "True road game; Ben Johnson's first regular-season game as an NFL HC on the road",
+        "Some books have Carolina as short as +3, tighter than the ML implies",
+        "Caleb Williams still had real late-season turnover/pressure issues in 2025"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "High near 93°F, morning clouds clearing to sun for the early kickoff; rain not expected at game time, though thunderstorms possible later Sunday night.",
+      "head_to_head": "Bears lead 9-3 all-time and are a perfect 7-0 on the road vs. Carolina, riding a current 4-game win streak.",
+      "venue_history": "Bank of America Stadium has been Carolina's only home venue — the Bears' 7-0 road mark there is effectively the venue trend, a clean and well-documented Chicago advantage in Charlotte.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "LV",
+      "opponent": "MIA",
+      "home_away": "home",
+      "win_prob": 0.55,
+      "summary": "The Skeptic surfaces a concrete schematic mismatch (LV's 32nd-ranked run defense vs. a top-13 Achane-led ground game) that directly undercuts the 'established home favorite' framing — both teams are actually in new-HC uncertainty, since Kubiak is himself a rookie HC. Willis's low-mistake profile paired with a strong run game supports a competitive script.",
+      "positives": [
+        "-3.5 favorites at home",
+        "Miami turning to Malik Willis as full-time starter"
+      ],
+      "negatives": [
+        "LV's run defense finished 32nd (dead last) in 2025 vs. a top-13 Achane-led Miami ground game",
+        "Both teams are in brand-new HC eras — Kubiak is himself a rookie NFL head coach",
+        "Willis has a low-mistake college-backup track record (3 TD/0 INT in two seasons) paired with a strong run game"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Dolphins lead the all-time series 20-18-1; Miami has won the last 2 meetings, and Las Vegas's last regular-season home win in this series dates back to 1996, long before Allegiant Stadium existed.",
+      "venue_history": "Very limited sample at Allegiant (opened 2020) — the one documented meeting there was a 26-25 Dolphins win in Dec. 2020.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "CIN",
+      "opponent": "TB",
+      "home_away": "home",
+      "win_prob": 0.53,
+      "summary": "Both sides largely agree this is a near-toss-up, and the Skeptic doesn't add much beyond what the Advocate already priced in — Burrow's own health uncertainty was implicit in a 52-57% model split. This settles almost exactly where the Advocate had it.",
+      "positives": [
+        "Favored by 3.5 at home behind Joe Burrow"
+      ],
+      "negatives": [
+        "Burrow himself returning from a toe injury that cost him nine games in 2025",
+        "Chase (knee) and Higgins (heel) questionable/'on track,' not fully clean",
+        "Defensive additions (Dexter Lawrence, Jonathan Allen, Boye Mafe) are brand new — Week 1 integration risk",
+        "Tampa Bay retains a ball-secure Baker Mayfield, Chris Godwin, healthy Bucky Irving — still playoff-caliber"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "~84°F, partly cloudy, light wind (~3 mph SW), 8% chance of precipitation.",
+      "head_to_head": "Tampa Bay leads the all-time series 7-6, and the Bucs have actually been the better road team here, winning 5 of 8 games in Cincinnati; Cincinnati has won the last 3 meetings, however.",
+      "venue_history": "No additional notable trend found beyond that head-to-head split (Tampa's winning road record in Cincinnati).",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "KC",
+      "opponent": "DEN",
+      "home_away": "home",
+      "win_prob": 0.52,
+      "summary": "This is the Skeptic's best-supported case on the entire slate: Denver is a defending AFC finalist with an elite, specific defensive profile and a real offensive upgrade (Waddle), while Mahomes returns from a season-ending ACL/LCL injury for his first live game in nine months against exactly that defense. KC's own -144 price is already the thinnest home-favorite line on the board, corroborating rather than contradicting the Skeptic.",
+      "positives": [
+        "-144 ML (~59% implied) hosting Denver on Monday Night Football"
+      ],
+      "negatives": [
+        "Denver made the 2025 AFC Championship with an elite defense (283.4 yds/game allowed, league-leading sacks) and added Jaylen Waddle",
+        "Patrick Mahomes returning from a torn ACL/LCL — first live game in 9 months, on national TV, vs. that defense",
+        "-144 is the thinnest home-favorite price on the entire slate — near coin-flip signal",
+        "Multiple outlets picking Denver outright"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Monday night kickoff (8:15 PM ET); ~86-87°F, humid, south wind ~9 mph, modest (0-20%) chance of a passing thunderstorm.",
+      "head_to_head": "Chiefs lead the all-time series 73-59, winning 13 of the last 17 meetings — but Denver swept the 2025 season series, including snapping a 10-year winless drought at Arrowhead (2015-2024) with a road win on their most recent visit.",
+      "venue_history": "Arrowhead is one of the NFL's loudest, most hostile road environments and has historically been brutal for Denver, which makes the Broncos' recent breakthrough win there notable.",
+      "rest_prep": "Week 1 for both — no bye/short-week edge either way; both get the extra day from the Monday slot equally."
+    },
+    {
+      "team": "DEN",
+      "opponent": "KC",
+      "home_away": "away",
+      "win_prob": 0.48,
+      "summary": "The mirror image of KC's entry: Denver's defensive profile and Mahomes' major-injury return make this a genuine toss-up rather than a Chiefs formality, but the road environment and Kansas City's pedigree keep Denver from being a clean favorite either — not a survivor play in either direction this week.",
+      "positives": [
+        "Made the 2025 AFC Championship game with an elite, top-ranked defense",
+        "Added Jaylen Waddle this offseason",
+        "Facing a Mahomes coming off a torn ACL/LCL making his first start in 9 months",
+        "Some models/experts pick Denver outright (e.g. 27-20)"
+      ],
+      "negatives": [
+        "Still on the road at Arrowhead on national Monday night TV",
+        "Even a recovering Chiefs team has a strong track record in these spots",
+        "Game reads as close to a coin flip either way — not a decisive survivor mismatch"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Monday night kickoff (8:15 PM ET); ~86-87°F, humid, south wind ~9 mph, modest (0-20%) chance of a passing thunderstorm.",
+      "head_to_head": "Broncos trail the all-time series 59-73 but have won 13 of the last 17 meetings — including a season sweep of KC in 2025 that snapped a 10-year Arrowhead winless drought (2015-2024).",
+      "venue_history": "Arrowhead is historically brutal for Denver, but their most recent visit broke a decade-long losing streak there — a meaningful recent counter-trend.",
+      "rest_prep": "Week 1 for both — no bye/short-week edge either way; both get the extra day from the Monday slot equally."
+    },
+    {
+      "team": "TEN",
+      "opponent": "NYJ",
+      "home_away": "home",
+      "win_prob": 0.55,
+      "summary": "Modest home favorite in a low-total game; not decisive enough for a premium survivor spot.",
+      "positives": [
+        "Modest home favorite (-124 ML)",
+        "Young QB Cam Ward has upside"
+      ],
+      "negatives": [
+        "Only a 1.5-point edge — close, low-total game",
+        "Not a decisive enough mismatch for survivor purposes"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Outdoors — not deep-researched this week (outside the debate shortlist); check forecast closer to kickoff.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "BUF",
+      "opponent": "HOU",
+      "home_away": "away",
+      "win_prob": 0.54,
+      "summary": "Barely a favorite on the road against the team that beat them last season; risk the market is inflated by Josh Allen hype rather than fundamentals.",
+      "positives": [
+        "Slight road favorite (-118)",
+        "Josh Allen-led offense"
+      ],
+      "negatives": [
+        "Houston's top-ranked defense beat Buffalo last season",
+        "Line barely favors Buffalo — not a safe survivor spot",
+        "Possible public overreaction to Allen MVP narrative"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Retractable roof — status/forecast not deep-researched this week.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "MIN",
+      "opponent": "GB",
+      "home_away": "home",
+      "win_prob": 0.52,
+      "summary": "A true divisional toss-up — one model even favors the road team. Weak survivor value.",
+      "positives": [
+        "Slight home favorite (-120 ML)"
+      ],
+      "negatives": [
+        "One model favors Green Bay outright (57.6%)",
+        "True divisional toss-up"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "GB",
+      "opponent": "MIN",
+      "home_away": "away",
+      "win_prob": 0.46,
+      "summary": "Short road underdog by the market line despite one model liking them; too close to call.",
+      "positives": [
+        "One projection model favors Green Bay outright (57.6%)"
+      ],
+      "negatives": [
+        "Market line makes them a short road underdog",
+        "Too close to call for survivor purposes"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "HOU",
+      "opponent": "BUF",
+      "home_away": "home",
+      "win_prob": 0.46,
+      "summary": "Still an underdog by the line at home despite last year's head-to-head win over Buffalo; too close to burn a team on.",
+      "positives": [
+        "Houston's defense beat Buffalo last season",
+        "Playing at home"
+      ],
+      "negatives": [
+        "Still a market underdog by the line",
+        "Too close a game for survivor purposes"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Retractable roof — status/forecast not deep-researched this week.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "NYJ",
+      "opponent": "TEN",
+      "home_away": "away",
+      "win_prob": 0.45,
+      "summary": "Road underdog; not a survivor-caliber spot.",
+      "positives": [
+        "Road trip against a beatable Titans team"
+      ],
+      "negatives": [
+        "Market underdog on the road",
+        "Not a survivor-caliber spot"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Outdoors — not deep-researched this week (outside the debate shortlist); check forecast closer to kickoff.",
+      "head_to_head": "Not deep-researched this week — outside the top debate shortlist.",
+      "venue_history": "Not deep-researched this week — outside the top debate shortlist.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "TB",
+      "opponent": "CIN",
+      "home_away": "away",
+      "win_prob": 0.45,
+      "summary": "Road underdog vs. a Bengals team dealing with its own health questions; still a skip.",
+      "positives": [
+        "Roster still has Baker Mayfield, Chris Godwin, a healthy Bucky Irving — playoff-caliber, not a rebuild"
+      ],
+      "negatives": [
+        "Road underdog vs. Cincinnati by the market line",
+        "Skip for survivor purposes"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "~84°F, partly cloudy, light wind (~3 mph SW), 8% chance of precipitation.",
+      "head_to_head": "Tampa Bay leads the all-time series 7-6 and has actually been the better road team here, winning 5 of 8 games in Cincinnati — though the Bengals have won the last 3 meetings.",
+      "venue_history": "No additional notable trend beyond that head-to-head split.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "CAR",
+      "opponent": "CHI",
+      "home_away": "home",
+      "win_prob": 0.4,
+      "summary": "Real momentum from a strong 2025 close, but still a market underdog at home vs. Chicago.",
+      "positives": [
+        "Bryce Young's late-2025 form (23 TD) and a playoff win over the Rams",
+        "Playing at home"
+      ],
+      "negatives": [
+        "Still a market underdog vs. Chicago",
+        "Not a strong enough favorite case to pick"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "High near 93°F, morning clouds clearing to sun for the early kickoff; rain not expected at game time, though thunderstorms possible later Sunday night.",
+      "head_to_head": "Bears lead 9-3 all-time and are a perfect 7-0 on the road at Carolina's stadium, riding a current 4-game win streak — a rough historical trend for the Panthers at home in this series.",
+      "venue_history": "Bank of America Stadium has been Carolina's only home venue — Chicago's 7-0 road mark there is a clean, well-documented visitor advantage.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "MIA",
+      "opponent": "LV",
+      "home_away": "away",
+      "win_prob": 0.4,
+      "summary": "A schematic run-game edge doesn't overcome being a road underdog turning to a new full-time starter.",
+      "positives": [
+        "Malik Willis has a low-mistake track record as a game manager",
+        "Achane-led run game grades well against LV's run defense"
+      ],
+      "negatives": [
+        "Still a market underdog on the road with a new starting QB",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Dolphins lead the all-time series 20-18-1 and have won the last 2 meetings; Las Vegas's last regular-season home win in this series dates back to 1996.",
+      "venue_history": "Very limited sample at Allegiant Stadium (opened 2020) — the one documented meeting there was a 26-25 Dolphins win in Dec. 2020.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "NYG",
+      "opponent": "DAL",
+      "home_away": "home",
+      "win_prob": 0.38,
+      "summary": "A credible new coaching staff doesn't offset an unproven QB-RB combo and market-underdog status at home.",
+      "positives": [
+        "Home game",
+        "New HC John Harbaugh is a proven program-builder, not a placeholder hire"
+      ],
+      "negatives": [
+        "Unproven Dart/Skattebo combo under center",
+        "Still a market underdog vs. Dallas",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "Evening kickoff (8:20 PM ET); chance of rain showers before kickoff, turning mostly cloudy, temp falling to ~71°F.",
+      "head_to_head": "Cowboys lead the all-time series 78-48-2, but at MetLife Stadium specifically the two teams have split their last 10 meetings 5-5, and the Giants won the most recent MetLife meeting 34-17 (Jan. 2026) — a rare recent bright spot for NYG in this series.",
+      "venue_history": "No strong 'Cowboys dominate at MetLife' trend — the 5-5 home split is close to even, unlike Dallas's lopsided overall series record.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "WAS",
+      "opponent": "PHI",
+      "home_away": "away",
+      "win_prob": 0.37,
+      "summary": "Road underdog missing a key starter against a home favorite; skip.",
+      "positives": [
+        "Jayden Daniels back from injury gives some offensive upside"
+      ],
+      "negatives": [
+        "Missing starting LT Laremy Tunsil (torn triceps)",
+        "Road underdog vs. Philadelphia",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "High near 81°F, low near 68°F — mild, no significant rain signal.",
+      "head_to_head": "Washington leads the overall series 91-88-6 and actually won the most recent meeting at Lincoln Financial Field 24-17 (Jan. 2026), though Philly holds a 46-42-3 edge there historically.",
+      "venue_history": "The Linc is one of the NFL's loudest, most hostile road environments, especially in NFC East games — a real factor for Washington on the road.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "ATL",
+      "opponent": "PIT",
+      "home_away": "away",
+      "win_prob": 0.34,
+      "summary": "Still has skill talent, but forced into a backup-QB start on the road; skip.",
+      "positives": [
+        "Still retains skill talent (Bijan Robinson, Drake London, Kyle Pitts)"
+      ],
+      "negatives": [
+        "Forced into a Cooper Rush start after Tua's injury",
+        "Road underdog",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "~80°F, partly cloudy/sunny, winds 5-10 mph; precipitation chance low (estimates range 0-30%).",
+      "head_to_head": "Steelers dominate 16-2-1 all-time and are 7-1 at home vs. Atlanta, riding a current 5-game win streak — a difficult historical trend for the Falcons here.",
+      "venue_history": "No notable site-specific trend beyond the lopsided head-to-head itself.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "IND",
+      "opponent": "BAL",
+      "home_away": "home",
+      "win_prob": 0.4,
+      "summary": "Early-season form has been strong before, but still an underdog at home against Lamar Jackson's Ravens.",
+      "positives": [
+        "Started 2025 at 8-2 before a second-half collapse — early-season form has been strong before",
+        "Daniel Jones fully rested off a healed Achilles"
+      ],
+      "negatives": [
+        "Still an underdog at home against Lamar Jackson's Ravens",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Colts lead 11-7 overall; Indianapolis is particularly strong protecting home turf against Baltimore (~5-1 hosting), part of why the Ravens are only a modest road favorite here.",
+      "venue_history": "No additional dome-specific trend documented.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "NO",
+      "opponent": "DET",
+      "home_away": "away",
+      "win_prob": 0.25,
+      "summary": "A hot 2025 close doesn't offset a big road-underdog spot with a limited Kamara.",
+      "positives": [
+        "Closed 2025 hot, veteran/division-tested roster"
+      ],
+      "negatives": [
+        "Alvin Kamara (MCL) limited",
+        "Big road underdog",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Series is nearly even at 13-13-1; Lions hold a 7-4 edge hosting New Orleans, but the overall series is essentially a coin flip.",
+      "venue_history": "No notable trend — Saints' results at Ford Field have been mixed historically.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "CLE",
+      "opponent": "JAX",
+      "home_away": "away",
+      "win_prob": 0.18,
+      "summary": "A healthy Watson and one useful trade piece don't offset a full rebuild on the road.",
+      "positives": [
+        "Got a quality DL piece (Jared Verse) in the Garrett trade",
+        "Deshaun Watson fully healthy"
+      ],
+      "negatives": [
+        "Heavy road underdog in a full rebuild",
+        "New DC, unproven scheme",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": "~89°F, mostly cloudy, 7% chance of rain at kickoff — hot/humid but no rain expected.",
+      "head_to_head": "JAX leads 12-8 all-time and is 5-5 at home vs. Cleveland, but the Browns have won 3 straight meetings and 5 of the last 7 played in Jacksonville — a real recent road advantage for CLE.",
+      "venue_history": "EverBank's heat/humidity is a documented tough draw for visitors, though Cleveland has handled it well lately (5 of last 7 there).",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    },
+    {
+      "team": "ARI",
+      "opponent": "LAC",
+      "home_away": "away",
+      "win_prob": 0.14,
+      "summary": "Retains some skill talent but benched its franchise QB into the heaviest underdog spot of the week.",
+      "positives": [
+        "Still has skill talent (Marvin Harrison Jr., James Conner)"
+      ],
+      "negatives": [
+        "Benched franchise QB Kyler Murray for backup Jacoby Brissett",
+        "Heaviest underdog of the week, on the road",
+        "Skip"
+      ],
+      "is_largest_vegas_favorite": false,
+      "trap_flags": [],
+      "weather": null,
+      "head_to_head": "Chargers lead 11-5 all-time; Arizona is 1-7 on the road in this series (lone road win in 2001), though ARI won the most recent meeting 17-15 in Oct. 2024.",
+      "venue_history": "First-ever Chargers-Cardinals meeting at SoFi Stadium — no venue trend yet; Arizona's broader 1-7 road record in this series is the closest context.",
+      "rest_prep": "Week 1 for both teams — no bye or short week for anyone; no rest/prep edge either way."
+    }
+  ],
+  "trap_game_policy_note": "Trap-game status is capped at the 1-2 most credible upset risks per week (LAC, JAX this week), not a flag for every minor concern. Any trap-flagged team is automatically excluded from the recommendation, same as the largest Vegas favorite — both LAC (largest favorite) and JAX (trap game) were excluded here, so the recommendation goes to DET, the highest-probability team left standing."
+}
