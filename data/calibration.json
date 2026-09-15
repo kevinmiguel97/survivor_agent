@@ -1,0 +1,231 @@
+{
+  "season": 2026,
+  "weeks": [
+    {
+      "week": 1,
+      "reviewed_at": "2026-09-15T00:00:00-04:00",
+      "board_source": "data/history/week_analysis_2026_wk01.json",
+      "games_final_count": 16,
+      "games_pending_count": 0,
+      "recommendation": "DET",
+      "recommendation_result": "win",
+      "largest_vegas_favorite": {"team": "LAC", "raw_vegas_prob": 0.85, "actual_result": "loss"},
+      "trap_flags_grading": [
+        {
+          "team": "LAC",
+          "flags": ["reverse line movement — spread fell from 11.5 to 9.5-10.5 despite ~79% of public money on LAC, suggesting sharp/book skepticism"],
+          "actual_result": "loss",
+          "validated": true
+        },
+        {
+          "team": "JAX",
+          "flags": ["post-breakout trap-game narrative (surprise 13-4 season raising expectations)", "new-system uncertainty (Cleveland has a brand-new, unproven DC)"],
+          "actual_result": "win",
+          "validated": false
+        }
+      ],
+      "no_lazy_favorite_policy_outcome": "saved_a_pick",
+      "brier_score": 0.2246,
+      "teams_graded": 28,
+      "bucket_calibration": [
+        {"bucket": "<50%", "predicted_avg": 0.369, "actual_win_rate": 0.214, "n": 14},
+        {"bucket": "50-59%", "predicted_avg": 0.543, "actual_win_rate": 0.778, "n": 9},
+        {"bucket": "60-69%", "predicted_avg": 0.65, "actual_win_rate": 1.0, "n": 3},
+        {"bucket": "70-79%", "predicted_avg": null, "actual_win_rate": null, "n": 0},
+        {"bucket": "80-89%", "predicted_avg": 0.815, "actual_win_rate": 0.5, "n": 2},
+        {"bucket": "90-100%", "predicted_avg": null, "actual_win_rate": null, "n": 0}
+      ],
+      "team_results": [
+        {
+          "team": "LAC", "opponent": "ARI", "predicted_win_prob": 0.83, "actual_result": "loss",
+          "brier_component": 0.6889, "recap_tier": "deep",
+          "recap": "Arizona (Jacoby Brissett in for benched Kyler Murray, under first-time HC Mike LaFleur) controlled time of possession 37:31-22:29 and beat the Chargers 26-14, the NFL's biggest Week 1 upset and the end of Jim Harbaugh's perfect 6-0 season-opener record. Herbert was held to 209 yards with a pick, and the exact OL/mobility issues the Skeptic flagged (Slater, Tuipulotu) showed up live — the reverse-line-movement trap flag called this correctly.",
+          "is_largest_vegas_favorite": true,
+          "trap_flags": ["reverse line movement — spread fell from 11.5 to 9.5-10.5 despite ~79% of public money on LAC, suggesting sharp/book skepticism"]
+        },
+        {
+          "team": "JAX", "opponent": "CLE", "predicted_win_prob": 0.8, "actual_result": "win",
+          "brier_component": 0.04, "recap_tier": "deep",
+          "recap": "Jacksonville throttled Cleveland 34-10, with Trevor Lawrence going 18-of-23 for 245 yards and 4 TDs (no INTs) and building a 24-0 lead by halftime. The pregame trap-game narrative (post-breakout letdown, unknown new Cleveland DC) never materialized — a clean false alarm on the trap flag.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": ["post-breakout trap-game narrative (surprise 13-4 season raising expectations)", "new-system uncertainty (Cleveland has a brand-new, unproven DC)"]
+        },
+        {
+          "team": "DET", "opponent": "NO", "predicted_win_prob": 0.68, "actual_result": "win",
+          "brier_component": 0.1024, "recap_tier": "deep",
+          "recap": "Detroit led 21-0 before New Orleans — as the flagged depleted secondary and 49.5 total both foreshadowed — stormed back to tie it 24-24 late in regulation, forcing overtime. Jahmyr Gibbs (3 TD, 156 yards) and a Goff-to-St. Brown OT score pulled out a 31-30 win after New Orleans' 2-point try for the outright win failed. The Skeptic's secondary-depletion flag was directionally right even though DET escaped with the pick intact.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "PHI", "opponent": "WAS", "predicted_win_prob": 0.66, "actual_result": "win",
+          "brier_component": 0.1156, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "PIT", "opponent": "ATL", "predicted_win_prob": 0.61, "actual_result": "win",
+          "brier_component": 0.1521, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "BAL", "opponent": "IND", "predicted_win_prob": 0.58, "actual_result": "win",
+          "brier_component": 0.1764, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "DAL", "opponent": "NYG", "predicted_win_prob": 0.55, "actual_result": "loss",
+          "brier_component": 0.3025, "recap_tier": "deep",
+          "recap": "Dallas lost 28-20 at the Giants despite entering as road favorites; the Skeptic's rebuttal — that the rebuilt post-Parsons-trade defense was a real liability, not added strength — played out as New York piled up 394 total yards to Dallas's 244 and controlled the game with an 8-minute third-quarter drive.",
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "CHI", "opponent": "CAR", "predicted_win_prob": 0.55, "actual_result": "win",
+          "brier_component": 0.2025, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "LV", "opponent": "MIA", "predicted_win_prob": 0.55, "actual_result": "win",
+          "brier_component": 0.2025, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "CIN", "opponent": "TB", "predicted_win_prob": 0.53, "actual_result": "win",
+          "brier_component": 0.2209, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "KC", "opponent": "DEN", "predicted_win_prob": 0.52, "actual_result": "win",
+          "brier_component": 0.2304, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "DEN", "opponent": "KC", "predicted_win_prob": 0.48, "actual_result": "loss",
+          "brier_component": 0.2304, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "TEN", "opponent": "NYJ", "predicted_win_prob": 0.55, "actual_result": "loss",
+          "brier_component": 0.3025, "recap_tier": "deep",
+          "recap": "Tennessee was outgained 361-195 and held to a garbage-time touchdown in a 23-10 loss to the Jets, whose defense limited Cam Ward to 140 yards passing and 68 rushing yards allowed. It's the Titans' sixth straight season-opening loss.",
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "BUF", "opponent": "HOU", "predicted_win_prob": 0.54, "actual_result": "win",
+          "brier_component": 0.2116, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "MIN", "opponent": "GB", "predicted_win_prob": 0.52, "actual_result": "win",
+          "brier_component": 0.2304, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "GB", "opponent": "MIN", "predicted_win_prob": 0.46, "actual_result": "loss",
+          "brier_component": 0.2116, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "HOU", "opponent": "BUF", "predicted_win_prob": 0.46, "actual_result": "loss",
+          "brier_component": 0.2116, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "NYJ", "opponent": "TEN", "predicted_win_prob": 0.45, "actual_result": "win",
+          "brier_component": 0.3025, "recap_tier": "deep",
+          "recap": "The Jets beat Tennessee 23-10, outgaining the Titans 361-195. QB Justin Fields/OC Frank Reich's offense scored on an opening 8-play drive and the defense limited Cam Ward to 140 yards passing behind a strong Aaron Glenn-coached unit in year two.",
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "TB", "opponent": "CIN", "predicted_win_prob": 0.45, "actual_result": "loss",
+          "brier_component": 0.2025, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "CAR", "opponent": "CHI", "predicted_win_prob": 0.4, "actual_result": "loss",
+          "brier_component": 0.16, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "MIA", "opponent": "LV", "predicted_win_prob": 0.4, "actual_result": "loss",
+          "brier_component": 0.16, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "NYG", "opponent": "DAL", "predicted_win_prob": 0.38, "actual_result": "win",
+          "brier_component": 0.3844, "recap_tier": "deep",
+          "recap": "The Giants beat Dallas 28-20 on Sunday Night Football, John Harbaugh's debut win, behind Jaxson Dart (230 yards passing, 3 TD, 0 INT, plus 54 rushing yards) and a 394-244 total-yardage edge. Dart became the first QB in NFL history to open a season with 3 pass TD, 50+ rush yards, and a 130+ rating — the pregame 'unproven Dart/Skattebo combo' negative didn't hold up at all.",
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "WAS", "opponent": "PHI", "predicted_win_prob": 0.37, "actual_result": "loss",
+          "brier_component": 0.1369, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "ATL", "opponent": "PIT", "predicted_win_prob": 0.34, "actual_result": "loss",
+          "brier_component": 0.1156, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "IND", "opponent": "BAL", "predicted_win_prob": 0.4, "actual_result": "loss",
+          "brier_component": 0.16, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "NO", "opponent": "DET", "predicted_win_prob": 0.25, "actual_result": "loss",
+          "brier_component": 0.0625, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "CLE", "opponent": "JAX", "predicted_win_prob": 0.18, "actual_result": "loss",
+          "brier_component": 0.0324, "recap_tier": "numeric_only", "recap": null,
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        },
+        {
+          "team": "ARI", "opponent": "LAC", "predicted_win_prob": 0.14, "actual_result": "win",
+          "brier_component": 0.7396, "recap_tier": "deep",
+          "recap": "Arizona's stunning 26-14 win — Jacoby Brissett throwing for 277 yards/1 TD, Trey McBride going for 95 yards/1 TD, rookie HC Mike LaFleur winning his debut — was the NFL's biggest Week 1 upset, coming from the week's single lowest win probability on the board (14%).",
+          "is_largest_vegas_favorite": false, "trap_flags": []
+        }
+      ]
+    }
+  ],
+  "season_summary": {
+    "weeks_reviewed": 1,
+    "total_teams_graded": 28,
+    "running_brier_score": 0.2246,
+    "running_bucket_calibration": [
+      {"bucket": "<50%", "predicted_avg": 0.369, "actual_win_rate": 0.214, "n": 14},
+      {"bucket": "50-59%", "predicted_avg": 0.543, "actual_win_rate": 0.778, "n": 9},
+      {"bucket": "60-69%", "predicted_avg": 0.65, "actual_win_rate": 1.0, "n": 3},
+      {"bucket": "70-79%", "predicted_avg": null, "actual_win_rate": null, "n": 0},
+      {"bucket": "80-89%", "predicted_avg": 0.815, "actual_win_rate": 0.5, "n": 2},
+      {"bucket": "90-100%", "predicted_avg": null, "actual_win_rate": null, "n": 0}
+    ],
+    "no_lazy_favorite_policy_record": {"no_cost": 0, "cost_a_pick": 0, "saved_a_pick": 1},
+    "trap_flag_policy_record": {"validated": 1, "false_alarm": 1}
+  },
+  "lessons_learned": [
+    {
+      "id": "L1",
+      "added_week": 1,
+      "added_at": "2026-09-15T00:00:00-04:00",
+      "criteria_area": "trap_flag_criteria",
+      "lesson": "A trap flag backed by a concrete, quantifiable signal (reverse line movement plus a specific personnel weakness — LAC's OL/QB mobility issues) called the week's biggest upset correctly, while a trap flag built mainly on narrative (JAX's 'post-breakout letdown' and 'new DC is unknown' framing, with no concrete weakness identified) was a clean false alarm. Weight trap flags toward cases with at least one hard, checkable signal (line movement, a specific missing/injured starter) over pure storyline/vibes-based reasoning."
+    },
+    {
+      "id": "L2",
+      "added_week": 1,
+      "added_at": "2026-09-15T00:00:00-04:00",
+      "criteria_area": "vegas_favorite_bias",
+      "lesson": "The no-lazy-favorite policy passed its first live test: the excluded largest Vegas favorite (LAC, 85% raw implied) suffered the week's biggest upset loss while the recommendation that went to the next-best team (DET) won, saving a pick outright. This is early evidence (n=1 week) that the policy's premise — the single largest raw-ML favorite is exactly where market/public overconfidence is most likely to get punished — has real teeth, not just theoretical justification. Continue applying it without softening."
+    },
+    {
+      "id": "L3",
+      "added_week": 1,
+      "added_at": "2026-09-15T00:00:00-04:00",
+      "criteria_area": "other",
+      "lesson": "The archived Week 1 board (data/history/week_analysis_2026_wk01.json) was missing entries for 4 of the week's 32 teams (SEA, NE, LA, SF — the SEA@NE and LA@SF games), even though every other game's both sides were represented. Future survivor-pick runs should verify all 32 teams for the week appear in the board before archiving/overwriting — a missing team can't be graded later and silently shrinks the calibration sample."
+    }
+  ]
+}

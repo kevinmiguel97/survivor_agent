@@ -1,7 +1,7 @@
 ---
 name: survivor-pick
 description: This skill should be used when the user asks for their weekly NFL survivor pool pick, e.g. "who should I pick this week", "give me my survivor pick", "what's the best survivor pick for week N", or discusses this repo's survivor pool strategy.
-version: 1.5.0
+version: 1.6.0
 ---
 
 # NFL Survivor Weekly Pick
@@ -37,14 +37,14 @@ Recommends this week's survivor pick for the user's private/office pool tracked 
    - **Recent form**: last 2-3 games and any head-to-head meetings already played this season.
    - **Historic head-to-head, home-adjusted**: how this matchup has gone historically, split out by home/away — at three levels: the two **teams** overall, the two **head coaches** (including prior stops, if either has faced the other before at a different team), and the two **starting QBs** (personal head-to-head record/stats, if they've faced off before).
    - **Venue/city history**: how the away team (and specifically its starting QB) has historically performed at this stadium/city — elevation, dome vs. outdoor, noise, travel distance/time-zone shift can produce a persistent record independent of general team strength.
-   - **Rest/prep differential**: days of rest coming in — short week, off a bye, a long week, or long travel. More prep favors the better-coached/disciplined side; short rest drags on a normally-favored team.
+   - **Rest/prep differential**: days of rest coming in — short week, off a bye, a long week, or long travel — plus whether the away team is playing its 2nd (or more) consecutive true road game. A road-trip streak compounds fatigue (no home-prep week, cumulative travel) even when the days-of-rest gap itself is normal, so check it independently of short-week/bye status. More prep favors the better-coached/disciplined side; short rest, or a stacked road trip, drags on a normally-favored team.
 
    Distill this into a per-team initial win-probability estimate (Vegas implied probability as the primary anchor, adjusted for everything else above) and a short list of **Positives** bullets.
 
 7. **Trap-game screen.** For every shortlisted team, check whether any of these apply, since this feeds the Skeptic in step 8. Apply any `trap_flag_criteria`-tagged lessons from step 2 when curating the scarce trap label below:
    - **Look-ahead spot**: a much bigger game (rivalry, playoff-implication) next week.
    - **Letdown spot**: coming off an emotional/high-stakes win into a lesser opponent.
-   - **Short-week/travel trap**: already covered in step 5's rest differential — call it out here if it applies to a specific candidate.
+   - **Short-week/travel trap**: already covered in step 6's rest/prep differential (including a 2nd-or-more consecutive road game) — call it out here if it applies to a specific candidate.
    - **New-system uncertainty**: a new HC/coordinator/scheme install (either side) adding game-flow variance the numbers don't reflect yet.
    - **Get-right game for the opponent**: the underdog is bad on paper but off a bye, returning a key starter, or extra-motivated (revenge game, first meeting with a former team/coach).
    - **Public/trendy overreaction**: the line moved on hype/hate rather than fundamentals.

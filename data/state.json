@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "current_week": 1,
+  "current_week": 2,
   "status": "alive",
   "mistake_count": 0,
   "picks": [
@@ -9,7 +9,7 @@
       "team": "DET",
       "opponent": "NO",
       "home_away": "home",
-      "result": "pending",
+      "result": "win",
       "win_prob_estimate": 0.68
     }
   ]
