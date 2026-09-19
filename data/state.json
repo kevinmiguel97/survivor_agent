@@ -11,6 +11,14 @@
       "home_away": "home",
       "result": "win",
       "win_prob_estimate": 0.68
+    },
+    {
+      "week": 2,
+      "team": "TB",
+      "opponent": "CLE",
+      "home_away": "home",
+      "result": "pending",
+      "win_prob_estimate": 0.76
     }
   ]
 }
