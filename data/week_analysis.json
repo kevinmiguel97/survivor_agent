@@ -1,430 +1,701 @@
 {
   "season": 2026,
-  "week": 2,
-  "generated_at": "2026-09-18T14:00:00-04:00",
-  "recommendation": "TB",
+  "week": 3,
+  "generated_at": "2026-09-26T15:00:00-04:00",
+  "recommendation": "SF",
   "largest_vegas_favorite": {
-    "team": "SF",
-    "raw_vegas_prob": 0.91,
-    "note": "Largest raw Vegas favorite this week (-1000 ML, ~91% raw implied, -13.5 spread vs. MIA). By policy this is never auto-selected as the recommendation, even though it survived the full debate and still ranks #2 post-Arbiter at 0.85 (trimmed slightly per the vegas_favorite_bias calibration lesson, on structural-size grounds rather than a discovered weakness)."
+    "team": "KC",
+    "raw_vegas_prob": 0.85,
+    "note": "Largest raw Vegas favorite this week (-750 ML, -11.5 at MIA, ~85% no-vig implied). By policy it is never the recommendation. It survived the debate at 0.84, the top Arbiter number on the board, so the recommendation goes to the next-best non-excluded team, SF (0.77)."
   },
-  "process_note": "Each of 13 teams' cases (the original top-10 power-score shortlist, plus TB/LAC/LA added mid-run — see below) was built by an Advocate (live research), stress-tested by an independent Skeptic subagent (fresh context, own WebSearch, looking only for flaws), and resolved by an independent Arbiter subagent (fresh context, saw only positives/negatives) that weighed both sides. Calibration lessons were threaded into all three stages: trap flags reserved for teams with a concrete, checkable signal rather than narrative alone; SF's huge raw favorite status got real scrutiny per the vegas_favorite_bias lesson. SHORTLIST-METHODOLOGY UPDATE: the original run's shortlist (top-10 by season-long power score) missed TB (~0.82 raw implied vs. a depleted, QB-controversy CLE) and LAC (~0.75 raw implied vs. LV) because their own full-season point-differential blend is mediocre (TB prior -1.82/current -6.0; LAC prior +0.83/current -12.0) even though this week's specific opponent is much weaker — the power-score ranking measures team quality, not the matchup-specific gap, so correctly blending prior-season data doesn't fix this. Separately, LA (Rams) was missed because one bad Week 1 game (-20.0 pd/g) dragged down an otherwise-elite prior-season blend (+8.7 pd/g) — a possible sign the current-season weight is too aggressive this early. Both are distinct, real gaps worth a calibration lesson. Given the user flagged this, TB/LAC/LA were retroactively run through the full debate: TB held up strongly (0.82 raw -> 0.76 Arbiter, only a mild discount) and now has the HIGHEST Arbiter probability on the entire board among non-excluded teams, surpassing KC's original 0.71 — the recommendation changed from KC to TB as a direct result. LAC (0.75 raw -> 0.61) and LA (0.78 raw -> 0.58) both took the two largest raw-to-Arbiter discounts on the board (confirmed multi-starter injury clusters on each), consistent with them being real trap-caliber risks, though SEA and BAL remain the two curated trap_flags per the 1-2/week cap — LAC/LA's real weaknesses are already reflected in their now-lower Arbiter numbers instead.",
+  "status_note": "Strategy run as ELIMINATED: Week 2's TB pick lost 23-19 to CLE per the fetched final. state.json had not yet been updated via survivor-record at run time. No opportunity-cost logic; recommendation = highest Arbiter probability among non-excluded teams.",
+  "process_note": "10-team shortlist (SEA, SF, KC, BUF, NYG, NO, LA, BAL from the matchup-gap power score; PHI and CIN added on moneyline strength after checking own form, in place of CAR/MIN) went through Advocate -> independent Skeptic subagent -> independent Arbiter subagent, with calibration lessons L1-L6 threaded into all three. L4/L5 drove the biggest discounts: PHI (opponent-QB-driven case, weak own form), NO (LV has better own form) and LA (prior-season profile vs. a current injury cluster). L6 shaped the trap curation: NYG's QB drop-off meets an opponent and weather built to exploit it. All 32 teams are on the board (L3).",
   "board": [
     {
-      "team": "KC", "opponent": "IND", "home_away": "home",
-      "win_prob": 0.71,
-      "summary": "The Skeptic's negatives were confirmed, not speculative — LT Josh Simmons OUT and a starting safety OUT are real O-line/secondary downgrades, and IND's skill talent (Taylor, Pittman, Jones) shows no material injury concerns, undercutting the 'Colts are gutted' framing built off one bad Week 1 score. KC remains clearly the right side, but the Arbiter trimmed below both the Advocate's 0.76 and the raw 0.74 to reflect the confirmed absences.",
-      "positives": ["Mahomes fully cleared/practicing, ran for 2 TDs in a 31-10 Week 1 win over DEN", "Colts were blown out 41-23 by BAL in Week 1, Daniel Jones had the 2nd-worst passing DVOA of Week 1", "Colts HC Shane Steichen is 0-1 head-to-head vs Andy Reid", "KC historically dominant at home on Sunday Night Football"],
-      "negatives": ["LT Josh Simmons confirmed OUT (back) — real starter-level OL downgrade", "S Chamarri Conner out again, CB Mansoor Delane limited — KC's back end thinner than a first look suggests", "IND's offensive skill talent (Taylor, Pittman, Jones) shows no material injury concerns — Colts aren't as depleted as the Week 1 score implies"],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Arrowhead Stadium; no adverse forecast found, no material weather factor expected.",
-      "head_to_head": "Chiefs beat Colts 23-20 in OT last season; long-run Reid-era KC dominance over Indianapolis.",
-      "venue_history": "Arrowhead is one of the league's toughest true road environments, compounding Indy's early-season road test.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue for either side."
-    },
-    {
-      "team": "IND", "opponent": "KC", "home_away": "away",
-      "win_prob": 0.29,
-      "summary": "Road underdog at Arrowhead after a Week 1 blowout loss, though the skill-position group is healthier than the score suggested.",
-      "positives": ["Skill-position talent (Jonathan Taylor, Michael Pittman, Daniel Jones) carries no material injury concerns"],
-      "negatives": ["Sizable road underdog at Arrowhead against a red-hot Chiefs team", "Defense was gashed for 41 points in a Week 1 blowout loss to BAL"],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Arrowhead Stadium; no material weather factor expected.",
-      "head_to_head": "Chiefs beat Colts 23-20 in OT last season; long-run Reid-era KC dominance.",
-      "venue_history": "Arrowhead is one of the league's toughest true road environments for visitors generally.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "SF", "opponent": "MIA", "home_away": "home",
-      "win_prob": 0.85,
-      "summary": "The calibration lesson says don't treat a huge favorite as automatically safe, but also warns against cratering a strong team's number without real evidence — and the Skeptic explicitly found no concrete injury-to-a-key-starter or line-movement signal favoring MIA, only the structural 'it's the biggest favorite' flag itself. MIA's roster losses (no Tua, Waddle, or Hill) are genuine and substantial, and SF's minor practice limitations don't rise to starter-threatening, so the number was trimmed only modestly off the Advocate's 0.87 as calibration humility.",
-      "positives": ["Beat the Rams 27-7 in Week 1, ranked 13th in scoring/11th in total yards vs. MIA's 25th/26th", "Miami is in a full rebuild — no Tua Tagovailoa (signed ATL), no Jaylen Waddle (traded DEN), no Tyreek Hill (released)", "Miami lost Week 1 to Las Vegas"],
-      "negatives": ["This is the single largest raw Vegas favorite on the entire board (-1000 ML/-13.5) — per the vegas_favorite_bias lesson, that size alone is a structural risk flag, the same shape as the Week 1 85%-favorite that lost outright", "SF has four players limited in practice (Bosa-knee, Kittle-Achilles, Juszczyk-finger, White-back) plus K Piñeiro out ill — more 'not fully clean' than a first look suggests, though none are start/sit questionable"],
+      "team": "KC",
+      "opponent": "MIA",
+      "home_away": "away",
+      "win_prob": 0.84,
+      "summary": "The Positives are hard and current: a 0.85 market, KC at +12 pd/g, and a Miami team at -18 pd/g that hasn't topped 13 points and is missing EDGE Beal and WR Douglas. The Skeptic's points (Simmons out again, Chop Robinson back, heat, Mahomes' knee) are real but minor. Per L2 the Arbiter shaved a point and did not crater the favorite.",
+      "positives": [
+        "Raw Vegas implied 0.85 (-750, -11.5), the week's largest favorite",
+        "KC 2-0, +12.0 pd/g; Mahomes practiced fully after a 382-yd game",
+        "Chris Jones (calf) has no designation",
+        "MIA 0-2 at -18.0 pd/g, hasn't topped 13 points; QB Malik Willis sacked 4x last week",
+        "MIA EDGE Robert Beal Jr. and WR Caleb Douglas OUT"
+      ],
+      "negatives": [
+        "LT Josh Simmons OUT for the 3rd straight week; SS Conner doubtful",
+        "MIA gets top pass rusher Chop Robinson back from a concussion",
+        "KC's defense allowed 30 to IND in an OT game last week",
+        "Mahomes still managing a knee; early Miami heat affects the road team"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": true,
-      "weather": "Outdoor Levi's Stadium: ~72-73°F, clear, minimal wind — ideal conditions, no weather risk.",
-      "head_to_head": "Last Dolphins visit to Levi's Stadium was 2022; limited recent head-to-head sample.",
-      "venue_history": "No specific Miami-at-Levi's trend found beyond the single 2022 data point.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": "Early (1pm ET) outdoor kickoff in Miami heat and humidity; heat historically weighs more on the visiting team.",
+      "head_to_head": "KC has won the recent meetings in this series.",
+      "venue_history": "KC's last regular-season trip to Miami (2020) was a win; no persistent venue problem found.",
+      "rest_prep": "Normal 7-day week for both; KC's Week 2 went to overtime vs. IND."
     },
     {
-      "team": "MIA", "opponent": "SF", "home_away": "away",
-      "win_prob": 0.15,
-      "summary": "Heaviest underdog on the board against a well-rested, healthy SF team, with a roster stripped of its top three offensive weapons this offseason.",
-      "positives": ["Roster retains some depth despite the rebuild"],
-      "negatives": ["Lost Tua Tagovailoa (signed ATL), Jaylen Waddle (traded DEN), and Tyreek Hill (released) this offseason — a gutted skill-position group", "Lost Week 1 to Las Vegas", "Facing the week's largest raw Vegas favorite on the road"],
+      "team": "SF",
+      "opponent": "ARI",
+      "home_away": "home",
+      "win_prob": 0.77,
+      "summary": "Losing Bosa, Height and Thompson guts the pass rush, and that is the Skeptic's best hard signal. But Brissett with a depleted ARI secondary (Johnson out for the season, Melton questionable) isn't well built to punish it. SF's two blowouts plus home field keep it close to its 0.785 market number, with a small haircut for the DL cluster.",
+      "positives": [
+        "Raw Vegas implied 0.785 (-425, -8.5)",
+        "SF 2-0 at +21.0 pd/g with two blowouts; Purdy 20/22, 287 yds last week",
+        "ARI down to QB Jacoby Brissett and blown out 31-7 by SEA (gave up the final 24 points)",
+        "ARI CB Will Johnson lost for the season; CB Max Melton questionable (toe)",
+        "Home game"
+      ],
+      "negatives": [
+        "DE Nick Bosa OUT (calf, IR floated); DE Romello Height and DL James Thompson Jr. also OUT, so the pass rush is thin",
+        "WR Mike Evans questionable (hip); WR Demarcus Robinson OUT",
+        "+21 pd/g is a two-game sample",
+        "ML drifted slightly, to -400 at some books"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Levi's Stadium: ideal conditions, no weather risk.",
-      "head_to_head": "Last Dolphins visit to Levi's Stadium was 2022; limited recent sample.",
-      "venue_history": "No specific Miami-at-Levi's trend found beyond one prior meeting.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": null,
+      "head_to_head": "SF has mostly controlled this series at home in recent seasons.",
+      "venue_history": "Routine NFC West division trip for ARI; no notable Levi's Stadium trend found.",
+      "rest_prep": "7 days for both; ARI played at home in Week 2."
     },
     {
-      "team": "BAL", "opponent": "NO", "home_away": "home",
-      "win_prob": 0.62,
-      "summary": "This is the board's other best-evidenced hard-signal trap case: Zay Flowers is now DOUBTFUL, top pass rusher Trey Hendrickson didn't practice, and both starting LT and LG missed practice — a broad two-sided cluster of confirmed absences, not speculation, directly undercutting Baltimore's ability to pressure Shough (who's thriving despite pressure) or protect Jackson. Combined with the Ravens' own beat site explicitly calling this a trap, the Skeptic's case clearly outweighs a Week 1 blowout win that predates these fresh absences, earning a larger haircut than the Advocate's already-discounted 0.74.",
-      "positives": ["Dominant 41-23 Week 1 win over IND, Lamar Jackson 'looked like a 3-time MVP', Derrick Henry ran effectively, defense forced 2 takeaways", "Jackson himself carries no injury concerns", "Home game"],
-      "negatives": ["WR Zay Flowers now officially DOUBTFUL (hamstring), not just day-to-day", "Top pass rusher Trey Hendrickson (OLB) did not practice; DT Nnamdi Madubuike limited; CB T.J. Tampa DNP; LT Ronnie Stanley/LG John Simpson both missed practice (returned limited Friday) — a broad two-sided injury cluster", "Ravens' own beat site (Baltimore Beatdown) explicitly labeled this a 'potential Week 2 trap game'", "Saints QB Tyler Shough currently leads the NFL in passing yards (410) and completions (35) through Week 1, and NO nearly upset Detroit in Week 1 (lost by 1 in OT after a failed 2-pt try)"],
-      "trap_flags": ["Explicit trap-game call from Ravens' own beat site, backed by a broad, confirmed injury cluster (Flowers doubtful, Hendrickson DNP, both starting LT/LG limited) plus a red-hot Saints passing offense that already nearly upset Detroit"],
-      "is_largest_vegas_favorite": false,
-      "weather": "Outdoor M&T Bank Stadium: ~76°F high, no precipitation — benign weather.",
-      "head_to_head": "Not deeply researched beyond current-season form; infrequent interconference scheduling.",
-      "venue_history": "No notable Saints-specific trend at M&T Bank Stadium found.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "NO", "opponent": "BAL", "home_away": "away",
-      "win_prob": 0.38,
-      "summary": "Live road underdog, but Shough's NFL-leading passing volume through Week 1 and Baltimore's broad, confirmed injury cluster make this a real threat, not a token cover.",
-      "positives": ["QB Tyler Shough currently leads the NFL in passing yards (410) and completions (35) through Week 1", "Nearly upset Detroit in Week 1, losing by just 1 point in OT after a failed 2-pt try", "Facing a Ravens team missing/limiting Zay Flowers, Trey Hendrickson, and both starting OL tackle/guard spots"],
-      "negatives": ["Still a road underdog against a Lamar Jackson-led offense that hung 41 points in Week 1", "Ravens' defense forced 2 takeaways in Week 1 despite its own injury list"],
+      "team": "BUF",
+      "opponent": "LAC",
+      "home_away": "home",
+      "win_prob": 0.75,
+      "summary": "LAC's six-player OUT list spans both lines and the secondary. That kind of confirmed multi-starter cluster is exactly what predicted LAC's loss last week (L4), and it comes on a cross-country 1pm trip. BUF's own defensive injuries and the 31 it allowed are real, and the small line drift is noise, so the Arbiter held at market.",
+      "positives": [
+        "Raw Vegas implied 0.748 (-360, -7.5)",
+        "BUF 2-0, +7.5 pd/g (beat DET 41-31)",
+        "LAC 0-2 (-12.0 pd/g), in its first road game, cross-country to 1pm ET",
+        "LAC OUT: DT Tomlinson, RT Pipkins, S Molden, TE Kolar, Awosika, Thompson",
+        "Dry, mild weather"
+      ],
+      "negatives": [
+        "BUF's defense gave up 31 to DET; DB Hancock and DL T.J. Sanders OUT, DL Ed Oliver questionable",
+        "WRs DJ Moore and Keon Coleman are game-time decisions",
+        "Line came down to -7 / ML -340; the market isn't steaming BUF",
+        "Herbert, Mack, James and Slater all play; recent Allen-Herbert games have been close"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor M&T Bank Stadium: benign, no precipitation.",
-      "head_to_head": "Not deeply researched; infrequent interconference scheduling.",
-      "venue_history": "No notable Saints-specific trend at M&T Bank Stadium found.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "65F, cloudy, NNE wind ~12 mph, 0% precipitation. Not a factor.",
+      "head_to_head": "Recent Allen-vs-Herbert meetings have been competitive.",
+      "venue_history": "LAC's first road game of 2026: cross-country trip to a 1pm ET kickoff in Orchard Park.",
+      "rest_prep": "7 days for both; LAC's first road game after two home games."
     },
     {
-      "team": "PHI", "opponent": "TEN", "home_away": "away",
-      "win_prob": 0.68,
-      "summary": "The Skeptic materially undercuts the Advocate's 'no discount needed' premise — All-Pro DT Jalen Carter and All-Pro CB/S Cooper DeJean both missing practice with real injuries directly contradicts the initial 'confirmed good to go' read, and Dickerson is out to at least Week 6 while already struggling pregame. Three real starters compromised (not one), against a Titans team described as fully healthy, is a meaningful swing even accounting for PHI's genuine road-record and matchup edges — pulled down clearly below the Advocate's ungrounded 0.78.",
-      "positives": ["NFL's best road win% since 2021 (.698, 30-13)", "Titans are 3-15 since the start of last season, allowed a league-worst 12 broken tackles in Week 1 (exploitable by Saquon Barkley)", "Titans QB Cam Ward posted a 34.4 QBR in Week 1 (7th-worst in the NFL)"],
-      "negatives": ["Pro Bowl G Landon Dickerson confirmed on IR until at least Week 6, and was already having his worst pro game before the injury hit", "All-Pro DT Jalen Carter (wrist, may need a cast) and All-Pro CB/S Cooper DeJean (calf/abdomen) both missing practice — two additional key defensive starters banged up, contradicting an initial 'good to go' read", "Confirmed possible record heat (93-95°F, feels-like 95°F) at Nissan Stadium — real physical-toll factor"],
+      "team": "DET",
+      "opponent": "NYJ",
+      "home_away": "home",
+      "win_prob": 0.73,
+      "summary": "ALREADY USED (Week 1). Home favorite (-315, -6.5).",
+      "positives": [
+        "Home dome favorite"
+      ],
+      "negatives": [
+        "Allowed 41 at BUF"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Nissan Stadium: 93-94°F, feels-like ~95°F, minimal precip chance — a confirmed possible record-heat game for a September matchup.",
-      "head_to_head": "Only the 4th Eagles game at Nissan Stadium since 1999; PHI leads the all-time series 8-5; TEN won the 2018 meeting 26-23 in OT.",
-      "venue_history": "Limited sample (Eagles rarely play here) — no strong venue-specific trend beyond the small head-to-head history.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "TEN", "opponent": "PHI", "home_away": "home",
-      "win_prob": 0.32,
-      "summary": "Home underdog, but PHI's three compromised starters (Dickerson, Carter, DeJean) and confirmed record-heat conditions add real variance against a Titans team that is, unusually, fully healthy.",
-      "positives": ["Fully healthy entering the game, unlike PHI (Dickerson out to Week 6, Carter and DeJean banged up)", "Home field in confirmed near-record heat (93-95°F) that could sap a deeper, more explosive PHI roster's edge"],
-      "negatives": ["Lost 10-23 in Week 1, outgained 361-195, sixth straight season-opening loss", "QB Cam Ward posted a 34.4 QBR in Week 1, 7th-worst in the league", "Allowed a league-worst 12 broken tackles in Week 1"],
+      "team": "SEA",
+      "opponent": "WAS",
+      "home_away": "away",
+      "win_prob": 0.72,
+      "summary": "The two sides roughly cancel. SEA without both starting safeties, on its second straight road game in the East, is a genuine hard signal. But WAS carries a bigger cluster (Daniels, Luvu, Cosmi, Cross, Okonkwo), and the rain limits Mariota's ability to exploit SEA's secondary. Darnold's untested return lands this a hair under market.",
+      "positives": [
+        "Raw Vegas implied 0.726 (-310, -7.5)",
+        "SEA 2-0 (+13.5 pd/g), defending champions",
+        "Darnold returns from a glute injury after full Thu/Fri practices",
+        "WAS 0-2 (-9.5): QB Jayden Daniels OUT (elbow), plus Luvu, Cosmi, Cross and Okonkwo out"
+      ],
+      "negatives": [
+        "Both starting safeties (Julian Love, Ty Okada) OUT; Pili questionable",
+        "2nd straight road game; West-Coast team at 1pm ET in nor'easter rain",
+        "Darnold's return is untested in a game",
+        "Mariota is a competent backup"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Nissan Stadium: 93-94°F, feels-like ~95°F — confirmed possible record-heat game.",
-      "head_to_head": "PHI leads the all-time series 8-5; TEN won the 2018 meeting 26-23 in OT.",
-      "venue_history": "Limited sample — only the 4th Eagles game ever at Nissan Stadium.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "61F with light rain from the East Coast nor'easter.",
+      "head_to_head": "The recent series is roughly even.",
+      "venue_history": "SEA has played in Landover sparingly; West-Coast team in a 1pm ET body-clock game.",
+      "rest_prep": "7 days for both, but it is SEA's 2nd straight true road game (Week 2 at ARI)."
     },
     {
-      "team": "CHI", "opponent": "MIN", "home_away": "away",
+      "team": "CIN",
+      "opponent": "PIT",
+      "home_away": "away",
       "win_prob": 0.64,
-      "summary": "The one new fact that matters — RT Darnell Wright (knee) DNP Wednesday — is a real, previously-missed OL downgrade, but it's roughly offset by the erasure of the Advocate's line-movement concern (the MIN-favoring shift reversed once Murray was ruled out, actually working in CHI's favor). The Flores-vs-Johnson scheme history is narrative and doesn't move the number much per the calibration lesson, so this lands essentially where the Advocate had it.",
-      "positives": ["Highest-scoring season-opener in NFL history, 59-37 over CAR in Week 1", "New HC Ben Johnson's offense clicking immediately", "Caleb Williams carries no injury concerns"],
-      "negatives": ["Starting RT Darnell Wright (knee) DNP Wednesday — a new, real OL downgrade", "MIN DC Brian Flores' blitz-heavy scheme has given Ben Johnson trouble in the past (narrative-level, not a hard signal)"],
+      "summary": "The Positives carry the hard signals: real money moved the line from -1.5 to -3.5 while the total dropped, Burrow is fully healthy, CIN is at +10 pd/g, and PIT has a cluster of its own. The Skeptic's case (B.J. Hill, Iosivas, 'division road game vs Rodgers') is mostly narrative, so this lands slightly above market.",
+      "positives": [
+        "Raw Vegas implied 0.63 (-190, -3.5)",
+        "CIN 2-0, +10.0 pd/g; Burrow off the injury report",
+        "Line moved from CIN -1.5 to -3.5 while the total fell 47.5 to 42.5 (real money on CIN)",
+        "PIT: RB Dowdle and OG Dunker OUT; CBs Porter Jr. and Dean, RB Warren and WR Pittman questionable"
+      ],
+      "negatives": [
+        "DT B.J. Hill doubtful (Achilles); WR Iosivas OUT (IR)",
+        "Division road game against Aaron Rodgers",
+        "PIT's prior-season profile (-0.8 pd/g) isn't awful"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Dome (U.S. Bank Stadium) — no weather factor for either team.",
-      "head_to_head": "Historic NFC North rivalry; recent meetings competitive either way, no one-sided trend to lean on.",
-      "venue_history": "N/A — dome game, CHI is a division road team with no dramatic environment adjustment expected.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue for either side."
+      "weather": "67F, partly cloudy, NNW wind ~10 mph, 0% precipitation.",
+      "head_to_head": "A close division rivalry; Burrow vs. Rodgers only the second meeting of their careers.",
+      "venue_history": "Burrow has a winning record at Acrisure Stadium.",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "MIN", "opponent": "CHI", "home_away": "home",
-      "win_prob": 0.35,
-      "summary": "Three real, confirmed absences (Murray, Jennings, Mason to IR) plus a new questionable tag on RT O'Neill is a genuine hard-signal cluster. But Wentz's actual Week 1 efficiency (12/19, 3 TD, 0 INT, 123.5 rating) is real evidence too, not just a 'backup QB' discount — it tempers how severe the downgrade actually is in practice, landing slightly below the Advocate's already-cautious 0.37.",
-      "positives": ["Beat GB 39-22 in a Week 1 comeback win, forced 2 takeaways and 2 sacks of Jordan Love", "Home dome game, full control of environment", "Backup QB Carson Wentz was genuinely efficient in Week 1 relief action (12/19, 133 yds, 3 TD, 0 INT, 123.5 rating)"],
-      "negatives": ["Starting QB Kyler Murray is OUT (concussion) — Carson Wentz starts, J.J. McCarthy is backup", "RB Jordan Mason (thumb fracture) headed to IR; WR Jauan Jennings out (personal reasons)", "RT Brian O'Neill (knee) is newly QUESTIONABLE — a third meaningful injury on top of QB/RB/WR"],
+      "team": "PHI",
+      "opponent": "CHI",
+      "home_away": "away",
+      "win_prob": 0.63,
+      "summary": "A textbook L4/L5 case: the pick rests mainly on the opponent's QB, and that line move is already priced in (L6). PHI's own form is thin (+3.0 pd/g, 0-2 ATS) and its offense is missing Goedert, Hollywood Brown and OT Fred Johnson. CHI's home-dog record under Ben Johnson and the chance Bagent plays pulled PHI below market.",
+      "positives": [
+        "Raw Vegas implied ~0.67 (-225, -4.5)",
+        "PHI 2-0",
+        "CHI QB Caleb Williams officially OUT (hamstring); the line swung ~6 points on the news"
+      ],
+      "negatives": [
+        "Backup Tyson Bagent was a full participant Saturday and could clear concussion protocol; otherwise Case Keenum starts",
+        "PHI's own form is weak: +3.0 pd/g, 0-2 ATS, shaky late-game defense",
+        "PHI OUT: TE Goedert, WR Hollywood Brown, OT Fred Johnson; EDGE Greenard questionable",
+        "CHI 3-0 ATS as a home dog under Ben Johnson"
+      ],
+      "trap_flags": [
+        "Opponent-QB-driven favorite with weak own form (L4/L5): the Williams line move is priced in, and PHI is missing three offensive starters (Goedert, Brown, OT Johnson), sits at +3.0 pd/g / 0-2 ATS, and faces a CHI team that is 3-0 ATS as a home dog under Ben Johnson, with Bagent possibly clearing protocol."
+      ],
+      "is_largest_vegas_favorite": false,
+      "weather": "Monday night at Soldier Field; no specific forecast researched.",
+      "head_to_head": "PHI has won most recent meetings.",
+      "venue_history": "PHI's history at Soldier Field is mixed.",
+      "rest_prep": "Monday night game: 8 days of rest for both sides."
+    },
+    {
+      "team": "JAX",
+      "opponent": "NE",
+      "home_away": "home",
+      "win_prob": 0.59,
+      "summary": "Not part of the full debate: modest home favorite (-160) against a NE team missing A.J. Brown.",
+      "positives": [
+        "Home favorite, -3",
+        "NE WR A.J. Brown on IR (4+ weeks)"
+      ],
+      "negatives": [
+        "NE's strong prior-season profile (+8.7 pd/g)",
+        "WR Jakobi Meyers limited (thumb)"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Dome (U.S. Bank Stadium) — no weather factor.",
-      "head_to_head": "Historic NFC North rivalry; recent meetings competitive either way.",
-      "venue_history": "N/A — MIN is home in its own dome.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Not researched (neither side of this game was shortlisted).",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "NE", "opponent": "PIT", "home_away": "away",
-      "win_prob": 0.64,
-      "summary": "Mike Tomlin's 20-6-3 ATS record as a home underdog across his head-coaching career is a concrete, well-documented historical trend with real predictive weight, and the Advocate's case (oddsmaker respect, an even betting split) has no comparable counter-evidence to offset it. It's a 'soft' hard signal (historical trend rather than injury/line-move), so it doesn't warrant a huge swing, but it earns real weight — moved down modestly from the Advocate's 0.68.",
-      "positives": ["Favored on the road, meaning oddsmakers view NE as the stronger team even away from home", "Betting money reported roughly even (53% of bets on PIT) — not a lopsided signal against NE", "PIT QB Aaron Rodgers has no reported injury concerns, so this isn't a case of facing a depleted opponent"],
-      "negatives": ["Mike Tomlin is 20-6-3 ATS as a home underdog across his HC career — the most profitable coach ATS as a home dog since 2000, a concrete trend with no counterpart in NE's case", "PIT CB Joey Porter Jr. confirmed OUT, OT Troy Fautanu questionable — weakens PIT's D/O-line, a mixed signal rather than a clean NE positive"],
+      "team": "BAL",
+      "opponent": "DAL",
+      "home_away": "home",
+      "win_prob": 0.57,
+      "summary": "Close to balanced on hard signals. DAL's gutted secondary is real, but so is Stanley's absence with backup Vinson facing DAL's rush, and the Rio neutral site removes home field. BAL blowing a late lead last week is a mild form concern, so this lands slightly under market.",
+      "positives": [
+        "Raw Vegas implied 0.583 (-155, -3.5)",
+        "Lamar Jackson plus Derrick Henry (top-3 rusher)",
+        "DAL OUT: CB Durant, S Hooker, S Locke, LB Overshown",
+        "DT Madubuike may return"
+      ],
+      "negatives": [
+        "LT Ronnie Stanley OUT; backup Carson Vinson starts",
+        "WR Zay Flowers missed most of the week (game-time decision)",
+        "Neutral site, so no home edge",
+        "Blew a 4th-quarter home lead to NO last week; DAL scored 37 on WAS"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Acrisure Stadium: forecast high ~80°F, no precipitation risk — benign.",
-      "head_to_head": "Historically competitive AFC series; no strong recent site-specific trend surfaced.",
-      "venue_history": "No recent-season NE-at-Pittsburgh trend surfaced.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": "Outdoor at Maracanã Stadium in Rio de Janeiro; no specific forecast researched.",
+      "head_to_head": "Infrequent interconference meeting; no meaningful head-to-head signal.",
+      "venue_history": "Neutral site: neither team has played in Rio, so no home edge (DAL is only the designated home team).",
+      "rest_prep": "Long-haul international travel for both teams."
     },
     {
-      "team": "PIT", "opponent": "NE", "home_away": "home",
-      "win_prob": 0.36,
-      "summary": "Home underdog, but Mike Tomlin's strong historical record as a home dog and a healthy Rodgers give this real upset equity against a Patriots team with no clear counter-signal.",
-      "positives": ["Mike Tomlin is 20-6-3 ATS as a home underdog across his HC career", "QB Aaron Rodgers has no reported injury concerns"],
-      "negatives": ["CB Joey Porter Jr. confirmed OUT; OT Troy Fautanu questionable", "Facing a Patriots team that is favored on the road, reflecting real oddsmaker respect for NE"],
+      "team": "CAR",
+      "opponent": "CLE",
+      "home_away": "away",
+      "win_prob": 0.57,
+      "summary": "Not part of the full debate: slight road favorite (-150) after a 34-3 win at ATL.",
+      "positives": [
+        "Beat ATL 34-3 last week"
+      ],
+      "negatives": [
+        "Road game against a CLE team that just upset TB"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Acrisure Stadium: benign, ~80°F, no precipitation risk.",
-      "head_to_head": "Historically competitive AFC series; no strong recent trend surfaced.",
-      "venue_history": "No recent-season trend surfaced.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Not researched (neither side of this game was shortlisted).",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "HOU", "opponent": "CIN", "home_away": "home",
-      "win_prob": 0.48,
-      "summary": "Every piece of new information points against Houston, not toward it — Nico Collins is confirmed OUT (not merely questionable), Cincinnati has a real, specific historical ATS/SU trend as a road dog in Houston, and Houston's secondary weakness is a confirmed stat-based issue. With four corroborating signals stacking the same direction and none favoring HOU, this pushes below a coin flip despite HOU's home-field and pass-rush arguments.",
-      "positives": ["Elite defensive front (Will Anderson Jr., Danielle Hunter) facing a CIN OL that allowed just 1 sack in Week 1", "RB David Montgomery scored 3 TDs in Week 1 (in a loss)", "Home game in a dome that's confirmed closed for this game — no weather variance"],
-      "negatives": ["WR Nico Collins confirmed OUT (hamstring) — a real, concrete weapon downgrade, not merely questionable as first reported", "Houston's CB duo (Lassiter, Stingley Jr.) allowed 9 catches/95 yds/1 TD on 16 targets in Week 1 — a specific, confirmed secondary weakness", "Bengals are 4-3 SU as road underdogs specifically vs. Houston historically and have covered the spread in each of their last 3 trips to Houston — a real, quantifiable trend favoring CIN", "Houston lost its Week 1 opener 36-31 to Buffalo", "Joe Burrow's back tightness has resolved to probable/expected-to-start — good news for CIN's offense"],
+      "team": "HOU",
+      "opponent": "IND",
+      "home_away": "away",
+      "win_prob": 0.57,
+      "summary": "Not part of the full debate: road favorite (-150) despite an 0-2 start and a gutted WR room.",
+      "positives": [
+        "Strong prior-season profile (+6.4 pd/g)"
+      ],
+      "negatives": [
+        "0-2; Nico Collins out, Tank Dell on IR, Higgins out for the season"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "null — NRG Stadium roof confirmed closed for this game, no weather factor.",
-      "head_to_head": "Bengals are 4-3 SU as road underdogs vs. Houston historically; all-time series is Bengals 5-7 (Texans lead).",
-      "venue_history": "Cincinnati has been an underdog in all 8 career meetings against Houston, but has covered the last 3 visits — a competitive, closer-than-the-spread trend.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue; this is Cincinnati's first road game of the season."
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "CIN", "opponent": "HOU", "home_away": "away",
+      "team": "NO",
+      "opponent": "LV",
+      "home_away": "home",
+      "win_prob": 0.55,
+      "summary": "L5 applies in reverse: LV has the better own-team form (2-0, +13 pd/g, Cousins at 6 TD), while NO is 1-1 with a weak prior-season profile and several young contributors out. Shough's yardage lead is inflated by trailing game scripts. Dome home field keeps NO favored, but well below market.",
+      "positives": [
+        "Raw Vegas implied 0.616 (-180, -3.5)",
+        "Shough leads the NFL with 662 passing yards; won at BAL as an 8.5-point dog",
+        "Dome home game; LV S Treydan Stukes OUT (concussion)"
+      ],
+      "negatives": [
+        "LV 2-0 at +13.0 pd/g with Cousins at 6 TD, a better own-form profile than NO's",
+        "NO's prior-season pd -4.5",
+        "NO missing Tyson, Christen Miller and Barion Brown; CB Emerson questionable",
+        "Shough's volume partly came from trailing game scripts"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "The teams meet infrequently; no meaningful head-to-head signal.",
+      "venue_history": "Caesars Superdome; no notable LV trend found.",
+      "rest_prep": "Normal 7-day week for both sides."
+    },
+    {
+      "team": "NYG",
+      "opponent": "TEN",
+      "home_away": "home",
       "win_prob": 0.52,
-      "summary": "Live road favorite by the underlying evidence — a confirmed, specific historical ATS/SU trend as a road dog in Houston, plus a confirmed Houston secondary weakness and a confirmed Nico Collins absence, outweigh the raw moneyline framing.",
-      "positives": ["4-3 SU as a road underdog vs. Houston historically, and covered the spread in each of the last 3 trips to Houston — a real, quantifiable trend", "Burrow's back tightness resolved to probable/expected-to-start", "Houston's CB duo (Lassiter, Stingley Jr.) allowed 9 catches/95 yds/1 TD on 16 targets in Week 1 — an exploitable, confirmed weakness", "OL allowed just 1 sack in Week 1, lowest pressure rate in the league"],
-      "negatives": ["Facing an elite Houston DL front (Will Anderson Jr., Danielle Hunter)", "First road game of the season"],
+      "summary": "The Skeptic wins decisively. Per L6, the Dart-to-Winston drop-off (4.1 YPA in relief) matters because it meets a nor'easter that caps passing and a healthy TEN run game aimed at NYG's 5.6-YPC run defense. Burns missing practice and Daboll knowing NYG's personnel pile on, so this is near a coin flip.",
+      "positives": [
+        "Raw Vegas implied 0.574 (-150, -2.5)",
+        "TEN 0-2 with a -11.4 prior-season pd/g",
+        "Home game"
+      ],
+      "negatives": [
+        "QB Jaxson Dart OUT for the season; Jameis Winston starts after 11/27, 111 yds (4.1 YPA), INT in relief",
+        "Line moved from NYG -5.5 to -2.5",
+        "Nor'easter: heavy rain, 18-22 mph wind gusting near 40",
+        "EDGE Brian Burns missed all practice",
+        "NYG allows 5.6 YPC to RBs; TEN's RBs practiced fully; TEN OC Daboll knows NYG's personnel"
+      ],
+      "trap_flags": [
+        "QB drop-off meets an opponent built to exploit it (L6): Winston at 4.1 YPA in relief, a 40-mph-gust nor'easter capping the pass game, NYG's 5.6-YPC run defense vs. healthy TEN backs, Burns missing all practice, and ex-NYG coach Daboll as TEN's OC. The line already fell 3 points."
+      ],
+      "is_largest_vegas_favorite": false,
+      "weather": "Nor'easter: 83-87% rain chance, 18-22 mph wind with gusts near 40 mph. The week's worst passing/kicking conditions.",
+      "head_to_head": "Rarely played; no meaningful head-to-head signal. TEN OC Brian Daboll is the former NYG head coach.",
+      "venue_history": "TEN at MetLife is infrequent; no notable trend found.",
+      "rest_prep": "Normal 7-day week for both sides."
+    },
+    {
+      "team": "LA",
+      "opponent": "DEN",
+      "home_away": "away",
+      "win_prob": 0.52,
+      "summary": "LA's case rests on its prior-season profile and a weak DEN, but the current hard signals point the other way. Garrett is on IR, Nacua and Kinchens are doubtful, and LA is on a short week at altitude at night. LA's current form is only 1-1 (L5), while DEN's poor pd and Nix's vanished rushing keep it from dropping further.",
+      "positives": [
+        "Raw Vegas implied 0.562 (-140, -2.5)",
+        "Elite prior-season profile (+8.7 pd/g); defense held NYG to 6",
+        "DEN 1-1 at -7.0 pd/g; Bo Nix has 8 rushing yards on 8 carries"
+      ],
+      "negatives": [
+        "EDGE Myles Garrett on IR; WR Puka Nacua and S Kam Kinchens doubtful",
+        "6-day turnaround after Monday night, going to altitude",
+        "Current form only 1-1 (L5)",
+        "DEN's strong altitude/night home record; last year's AFC #1 seed"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "null — NRG Stadium roof confirmed closed, no weather factor.",
-      "head_to_head": "4-3 SU as a road underdog vs. Houston historically; all-time series Bengals 5-7.",
-      "venue_history": "Underdog in all 8 career meetings at Houston, but covered the last 3 visits.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Sunday night at altitude in Denver; no specific forecast researched.",
+      "head_to_head": "Recent meetings are split.",
+      "venue_history": "DEN's altitude and night-game home record is historically strong.",
+      "rest_prep": "LA is on a 6-day turnaround after Week 2's Monday night game; DEN has a full week."
     },
     {
-      "team": "JAX", "opponent": "DEN", "home_away": "away",
-      "win_prob": 0.40,
-      "summary": "The Advocate's case (ATS streaks, road-cover streak, Lawrence's 4-TD game) is mostly small-sample pattern-matching that doesn't reliably predict this specific matchup, and the Skeptic conceded as much. The Skeptic's own counter — Sean Payton's bounce-back-game tendency after an ugly loss — is itself narrative, not a hard signal, so per the calibration lesson it shouldn't move the number much either. Net: essentially a wash, settling a touch below the Advocate's 0.42 since DEN's home get-right spot still has some situational bite.",
-      "positives": ["9-1 ATS in last 10 games; road team has covered 6 straight meetings in this series", "Beat DEN 34-20 at Mile High last season, has won 3 straight there", "Lawrence threw 4 TD on 23 attempts in a Week 1 win over CLE, 100% red-zone efficiency", "DEN's offense was sluggish in a 31-10 Week 1 loss to KC"],
-      "negatives": ["ATS/streak stats are small-sample descriptive trends, not strongly predictive", "Lawrence's 4-TD game came against a weak CLE defense — doesn't extrapolate cleanly to DEN's D", "DEN is in a classic home 'get-right' bounce-back spot after an ugly Week 1 loss — a real situational factor"],
+      "team": "MIN",
+      "opponent": "TB",
+      "home_away": "away",
+      "win_prob": 0.52,
+      "summary": "Not part of the full debate: near pick'em road favorite (-120), 2-0 on defense.",
+      "positives": [
+        "2-0; smothering pass rush (Turner)"
+      ],
+      "negatives": [
+        "C Nick Samac OUT; LB Ivan Pace questionable"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Empower Field: ~69-70°F, mostly clear, light rain chance, light wind — not decisive.",
-      "head_to_head": "Series tied 8-8 all-time; JAX has won the last 3 regular-season meetings at Denver, including a 34-20 win last season.",
-      "venue_history": "JAX has a strong recent record specifically at Denver (3 straight wins), bucking the usual altitude-disadvantage narrative; altitude generally favors DEN's offense/kicking.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": "Not researched (neither side of this game was shortlisted).",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "DEN", "opponent": "JAX", "home_away": "home",
-      "win_prob": 0.60,
-      "summary": "Home favorite in a get-right spot after an ugly Week 1 loss, against a JAX team whose recent form (dominant Week 1 win, 3-game win streak at this venue) provides real counter-evidence.",
-      "positives": ["Home game at altitude, in a 'get-right' bounce-back spot after an ugly Week 1 loss to KC", "Sean Payton-coached teams have historically responded well to bad losses"],
-      "negatives": ["Offense was sluggish in a 31-10 Week 1 loss to KC", "JAX has won 3 straight meetings at this venue, including 34-20 last season", "WR Marvin Mims Jr. (foot) held out of practice"],
+      "team": "TEN",
+      "opponent": "NYG",
+      "home_away": "away",
+      "win_prob": 0.48,
+      "summary": "Near coin flip: a healthy run game and nor'easter conditions against Winston make this 0-2 team genuinely live.",
+      "positives": [
+        "Healthy RBs vs. NYG's 5.6-YPC run defense",
+        "OC Daboll knows NYG's personnel",
+        "Wind and rain cap Winston"
+      ],
+      "negatives": [
+        "0-2; prior-season pd -11.4"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Empower Field: ~69-70°F, mostly clear, light wind.",
-      "head_to_head": "Series tied 8-8 all-time; JAX has won the last 3 meetings at Denver.",
-      "venue_history": "Altitude (5,280 ft) is a standing, persistent advantage for DEN against visiting teams generally.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Nor'easter: 83-87% rain chance, 18-22 mph wind with gusts near 40 mph. The week's worst passing/kicking conditions.",
+      "head_to_head": "Rarely played; no meaningful head-to-head signal. TEN OC Brian Daboll is the former NYG head coach.",
+      "venue_history": "TEN at MetLife is infrequent; no notable trend found.",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "SEA", "opponent": "ARI", "home_away": "away",
-      "win_prob": 0.50,
-      "summary": "The board's clearest hard-signal trap case: Darnold is OUT with an ill-defined injury and no timeline, and the line has moved a confirmed, stabilized ~6-7 points toward SEA off a backup QB, with a real sharp/square split (93% ML money vs. only 59% spread money) specifically signaling public overreaction to the Week 1 win. Per the calibration lesson, concrete line movement plus a confirmed missing starter is exactly the combination that correctly flagged last week's upset, so this outweighs SEA's Week 1 form and Drew Lock's one good relief outing — dropped to a genuine coin flip.",
-      "positives": ["Beat NE in Week 1 (covered -3.5) even after starting QB Sam Darnold left early", "Backup Drew Lock went 72.7% comp/187 yds/1 TD in relief action", "Seattle's overall roster is deeper than Arizona's"],
-      "negatives": ["Starting QB Sam Darnold is OUT with a vaguely-described soft-tissue injury, no clear timeline, team hedging on IR decision", "Spread has moved from ~10-11 points down to SEA -3.5/-4.5 — a confirmed, stabilized near-full-touchdown reverse line move", "93% of moneyline money is on SEA but only 59% of spread money — a real sharp/square divergence signal", "ARI won on the road last week (beat the Chargers) and gets a get-right/confidence home spot against a backup QB"],
-      "trap_flags": ["Confirmed reverse line movement (~6-7 points) driven by Darnold's QB-out status, plus a real 93% ML / 59% spread money split — the board's clearest hard-signal trap case alongside BAL"],
-      "is_largest_vegas_favorite": false,
-      "weather": "Roof status at State Farm Stadium is a game-day decision, not yet announced; if open, no precipitation risk, temps typically hot.",
-      "head_to_head": "NFC West rivalry; historically competitive series, no strong one-sided trend found.",
-      "venue_history": "No specific Seattle-at-Arizona trend found beyond division familiarity.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "ARI", "opponent": "SEA", "home_away": "home",
-      "win_prob": 0.50,
-      "summary": "Home underdog on paper, but a confirmed opposing QB injury, a large confirmed reverse line move, and Arizona's own Week 1 road upset combine to make this a genuine coin flip rather than an underdog spot.",
-      "positives": ["Coming off the league's biggest Week 1 upset win, on the road at LAC", "Facing a Seattle team starting backup QB Drew Lock after Sam Darnold (hip/glute) was ruled OUT", "Gets a get-right/confidence home spot after last week's statement win"],
-      "negatives": ["Still technically the home underdog by market pricing, even after the line moved sharply in Arizona's favor", "Seattle's overall roster remains deeper"],
+      "team": "DEN",
+      "opponent": "LA",
+      "home_away": "home",
+      "win_prob": 0.48,
+      "summary": "Home altitude underdog against a depleted LA team on a short week.",
+      "positives": [
+        "LA missing Garrett (IR), plus Nacua and Kinchens doubtful",
+        "LA on a 6-day turnaround to altitude"
+      ],
+      "negatives": [
+        "-7.0 pd/g; Nix's rushing has vanished"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Roof status at State Farm Stadium is a game-day decision, not yet announced.",
-      "head_to_head": "NFC West rivalry; historically competitive series.",
-      "venue_history": "No specific trend found beyond division familiarity.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Sunday night at altitude in Denver; no specific forecast researched.",
+      "head_to_head": "Recent meetings are split.",
+      "venue_history": "DEN's altitude and night-game home record is historically strong.",
+      "rest_prep": "LA is on a 6-day turnaround after Week 2's Monday night game; DEN has a full week."
     },
     {
-      "team": "TB", "opponent": "CLE", "home_away": "home",
-      "win_prob": 0.76,
-      "summary": "Now part of the full debate. CLE's negatives skew heavily narrative (fan revolt, QB-benching rumors) except one hard fact — Myles Garrett is genuinely off Cleveland's roster (traded to LA this offseason), a real pass-rush downgrade for the Browns. TB's own negatives are more concrete: a defense that allowed 33 points to CIN in Week 1, a real (if trending-to-play) injury cluster, and a market that barely moved the spread while actually lowering the total — signaling the market itself doesn't see this as a laugher. Per the vegas_favorite_bias lesson, discounted modestly (not sharply) off the 0.82 raw number, since CLE's case still leans on narrative more than hard signals.",
-      "positives": ["CLE lost 10-34 to JAX in Week 1, one of the league's worst Week 1 performances", "CLE's brand-new first-year HC Todd Monken, and starting QB Deshaun Watson (poor Week 1: 16/22, 205 yds, 1 TD/1 INT) is facing open fan revolt ('We want Shedeur' chants); insiders believe he could be benched for Shedeur Sanders as soon as Week 3", "CLE has multiple O-line starters injured (Teven Jenkins DNP/out, others limited)", "CLE's franchise pass rusher Myles Garrett was traded away this offseason and is no longer on the roster at all — a major, confirmed roster downgrade"],
-      "negatives": ["TB's own defense allowed 33 points to CIN in Week 1 — a real, stat-based weakness, not narrative", "TB has its own injury cluster (WR Jalen McMillan, CB Jacob Parrish, S Miles Killebrew all questionable, though trending to play)", "The spread only moved a half point (-8 to -8.5) and the total actually DROPPED (41.5 to 40.5) — the market expects a closer game than the 'line moving toward the favorite' framing suggests", "0.82 raw implied is a very large favorite — CLE still has an ~18% live chance by the market's own pricing and has nothing to lose"],
+      "team": "TB",
+      "opponent": "MIN",
+      "home_away": "home",
+      "win_prob": 0.48,
+      "summary": "ALREADY USED (Week 2). Home near pick'em underdog at 0-2.",
+      "positives": [
+        "Home game"
+      ],
+      "negatives": [
+        "0-2"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Raymond James Stadium: ~88°F high/76°F low, typical warm/humid late-Sept Tampa conditions, no rain/wind flag — not a meaningful factor.",
-      "head_to_head": "CLE leads all-time series 7-4, but TB has won the last 3 meetings (since 2002); last meeting 2022 (CLE won 23-17 in OT). Head coaches: TB's Todd Bowles (since 2022) vs. CLE's brand-new first-year HC Todd Monken.",
-      "venue_history": "CLE is 3-3 all-time on the road specifically vs. TB (small sample), including a notable 2018 OT loss at Raymond James after blowing a 4th-quarter lead — no strong venue edge either way beyond the small split.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": "Not researched (neither side of this game was shortlisted).",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "CLE", "opponent": "TB", "home_away": "away",
-      "win_prob": 0.24,
-      "summary": "Big, market-confirmed road underdog after a lopsided Week 1 loss, further hurt by trading away franchise pass rusher Myles Garrett this offseason — though TB's own defensive and injury questions keep this from being a total lock for the Bucs.",
-      "positives": ["Nothing standout on paper, but TB's defense allowed 33 points to CIN in Week 1 and the market total dropped rather than rose, suggesting the game may be closer than the spread implies"],
-      "negatives": ["Lost 10-34 to JAX in Week 1", "Traded away franchise DE Myles Garrett this offseason — a major roster downgrade with no direct replacement", "Starting QB Deshaun Watson faces open fan revolt and speculation about being benched for Shedeur Sanders as soon as Week 3", "Multiple O-line starters injured (Teven Jenkins DNP/out, others limited)"],
+      "team": "LV",
+      "opponent": "NO",
+      "home_away": "away",
+      "win_prob": 0.45,
+      "summary": "Live road dog: 2-0 at +13 pd/g, with Cousins efficient and Bowers possibly back.",
+      "positives": [
+        "2-0, +13.0 pd/g; Cousins at 6 TD",
+        "NO missing several young contributors"
+      ],
+      "negatives": [
+        "S Stukes OUT",
+        "Prior-season pd -11.2"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor Raymond James Stadium: warm/humid, no rain/wind flag.",
-      "head_to_head": "CLE leads all-time series 7-4, but TB has won the last 3 meetings.",
-      "venue_history": "CLE is 3-3 all-time on the road specifically vs. TB — a small, roughly even sample.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": null,
+      "head_to_head": "The teams meet infrequently; no meaningful head-to-head signal.",
+      "venue_history": "Caesars Superdome; no notable LV trend found.",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "LAC", "opponent": "LV", "home_away": "home",
-      "win_prob": 0.61,
-      "summary": "Now part of the full debate — this is the most checkable, hard-signal-driven fade on the board. Two confirmed O-line starters are down (C Tyler Biadasz's injury is now described as likely season-ending ACL damage, G/T Trey Pipkins III is confirmed OUT for this game), plus a questionable WR1, stacked on a QB (Herbert) who already looked shaky in Week 1 before this additional attrition. LAC's positives (venue history, LV QB's poor personal record) are real but softer trend-based signals that don't offset the current, confirmed roster damage — a meaningful downgrade from the 0.75 raw Vegas number.",
-      "positives": ["Won 5 straight home meetings vs. LV; LV is 1-8 at SoFi Stadium since it opened — a real venue trend", "LV starting QB Geno Smith has a poor personal track record vs. LAC (~1-2, 66.4 rating, 4 TD/6 INT across those meetings)", "LV's top receiving threat Brock Bowers (TE) is DOUBTFUL (knee)", "Justin Herbert is healthy (not on the injury report)"],
-      "negatives": ["Starting C Tyler Biadasz's injury is now described as likely season-ending ACL damage, and starting G/T Trey Pipkins III is CONFIRMED OUT for this game — two O-line starters down, not one", "WR1 Ladd McConkey (rib) was limited Friday, questionable", "Herbert already looked shaky in Week 1 (209 yds, INT, visible OL/mobility issues) even before this additional O-line attrition", "Media is explicitly framing this as a potential trap for LAC, including a quoted NFL coach warning LAC 'will have their hands full'"],
+      "team": "DAL",
+      "opponent": "BAL",
+      "home_away": "home",
+      "win_prob": 0.43,
+      "summary": "Designated home team at a neutral site with a gutted secondary; Stanley's absence gives its pass rush a target.",
+      "positives": [
+        "Scored 37 on WAS",
+        "BAL LT Stanley OUT"
+      ],
+      "negatives": [
+        "CB Durant, S Hooker, S Locke, LB Overshown OUT",
+        "No real home edge in Rio"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Dome/fixed canopy (SoFi Stadium) — confirmed no weather factor.",
-      "head_to_head": "LAC has won 5 straight home meetings vs. LV; LV hasn't won at this venue since a 2020 no-fans COVID game. All-time series LV leads 69-62-2, but recent form squarely favors LAC.",
-      "venue_history": "LV is a combined 1-8 at SoFi Stadium since it opened (vs. both LAC and the Rams) — a real, checkable venue trend against them.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": "Outdoor at Maracanã Stadium in Rio de Janeiro; no specific forecast researched.",
+      "head_to_head": "Infrequent interconference meeting; no meaningful head-to-head signal.",
+      "venue_history": "Neutral site: neither team has played in Rio, so no home edge (DAL is only the designated home team).",
+      "rest_prep": "Long-haul international travel for both teams."
     },
     {
-      "team": "LV", "opponent": "LAC", "home_away": "away",
-      "win_prob": 0.39,
-      "summary": "Live road underdog, but genuinely live given LAC's confirmed O-line attrition (2 starters down) even after accounting for LV's own missing top weapon (Bowers doubtful) and a poor personal QB history vs. this opponent.",
-      "positives": ["Beat MIA 27-13 in Week 1 — real momentum, more physical under new HC Klint Kubiak", "Facing a LAC O-line missing 2 starters (Biadasz likely season-ending, Pipkins confirmed out)", "LAC WR1 Ladd McConkey is questionable (rib)"],
-      "negatives": ["1-8 at SoFi Stadium since it opened — a real, checkable venue trend against them", "QB Geno Smith has a poor personal track record vs. LAC (~1-2, 66.4 rating, 4 TD/6 INT)", "Top receiving threat Brock Bowers (TE) is DOUBTFUL (knee)", "CB Darien Porter is OUT"],
+      "team": "CLE",
+      "opponent": "CAR",
+      "home_away": "home",
+      "win_prob": 0.43,
+      "summary": "Not part of the full debate: home underdog coming off the upset win at TB.",
+      "positives": [
+        "Watson sharp in the win at TB"
+      ],
+      "negatives": [
+        "-10.0 pd/g; RB Dylan Sampson on IR"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Dome/fixed canopy (SoFi Stadium) — confirmed no weather factor.",
-      "head_to_head": "LV hasn't won at this venue since a 2020 no-fans COVID game; LAC has won 5 straight there.",
-      "venue_history": "1-8 at SoFi Stadium since it opened.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Not researched (neither side of this game was shortlisted).",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "DAL", "opponent": "WAS", "home_away": "home",
-      "win_prob": 0.60,
-      "summary": "Not part of the full debate — modest home favorite in a close divisional matchup.",
-      "positives": ["Home favorite (-4) needing a bounce-back after a Week 1 loss"],
-      "negatives": ["Lost 20-28 to NYG in Week 1 — the post-Parsons-trade defense was gashed for 394 total yards allowed", "Not part of the full debate — single-pass estimate only"],
+      "team": "IND",
+      "opponent": "HOU",
+      "home_away": "home",
+      "win_prob": 0.43,
+      "summary": "Not part of the full debate: home underdog, 0-2 after taking KC to OT.",
+      "positives": [
+        "Took KC to OT last week",
+        "HOU's depleted WR room"
+      ],
+      "negatives": [
+        "0-2; WR Alec Pierce on IR"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Roof status at AT&T Stadium typically closed for September heat — no material weather factor expected.",
-      "head_to_head": "Not deeply researched this week — outside the top debate shortlist.",
-      "venue_history": "Not deeply researched this week — outside the top debate shortlist.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "WAS", "opponent": "DAL", "home_away": "away",
-      "win_prob": 0.40,
-      "summary": "Road underdog in a close divisional matchup after a narrow Week 1 loss.",
-      "positives": ["Lost a competitive game (22-24) to PHI in Week 1"],
-      "negatives": ["Road underdog against a Dallas team looking to bounce back at home"],
+      "team": "NE",
+      "opponent": "JAX",
+      "home_away": "away",
+      "win_prob": 0.41,
+      "summary": "Not part of the full debate: road underdog without A.J. Brown.",
+      "positives": [
+        "Strong prior-season profile"
+      ],
+      "negatives": [
+        "A.J. Brown on IR"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Roof status at AT&T Stadium typically closed — no material weather factor expected.",
-      "head_to_head": "Not deeply researched this week — outside the top debate shortlist.",
-      "venue_history": "Not deeply researched this week — outside the top debate shortlist.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
+      "weather": "Not researched (neither side of this game was shortlisted).",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "LA", "opponent": "NYG", "home_away": "home",
-      "win_prob": 0.58,
-      "summary": "Now part of the full debate — this is the best-evidenced trap-game candidate of the three retroactively-added teams. Myles Garrett (LA's big offseason defensive addition, traded from CLE) is confirmed OUT for at least 4 games (knee surgery); WR Davante Adams and S Kam Kinchens did not practice at all this week (unresolved risk to LA's own offense); and LA was blown out 27-7 by SF in Week 1, a real 20-point road result, not just a bad final score. NYG's Week 1 win was a genuine road upset over a playoff-caliber Dallas team in new HC John Harbaugh's debut, with top WR Malik Nabers expected to play. McVay's 4-0 career record vs. the Giants is real but backward-looking and doesn't offset the pile of current, hard-signal concerns — the largest raw-to-Arbiter discount on the board (0.78 to 0.58).",
-      "positives": ["Under HC Sean McVay specifically, the Rams are a perfect 4-0 vs. the Giants, averaging 33.0 points/game", "NYG's new HC John Harbaugh is brand-new to the team (1 game in)", "NYG has never played at SoFi Stadium (no venue track record)", "No reverse line movement found — no signal of fading LA"],
-      "negatives": ["Myles Garrett (LA's big offseason defensive addition) is confirmed OUT — knee surgery, IR, minimum 4 games, earliest return Week 6 — a major, real pass-rush downgrade", "WR Davante Adams and S Kam Kinchens did NOT practice at all this week — unresolved risk on LA's own offense", "CB/S Kam Curl, LB Omar Speights, and LB Nate Landman were all limited — LA's front seven and secondary are banged up beyond just Garrett", "Blown out 27-7 by SF in Week 1 — a real 20-point road result to open the season", "NYG's Week 1 win was a genuine road upset over a playoff-caliber Dallas team in Harbaugh's coaching debut, not just a good stat line; top WR Malik Nabers (knee) was a full practice participant and expected to play"],
+      "team": "CHI",
+      "opponent": "PHI",
+      "home_away": "home",
+      "win_prob": 0.37,
+      "summary": "Keenum (or a possibly-cleared Bagent) replaces Caleb Williams, but PHI's banged-up offense and CHI's home-dog record keep it live.",
+      "positives": [
+        "3-0 ATS as a home dog under Ben Johnson",
+        "PHI missing Goedert, Brown and OT Johnson"
+      ],
+      "negatives": [
+        "Caleb Williams OUT",
+        "Offense scored 3 points last week"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Dome/fixed canopy (SoFi Stadium) — confirmed no weather factor. Monday Night Football.",
-      "head_to_head": "Under Sean McVay, LA is 4-0 vs. NYG, averaging 33.0 ppg. All-time series LA leads 27-17, though NYG has led since 2000 (7-3). Last meeting 2017 (LA won 51-17).",
-      "venue_history": "NYG has never played at SoFi Stadium (opened 2020) — no direct venue track record either way.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue. LA opened the season with an international game in Australia (Week 1) but has had a full week back home since."
+      "weather": "Monday night at Soldier Field; no specific forecast researched.",
+      "head_to_head": "PHI has won most recent meetings.",
+      "venue_history": "PHI's history at Soldier Field is mixed.",
+      "rest_prep": "Monday night game: 8 days of rest for both sides."
     },
     {
-      "team": "NYG", "opponent": "LA", "home_away": "away",
-      "win_prob": 0.42,
-      "summary": "Live road underdog with real upside — a genuine Week 1 road upset over a playoff-caliber team, a fully healthy top WR, and a Rams defense missing its big offseason pass-rush addition plus two more starters who didn't practice all week.",
-      "positives": ["Beat DAL 28-20 in Week 1 in a real road upset over a playoff-caliber team, not just a good stat line — Jaxson Dart (3 pass TD, 50+ rush yds, 130+ rating)", "Top WR Malik Nabers (knee) was a full practice participant and is expected to play", "Facing a Rams defense missing Myles Garrett (out 4+ games) plus WR Davante Adams and S Kam Kinchens, who didn't practice all week", "New HC John Harbaugh got a strong, statement debut win"],
-      "negatives": ["Under Sean McVay, LA is a perfect 4-0 vs. NYG, averaging 33.0 points/game — a real coach-era trend", "Has never played at SoFi Stadium — no venue experience", "Still a sizable road underdog by market pricing"],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Dome/fixed canopy (SoFi Stadium) — no weather factor. Monday Night Football.",
-      "head_to_head": "0-4 vs. LA under McVay specifically; last meeting 2017 (LA won 51-17).",
-      "venue_history": "Has never played at SoFi Stadium — no track record.",
-      "rest_prep": "Standard 7-day turn — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "ATL", "opponent": "CAR", "home_away": "home",
-      "win_prob": 0.47,
-      "summary": "Not part of the full debate — narrow home underdog by market pricing, in a low-stakes early-season NFC South matchup.",
-      "positives": ["Home field in a divisional matchup"],
-      "negatives": ["Lost 13-20 to PIT in Week 1, offense managed just 13 points", "Actually a slight underdog on the moneyline despite being at home"],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Not deeply researched this week — outside the top debate shortlist.",
-      "head_to_head": "Not deeply researched this week — outside the top debate shortlist.",
-      "venue_history": "Not deeply researched this week — outside the top debate shortlist.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "CAR", "opponent": "ATL", "home_away": "away",
-      "win_prob": 0.53,
-      "summary": "Not part of the full debate — favored on the road despite a lopsided Week 1 loss.",
-      "positives": ["Favored on the road (-125 ML) despite the Week 1 result"],
-      "negatives": ["Defense allowed 59 points in a Week 1 loss to CHI — a serious concern entering this game"],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Not deeply researched this week — outside the top debate shortlist.",
-      "head_to_head": "Not deeply researched this week — outside the top debate shortlist.",
-      "venue_history": "Not deeply researched this week — outside the top debate shortlist.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "GB", "opponent": "NYJ", "home_away": "away",
-      "win_prob": 0.64,
-      "summary": "Not part of the full debate — favored on the road despite a Week 1 home loss.",
-      "positives": ["Favored on the road (-200 ML) despite a Week 1 loss"],
-      "negatives": ["Allowed 39 points to MIN in a Week 1 comeback loss — defense has issues to answer"],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Outdoor — not deeply researched this week (outside the debate shortlist).",
-      "head_to_head": "Not deeply researched this week — outside the top debate shortlist.",
-      "venue_history": "Not deeply researched this week — outside the top debate shortlist.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
-    },
-    {
-      "team": "NYJ", "opponent": "GB", "home_away": "home",
+      "team": "PIT",
+      "opponent": "CIN",
+      "home_away": "home",
       "win_prob": 0.36,
-      "summary": "Not part of the full debate — home underdog against a quality GB roster despite a good Week 1 win of their own.",
-      "positives": ["Beat TEN 23-10 in Week 1, defense limited Cam Ward to 140 pass yards"],
-      "negatives": ["Significant underdog at home (+165 ML) against a talented GB roster"],
+      "summary": "Home division underdog with a heavy injury report; money has moved toward CIN.",
+      "positives": [
+        "Home division game; Rodgers at QB"
+      ],
+      "negatives": [
+        "Dowdle and Dunker OUT; both starting CBs questionable",
+        "Line moved from -1.5 to -3.5 against PIT"
+      ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor — not deeply researched this week (outside the debate shortlist).",
-      "head_to_head": "Not deeply researched this week — outside the top debate shortlist.",
-      "venue_history": "Not deeply researched this week — outside the top debate shortlist.",
-      "rest_prep": "Standard 7-day turn for both — no short week, bye, or consecutive road-game issue."
+      "weather": "67F, partly cloudy, NNW wind ~10 mph, 0% precipitation.",
+      "head_to_head": "A close division rivalry; Burrow vs. Rodgers only the second meeting of their careers.",
+      "venue_history": "Burrow has a winning record at Acrisure Stadium.",
+      "rest_prep": "Normal 7-day week for both sides."
     },
     {
-      "team": "BUF", "opponent": "DET", "home_away": "home",
+      "team": "WAS",
+      "opponent": "SEA",
+      "home_away": "home",
+      "win_prob": 0.28,
+      "summary": "Mariota starts for the injured Daniels, with a broad injury cluster (Luvu, Cosmi, Cross, Okonkwo); SEA missing both safeties is the opening.",
+      "positives": [
+        "SEA without both starting safeties; on its 2nd straight road game",
+        "Mariota is a competent backup"
+      ],
+      "negatives": [
+        "Daniels OUT",
+        "0-2, -9.5 pd/g",
+        "Multi-starter injury cluster"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "61F with light rain from the East Coast nor'easter.",
+      "head_to_head": "The recent series is roughly even.",
+      "venue_history": "SEA has played in Landover sparingly; West-Coast team in a 1pm ET body-clock game.",
+      "rest_prep": "7 days for both, but it is SEA's 2nd straight true road game (Week 2 at ARI)."
+    },
+    {
+      "team": "NYJ",
+      "opponent": "DET",
+      "home_away": "away",
+      "win_prob": 0.27,
+      "summary": "Not part of the full debate: road underdog missing WR Omar Cooper (IR).",
+      "positives": [
+        "Won a game in Week 1"
+      ],
+      "negatives": [
+        "WR Omar Cooper on IR; TE Mason Taylor out"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Normal 7-day week for both sides."
+    },
+    {
+      "team": "LAC",
+      "opponent": "BUF",
+      "home_away": "away",
+      "win_prob": 0.25,
+      "summary": "0-2 and on its first road trip, with six players OUT across both lines and the secondary.",
+      "positives": [
+        "Herbert, Mack, James and Slater all play",
+        "BUF's own defensive injuries"
+      ],
+      "negatives": [
+        "0-2, -12.0 pd/g",
+        "Six players OUT",
+        "Cross-country 1pm ET kickoff"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "65F, cloudy, NNE wind ~12 mph, 0% precipitation. Not a factor.",
+      "head_to_head": "Recent Allen-vs-Herbert meetings have been competitive.",
+      "venue_history": "LAC's first road game of 2026: cross-country trip to a 1pm ET kickoff in Orchard Park.",
+      "rest_prep": "7 days for both; LAC's first road game after two home games."
+    },
+    {
+      "team": "ARI",
+      "opponent": "SF",
+      "home_away": "away",
+      "win_prob": 0.23,
+      "summary": "Big road underdog with Brissett at QB and a depleted secondary; SF's thin pass rush is the one opening.",
+      "positives": [
+        "SF missing Bosa, Height and Thompson on the DL"
+      ],
+      "negatives": [
+        "Blown out 31-7 by SEA",
+        "CB Will Johnson lost for the season; Melton questionable"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "SF has mostly controlled this series at home in recent seasons.",
+      "venue_history": "Routine NFC West division trip for ARI; no notable Levi's Stadium trend found.",
+      "rest_prep": "7 days for both; ARI played at home in Week 2."
+    },
+    {
+      "team": "MIA",
+      "opponent": "KC",
+      "home_away": "home",
+      "win_prob": 0.16,
+      "summary": "Heavy home underdog: 0-2, -18 pd/g, hasn't topped 13 points. Chop Robinson's return and the heat are the only real hopes.",
+      "positives": [
+        "Chop Robinson back from a concussion",
+        "Early-game heat edge vs. a visiting team"
+      ],
+      "negatives": [
+        "0-2 at -18.0 pd/g",
+        "EDGE Beal and WR Douglas OUT",
+        "Willis sacked 4x last week"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Early (1pm ET) outdoor kickoff in Miami heat and humidity; heat historically weighs more on the visiting team.",
+      "head_to_head": "KC has won the recent meetings in this series.",
+      "venue_history": "KC's last regular-season trip to Miami (2020) was a win; no persistent venue problem found.",
+      "rest_prep": "Normal 7-day week for both; KC's Week 2 went to overtime vs. IND."
+    },
+    {
+      "team": "ATL",
+      "opponent": "GB",
+      "home_away": "away",
       "win_prob": null,
-      "summary": "This Thursday Night Football opener (BUF 41, DET 31) had already concluded before this analysis began — no pregame Advocate/Skeptic/Arbiter pass was run for it. Included here purely for board completeness so survivor-review can still track the full slate; not eligible for this week's pick either way (DET was already used in Week 1, and BUF's game is already decided).",
+      "summary": "Thursday night game already final before this analysis (ATL 35, GB 14). No pregame debate; not pickable.",
       "positives": [],
       "negatives": [],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor — game already completed, not researched pregame this run.",
-      "head_to_head": "Not researched — game already completed before this run.",
-      "venue_history": "Not researched — game already completed before this run.",
-      "rest_prep": "Not applicable — game already completed."
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Thursday game."
     },
     {
-      "team": "DET", "opponent": "BUF", "home_away": "away",
+      "team": "GB",
+      "opponent": "ATL",
+      "home_away": "home",
       "win_prob": null,
-      "summary": "This Thursday Night Football opener (BUF 41, DET 31) had already concluded before this analysis began — no pregame Advocate/Skeptic/Arbiter pass was run for it. Included here purely for board completeness. DET was already used in Week 1 (won vs. NO) and is therefore ineligible for a Week 2 pick regardless of this game's outcome.",
+      "summary": "Thursday night game already final before this analysis (ATL 35, GB 14). No pregame debate; not pickable.",
       "positives": [],
       "negatives": [],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Outdoor — game already completed, not researched pregame this run.",
-      "head_to_head": "Not researched — game already completed before this run.",
-      "venue_history": "Not researched — game already completed before this run.",
-      "rest_prep": "Not applicable — game already completed."
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Thursday game."
     }
   ]
 }

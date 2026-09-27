@@ -1,8 +1,8 @@
 {
   "season": 2026,
-  "current_week": 2,
-  "status": "alive",
-  "mistake_count": 0,
+  "current_week": 3,
+  "status": "eliminated",
+  "mistake_count": 1,
   "picks": [
     {
       "week": 1,
@@ -17,8 +17,16 @@
       "team": "TB",
       "opponent": "CLE",
       "home_away": "home",
-      "result": "pending",
+      "result": "loss",
       "win_prob_estimate": 0.76
+    },
+    {
+      "week": 3,
+      "team": "SF",
+      "opponent": "ARI",
+      "home_away": "home",
+      "result": "pending",
+      "win_prob_estimate": 0.77
     }
   ]
 }
