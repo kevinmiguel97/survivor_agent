@@ -820,42 +820,473 @@
           "trap_flags": []
         }
       ]
+    },
+    {
+      "week": 3,
+      "reviewed_at": "2026-10-03T09:33:17-04:00",
+      "board_source": "data/history/week_analysis_2026_wk03.json",
+      "games_final_count": 16,
+      "games_pending_count": 0,
+      "recommendation": "SF",
+      "recommendation_result": "win",
+      "largest_vegas_favorite": {
+        "team": "KC",
+        "raw_vegas_prob": 0.85,
+        "actual_result": "win"
+      },
+      "trap_flags_grading": [
+        {
+          "team": "PHI",
+          "flags": [
+            "Opponent-QB-driven favorite with weak own form (L4/L5): the Williams line move is priced in, and PHI is missing three offensive starters (Goedert, Brown, OT Johnson), sits at +3.0 pd/g / 0-2 ATS, and faces a CHI team that is 3-0 ATS as a home dog under Ben Johnson, with Bagent possibly clearing protocol."
+          ],
+          "actual_result": "loss",
+          "validated": true
+        },
+        {
+          "team": "NYG",
+          "flags": [
+            "QB drop-off meets an opponent built to exploit it (L6): Winston at 4.1 YPA in relief, a 40-mph-gust nor'easter capping the pass game, NYG's 5.6-YPC run defense vs. healthy TEN backs, Burns missing all practice, and ex-NYG coach Daboll as TEN's OC. The line already fell 3 points."
+          ],
+          "actual_result": "win",
+          "validated": false
+        }
+      ],
+      "no_lazy_favorite_policy_outcome": "no_cost",
+      "brier_score": 0.2384,
+      "teams_graded": 30,
+      "bucket_calibration": [
+        {
+          "bucket": "<50%",
+          "predicted_avg": 0.367,
+          "actual_win_rate": 0.467,
+          "n": 15
+        },
+        {
+          "bucket": "50-59%",
+          "predicted_avg": 0.551,
+          "actual_win_rate": 0.5,
+          "n": 8
+        },
+        {
+          "bucket": "60-69%",
+          "predicted_avg": 0.635,
+          "actual_win_rate": 0.0,
+          "n": 2
+        },
+        {
+          "bucket": "70-79%",
+          "predicted_avg": 0.742,
+          "actual_win_rate": 0.75,
+          "n": 4
+        },
+        {
+          "bucket": "80-89%",
+          "predicted_avg": 0.84,
+          "actual_win_rate": 1.0,
+          "n": 1
+        },
+        {
+          "bucket": "90-100%",
+          "predicted_avg": null,
+          "actual_win_rate": null,
+          "n": 0
+        }
+      ],
+      "team_results": [
+        {
+          "team": "KC",
+          "opponent": "MIA",
+          "predicted_win_prob": 0.84,
+          "actual_result": "win",
+          "brier_component": 0.0256,
+          "recap_tier": "deep",
+          "recap": "KC won 24-10 at MIA, a sloppy grind rather than a blowout (Mahomes 20/24, 246, 2 TD, 1 INT; Walker 2 TD). MIA lost Achane on the opening drive, and KC didn't go up two scores until 2:55 left. The excluded favorite won, but the recommendation also won, so the policy cost nothing.",
+          "is_largest_vegas_favorite": true,
+          "trap_flags": []
+        },
+        {
+          "team": "SF",
+          "opponent": "ARI",
+          "predicted_win_prob": 0.77,
+          "actual_result": "win",
+          "brier_component": 0.0529,
+          "recap_tier": "deep",
+          "recap": "SF won 36-30 but ARI's Brissett went 38/52 for 280 yds and 2 TDs against the Bosa-less pass rush and pulled within one score late. Purdy (297 yds, 4 TD, incl. an 82-yd hook-and-ladder) and an onside-kick recovery sealed it. The Skeptic's DL-cluster concern was real: a 0.77 pick won by just 6. The pick was right, and the haircut was justified.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "BUF",
+          "opponent": "LAC",
+          "predicted_win_prob": 0.75,
+          "actual_result": "win",
+          "brier_component": 0.0625,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "DET",
+          "opponent": "NYJ",
+          "predicted_win_prob": 0.73,
+          "actual_result": "win",
+          "brier_component": 0.0729,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "SEA",
+          "opponent": "WAS",
+          "predicted_win_prob": 0.72,
+          "actual_result": "loss",
+          "brier_component": 0.5184,
+          "recap_tier": "deep",
+          "recap": "SEA lost 33-31 at WAS, snapping a 12-game win streak. Darnold was fine (379 yds, 4 TD) but threw 2 INTs, including a 50-yd pick-six by Kain Medrano with 3:57 left, and SEA lost the turnover battle 3-0. Backup QB Mariota threw 3 TDs against SEA's safety-less secondary: exactly the Skeptic's hard signal (both starting safeties out, 2nd straight East road trip). The Arbiter called the two sides even, and that was too generous.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CIN",
+          "opponent": "PIT",
+          "predicted_win_prob": 0.64,
+          "actual_result": "loss",
+          "brier_component": 0.4096,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "PHI",
+          "opponent": "CHI",
+          "predicted_win_prob": 0.63,
+          "actual_result": "loss",
+          "brier_component": 0.3969,
+          "recap_tier": "deep",
+          "recap": "Trap flag VALIDATED: CHI's third-string QB Case Keenum (Bagent wasn't cleared in time) threw for 247 yds and accounted for 3 TDs in a 27-7 Monday-night rout. PHI's depleted offense managed 248 yds, went 22% on third down and committed 3 turnovers. The L4/L5 framing held up exactly: the opponent-QB line move was priced in, and PHI's own form and injuries were the real story.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": [
+            "Opponent-QB-driven favorite with weak own form (L4/L5): the Williams line move is priced in, and PHI is missing three offensive starters (Goedert, Brown, OT Johnson), sits at +3.0 pd/g / 0-2 ATS, and faces a CHI team that is 3-0 ATS as a home dog under Ben Johnson, with Bagent possibly clearing protocol."
+          ]
+        },
+        {
+          "team": "JAX",
+          "opponent": "NE",
+          "predicted_win_prob": 0.59,
+          "actual_result": "win",
+          "brier_component": 0.1681,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "BAL",
+          "opponent": "DAL",
+          "predicted_win_prob": 0.57,
+          "actual_result": "win",
+          "brier_component": 0.1849,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CAR",
+          "opponent": "CLE",
+          "predicted_win_prob": 0.57,
+          "actual_result": "loss",
+          "brier_component": 0.3249,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "HOU",
+          "opponent": "IND",
+          "predicted_win_prob": 0.57,
+          "actual_result": "loss",
+          "brier_component": 0.3249,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NO",
+          "opponent": "LV",
+          "predicted_win_prob": 0.55,
+          "actual_result": "loss",
+          "brier_component": 0.3025,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NYG",
+          "opponent": "TEN",
+          "predicted_win_prob": 0.52,
+          "actual_result": "win",
+          "brier_component": 0.2304,
+          "recap_tier": "deep",
+          "recap": "Trap flag was a narrow FALSE ALARM: NYG won 12-7 on four Zvada field goals with Winston at 12/18, 117 yds, and the game was alive until Holland intercepted Cam Ward with 17 seconds left. The nor'easter suppressed BOTH offenses (TEN nearly had no first down by halftime), so it neutralized TEN's ability to exploit the QB drop-off rather than amplifying it. The near-coin-flip 0.52 was well calibrated, even though the flag was wrong.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": [
+            "QB drop-off meets an opponent built to exploit it (L6): Winston at 4.1 YPA in relief, a 40-mph-gust nor'easter capping the pass game, NYG's 5.6-YPC run defense vs. healthy TEN backs, Burns missing all practice, and ex-NYG coach Daboll as TEN's OC. The line already fell 3 points."
+          ]
+        },
+        {
+          "team": "LA",
+          "opponent": "DEN",
+          "predicted_win_prob": 0.52,
+          "actual_result": "loss",
+          "brier_component": 0.2704,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "MIN",
+          "opponent": "TB",
+          "predicted_win_prob": 0.52,
+          "actual_result": "win",
+          "brier_component": 0.2304,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "TEN",
+          "opponent": "NYG",
+          "predicted_win_prob": 0.48,
+          "actual_result": "loss",
+          "brier_component": 0.2304,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "DEN",
+          "opponent": "LA",
+          "predicted_win_prob": 0.48,
+          "actual_result": "win",
+          "brier_component": 0.2704,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "TB",
+          "opponent": "MIN",
+          "predicted_win_prob": 0.48,
+          "actual_result": "loss",
+          "brier_component": 0.2304,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "LV",
+          "opponent": "NO",
+          "predicted_win_prob": 0.45,
+          "actual_result": "win",
+          "brier_component": 0.3025,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "DAL",
+          "opponent": "BAL",
+          "predicted_win_prob": 0.43,
+          "actual_result": "loss",
+          "brier_component": 0.1849,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CLE",
+          "opponent": "CAR",
+          "predicted_win_prob": 0.43,
+          "actual_result": "win",
+          "brier_component": 0.3249,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "IND",
+          "opponent": "HOU",
+          "predicted_win_prob": 0.43,
+          "actual_result": "win",
+          "brier_component": 0.3249,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NE",
+          "opponent": "JAX",
+          "predicted_win_prob": 0.41,
+          "actual_result": "loss",
+          "brier_component": 0.1681,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CHI",
+          "opponent": "PHI",
+          "predicted_win_prob": 0.37,
+          "actual_result": "win",
+          "brier_component": 0.3969,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "PIT",
+          "opponent": "CIN",
+          "predicted_win_prob": 0.36,
+          "actual_result": "win",
+          "brier_component": 0.4096,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "WAS",
+          "opponent": "SEA",
+          "predicted_win_prob": 0.28,
+          "actual_result": "win",
+          "brier_component": 0.5184,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NYJ",
+          "opponent": "DET",
+          "predicted_win_prob": 0.27,
+          "actual_result": "loss",
+          "brier_component": 0.0729,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "LAC",
+          "opponent": "BUF",
+          "predicted_win_prob": 0.25,
+          "actual_result": "loss",
+          "brier_component": 0.0625,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "ARI",
+          "opponent": "SF",
+          "predicted_win_prob": 0.23,
+          "actual_result": "loss",
+          "brier_component": 0.0529,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "MIA",
+          "opponent": "KC",
+          "predicted_win_prob": 0.16,
+          "actual_result": "loss",
+          "brier_component": 0.0256,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "ATL",
+          "opponent": "GB",
+          "predicted_win_prob": null,
+          "actual_result": "win",
+          "brier_component": null,
+          "recap_tier": "outcome_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "GB",
+          "opponent": "ATL",
+          "predicted_win_prob": null,
+          "actual_result": "loss",
+          "brier_component": null,
+          "recap_tier": "outcome_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        }
+      ]
     }
   ],
   "season_summary": {
-    "weeks_reviewed": 2,
-    "total_teams_graded": 58,
-    "running_brier_score": 0.2262,
+    "weeks_reviewed": 3,
+    "total_teams_graded": 88,
+    "running_brier_score": 0.2304,
     "running_bucket_calibration": [
       {
         "bucket": "<50%",
-        "predicted_avg": 0.363,
-        "actual_win_rate": 0.25,
-        "n": 28
+        "predicted_avg": 0.365,
+        "actual_win_rate": 0.326,
+        "n": 43
       },
       {
         "bucket": "50-59%",
-        "predicted_avg": 0.537,
-        "actual_win_rate": 0.786,
-        "n": 14
+        "predicted_avg": 0.542,
+        "actual_win_rate": 0.682,
+        "n": 22
       },
       {
         "bucket": "60-69%",
         "predicted_avg": 0.635,
-        "actual_win_rate": 0.727,
-        "n": 11
+        "actual_win_rate": 0.615,
+        "n": 13
       },
       {
         "bucket": "70-79%",
-        "predicted_avg": 0.735,
-        "actual_win_rate": 0.5,
-        "n": 2
+        "predicted_avg": 0.74,
+        "actual_win_rate": 0.667,
+        "n": 6
       },
       {
         "bucket": "80-89%",
-        "predicted_avg": 0.827,
-        "actual_win_rate": 0.667,
-        "n": 3
+        "predicted_avg": 0.83,
+        "actual_win_rate": 0.75,
+        "n": 4
       },
       {
         "bucket": "90-100%",
@@ -865,13 +1296,13 @@
       }
     ],
     "no_lazy_favorite_policy_record": {
-      "no_cost": 0,
+      "no_cost": 1,
       "cost_a_pick": 1,
       "saved_a_pick": 1
     },
     "trap_flag_policy_record": {
-      "validated": 2,
-      "false_alarm": 2
+      "validated": 3,
+      "false_alarm": 3
     }
   },
   "lessons_learned": [
@@ -916,6 +1347,27 @@
       "added_at": "2026-09-26T12:00:00-04:00",
       "criteria_area": "trap_flag_criteria",
       "lesson": "Reverse line movement caused by a starting-QB injury is not a trap signal by itself. That news is already fully priced into the moved line, so it is not hidden sharp skepticism. SEA's flag (Darnold out, ~6-7 pt move) was a clean false alarm: backup Drew Lock beat a weak division rival 31-7 in Seattle's 10th straight win in the series. Flag QB-out spots only when the drop-off meets an opponent capable of exploiting it, and check the series/matchup history before calling a trap. BAL's validated flag, by contrast, rested on a broad multi-position injury cluster plus a hot opposing offense."
+    },
+    {
+      "id": "L7",
+      "added_week": 3,
+      "added_at": "2026-10-03T09:33:17-04:00",
+      "criteria_area": "injury_weighting",
+      "lesson": "Favorites priced up mainly because the OPPONENT's starting QB is out went 1-2 in Week 3: PHI lost 27-7 to CHI's third-stringer Keenum, SEA lost 33-31 to WAS backup Mariota, and only SF beat Brissett. Add Week 2's TB loss to a 'mess' CLE team and the pattern holds. Experienced veteran backups (Keenum, Mariota, Brissett) playing at home are not a big drop-off. Once the market has moved the line for the QB news, don't stack a further discount on the opponent for it. Treat it as already priced, and grade the favorite on its OWN health and form. This extends L4/L6."
+    },
+    {
+      "id": "L8",
+      "added_week": 3,
+      "added_at": "2026-10-03T09:33:17-04:00",
+      "criteria_area": "advocate_skeptic_process",
+      "lesson": "When the Skeptic's hard signal is a specific missing position group that lines up with what the opponent does well (SEA without both starting safeties vs. a WAS passing attack, on a 2nd straight East road trip), the Arbiter should not call it a wash just because the opponent's injury list is longer. Weigh injuries by matchup relevance, not by count: SEA at 0.72 lost, while the longer WAS injury list didn't matter. Similarly, SF's thinned pass rush let Brissett throw for 280 yds in a closer-than-expected game. The haircut on SF was correct, and a larger one on SEA was warranted."
+    },
+    {
+      "id": "L9",
+      "added_week": 3,
+      "added_at": "2026-10-03T09:33:17-04:00",
+      "criteria_area": "weather",
+      "lesson": "Severe weather (heavy rain, ~40-mph gusts) suppresses BOTH offenses, so it compresses scoring and favors the side with the better defense and kicking. It does not specifically help an opponent exploit the favorite's backup QB. NYG's weather-amplified trap flag was a false alarm (won 12-7 on four FGs while TEN nearly had no first down by halftime). Don't count bad weather as a trap signal against a favorite unless the opponent's offense is clearly better suited to the conditions (e.g. a dominant run game vs. a run defense that is actually poor in current-season data)."
     }
   ]
 }

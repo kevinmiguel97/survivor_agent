@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "current_week": 3,
+  "current_week": 4,
   "status": "eliminated",
   "mistake_count": 1,
   "picks": [
@@ -25,8 +25,16 @@
       "team": "SF",
       "opponent": "ARI",
       "home_away": "home",
-      "result": "pending",
+      "result": "win",
       "win_prob_estimate": 0.77
+    },
+    {
+      "week": 4,
+      "team": "MIN",
+      "opponent": "MIA",
+      "home_away": "home",
+      "result": "pending",
+      "win_prob_estimate": 0.8
     }
   ]
 }
