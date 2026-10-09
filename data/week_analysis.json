@@ -1,667 +1,610 @@
 {
   "season": 2026,
-  "week": 4,
-  "generated_at": "2026-10-03T09:40:12-04:00",
-  "recommendation": "MIN",
+  "week": 5,
+  "generated_at": "2026-10-09T15:54:57-04:00",
+  "recommendation": "JAX",
   "largest_vegas_favorite": {
-    "team": "BAL",
-    "raw_vegas_prob": 0.85,
-    "note": "Largest raw Vegas favorite this week (-750 ML, -11.5 vs TEN, ~85% no-vig implied). Never the recommendation by policy. The Arbiter put it at 0.83, the top number on the board, so the pick goes to the next-best non-excluded team: MIN (0.80)."
+    "team": "HOU",
+    "raw_vegas_prob": 0.765,
+    "note": "Largest raw Vegas favorite this week (-390 ML, -7.5 at TEN, ~76.5% no-vig implied). Never the recommendation by policy. The Arbiter shaved it to 0.72 (0-4 own form, L5), below JAX's 0.74, so the recommendation would be JAX either way."
   },
-  "status_note": "Strategy run as ELIMINATED (Week 2 loss). No opportunity-cost logic; recommendation = highest Arbiter probability among non-excluded teams. Used: DET, TB, SF.",
-  "process_note": "10-team shortlist (BAL, MIN, SEA, BUF, KC, IND, LA, CHI, GB, HOU) went through Advocate -> independent Skeptic subagent -> independent Arbiter subagent, with lessons L1-L9 threaded into all three. L1 drove KC's trap flag (reverse line movement plus a rookie LT). L5/L8 drove GB's (weak own form, gutted interior). L7 discounted IND and CHI on opponent-QB / own-QB pricing. L8 kept SEA's missing RBs from being called a wash. All 32 teams are on the board (L3).",
+  "status_note": "Strategy run as ELIMINATED (Week 2 loss). No opportunity-cost logic; recommendation = highest Arbiter probability among non-excluded teams. Used: DET, TB, SF, MIN. CAR and KC on bye.",
+  "process_note": "10-team shortlist (HOU, JAX, CIN, NE, WAS, DEN, LA, ATL, SEA, PIT, ranked by moneyline since the power-score leaders were thin) went through Advocate -> independent Skeptic subagent -> independent Arbiter subagent, with lessons L1-L11 threaded into all three. L10 set the stricter trap bar (only CIN qualified: own offense compromised plus a key-number move). L5 drove the HOU, WAS and DEN discounts. L7 kept ATL's Lamar-out bump from being stacked. L8 drove NE's drop (four CBs out vs Cousins). All 30 teams playing this week are on the board (L3).",
   "board": [
     {
-      "team": "BAL",
-      "opponent": "TEN",
-      "home_away": "home",
-      "win_prob": 0.83,
-      "summary": "The Advocate's core holds: TEN is 0-3 at -7.3 pd/g, and Lamar is cleared. But Hendrickson being OUT undercuts the pressure-vs-TEN's-IR-guards angle. The line move came on public money, not reverse movement, and rain favors BAL's better defense, so it's no trap. Shaved two points per L2. Excluded from the recommendation as the week's largest Vegas favorite.",
-      "positives": [
-        "Raw Vegas implied ~0.85 (-750/+525, -11.5), the week's largest favorite",
-        "Lamar Jackson (back) cleared, no designation, full practices Thu/Fri",
-        "TEN 0-3 at -7.3 pd/g, 12.3 ppg; Cam Ward struggling amid QB-controversy talk",
-        "TEN guards Carmona Jr. and Slater on IR"
-      ],
-      "negatives": [
-        "EDGE Trey Hendrickson OUT (finger procedure), which weakens the pass-rush edge",
-        "LT Ronnie Stanley and WR Zay Flowers questionable; TE Andrews limited",
-        "Line moved from -8.5 to -11.5 on 82% public tickets and money",
-        "69% rain chance; total dropped from 47.5 to 42.5"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": true,
-      "weather": "Rain likely (69% chance); total down from 47.5 to 42.5.",
-      "head_to_head": "BAL has generally handled TEN in recent regular-season meetings.",
-      "venue_history": "No notable TEN trend in Baltimore found.",
-      "rest_prep": "Normal 7-day week; BAL home after a Week 3 road game at DAL."
-    },
-    {
-      "team": "MIN",
-      "opponent": "MIA",
-      "home_away": "home",
-      "win_prob": 0.8,
-      "summary": "L4 is satisfied: MIA's collapse is concrete and current (-16.7 pd/g, every loss by double digits, Achane out for the season), and sharp money pushed the line from -7.5 to -10.5. The Skeptic's points are real: MIN's offense ranks last and Jefferson is out, and a 38.5 total leaves room for a turnover-decided game. That trims MIN below market, but the matchup gap is the biggest on the board outside BAL.",
-      "positives": [
-        "Raw Vegas implied ~0.83 (-650/+475, -10.5); opened -7.5 and moved up on sharp money",
-        "MIN 3-0, +10.0 pd/g; home in the dome after two straight road games",
-        "MIA 0-3 at -16.7 pd/g; Malik Willis hasn't topped 13 points in any game, and all three losses were by double digits",
-        "MIA RB De'Von Achane torn ACL (season); WR Caleb Douglas out; 12 MIA players on the report"
-      ],
-      "negatives": [
-        "WR Justin Jefferson OUT (ankle); MIN's offense ranks last in the NFL (238 ypg)",
-        "Total collapsed from 42 to 38.5, so a low-scoring game where one turnover can decide it",
-        "CB Chuck Demmings and punter Brett Thorson OUT",
-        "O'Connell admitted the offense didn't adjust well without Jefferson last week"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": null,
-      "head_to_head": "First interconference meeting of the season; no meaningful recent head-to-head signal.",
-      "venue_history": "MIA's warm-weather offense moves indoors to a loud dome; no persistent venue trend found.",
-      "rest_prep": "Normal 7-day week. MIN is home after two straight road games (incl. at TB in Week 3); MIA is on the road after a home loss."
-    },
-    {
-      "team": "BUF",
-      "opponent": "NE",
-      "home_away": "home",
-      "win_prob": 0.73,
-      "summary": "The Advocate's case is concrete: BUF is 3-0, NE was blown out 35-6 at JAX, and NE's best player (CB Gonzalez) plus DT Barmore are out. The Allen-knee worry is soft (full practice, no designation), and the division-cover stat is about the spread, not the outright result. Near market, shaved a point for division familiarity.",
-      "positives": [
-        "Raw Vegas implied ~0.74 (-330/+265, -7)",
-        "BUF 3-0 at +7.7 pd/g (prior season +6.1)",
-        "NE 1-2 at -5.0 pd/g; lost 35-6 at JAX last week",
-        "NE OUT: CB Christian Gonzalez, DT Christian Barmore; OT Moses limited; WR A.J. Brown on IR",
-        "Allen practiced fully, no designation"
-      ],
-      "negatives": [
-        "Josh Allen's left knee is 'more hurt than injured' (Dr. Chao), which may limit scrambles",
-        "CB Benford questionable; DL Sanders and LB Andreessen missed practice",
-        "Division game; NE knows BUF's scheme"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Mostly sunny, ~6 mph wind.",
-      "head_to_head": "Division rivals; BUF has dominated the series at home in the Allen era.",
-      "venue_history": "NE in Orchard Park: no notable trend beyond BUF's general home strength.",
-      "rest_prep": "Normal 7-day week; BUF's 2nd straight home game."
-    },
-    {
-      "team": "SEA",
-      "opponent": "LAC",
-      "home_away": "home",
-      "win_prob": 0.72,
-      "summary": "Per L8, injuries were weighed by relevance: losing both RBs makes SEA one-dimensional around a Darnold who just had 3 turnovers, and LAC's pass rush is intact. That outweighs LAC merely having more questionable names. LAC is still 0-3 at -10.7 with Herbert turnover-prone, and SEA's pass defense is elite, so a modest discount off 0.745.",
-      "positives": [
-        "Raw Vegas implied ~0.745 (-350/+275, -7, stable)",
-        "Defending champs; 2-1 at +8.3 pd/g (prior +12.3); home after two straight East road trips",
-        "S Julian Love back (no designation); S Okada questionable after a full Friday practice",
-        "SEA has allowed the fewest passing yards in the NFL",
-        "LAC 0-3 at -10.7 pd/g; Herbert 3 TD / 4 INT"
-      ],
-      "negatives": [
-        "RBs Zach Charbonnet and Jadarian Price both OUT, so SEA leans on Darnold",
-        "Darnold had 3 turnovers (incl. a pick-six) in last week's loss at WAS",
-        "LAC pass rush healthy (Mack, Dupree off the report); S Derwin James and McConkey only questionable",
-        "Hosts undefeated SF next week (look-ahead, soft)"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Seattle outdoors, early October; no significant weather flagged.",
-      "head_to_head": "First regular-season meeting since 2022 (SEA won 37-23 at LAC).",
-      "venue_history": "Lumen Field noise is a real road-team drag; no LAC-specific trend.",
-      "rest_prep": "7 days for both; SEA home after two road games."
-    },
-    {
-      "team": "DET",
-      "opponent": "CAR",
-      "home_away": "away",
-      "win_prob": 0.65,
-      "summary": "ALREADY USED (Week 1). Sunday night road favorite (-200).",
-      "positives": [
-        "Raw Vegas ~0.65 (-200, -3.5)"
-      ],
-      "negatives": [
-        "DET 2-1 at -0.7 pd/g"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Charlotte Sunday night; not researched in detail.",
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "7 days for both; Sunday night."
-    },
-    {
-      "team": "KC",
-      "opponent": "LV",
-      "home_away": "away",
-      "win_prob": 0.6,
-      "summary": "The Skeptic wins. Per L1, reverse line movement (-5.5 to -4.5 despite 73% of the money on KC) plus a specific personnel weakness (a rookie LT against LV's edge rush) is the signal that has been right. LV is a 3-0 peer, not a mess, and it's KC's 2nd straight road game. Trap-flagged and excluded.",
-      "positives": [
-        "Raw Vegas implied ~0.66 (-220/+180, -4.5)",
-        "KC 3-0 at +12.7 pd/g; Mahomes a full participant",
-        "S Chamarri Conner returns; LV G Powers-Johnson out",
-        "Bye in Week 5, so no look-ahead"
-      ],
-      "negatives": [
-        "Reverse line movement: -5.5 to -4.5 despite 73% of the money on KC",
-        "LT Josh Simmons OUT (bulging disc); rookie Kahlil Benson starts against LV's edge rush",
-        "2nd straight road game (at MIA in Week 3)",
-        "LV is 3-0 at +11.3 pd/g with Kirk Cousins, a peer team; the total rose to 47.5"
-      ],
-      "trap_flags": [
-        "Reverse line movement + protection weakness (L1): the line fell from -5.5 to -4.5 against 73% of the money, and rookie LT Benson starts against LV's edge rush on KC's 2nd straight road trip, vs. a 3-0 LV team at +11.3 pd/g."
-      ],
-      "is_largest_vegas_favorite": false,
-      "weather": null,
-      "head_to_head": "KC has owned the series in the Mahomes era, but this is the first meeting with both teams 3-0.",
-      "venue_history": "KC has won regularly at Allegiant; division familiarity cuts both ways.",
-      "rest_prep": "7 days for both; KC's 2nd straight road game."
-    },
-    {
-      "team": "LA",
+      "team": "JAX",
       "opponent": "PHI",
-      "home_away": "away",
-      "win_prob": 0.58,
-      "summary": "Close. PHI's absences (Smith, Goedert, Baun, Epps) are many and relevant, but LA's losses of Donald and Watson matter too. LA's own form is mediocre (-0.7 pd/g, L5), and the body-clock kickoff, 2nd straight road game, and rain are real situational drags. Slightly below the market.",
-      "positives": [
-        "Raw Vegas implied ~0.60-0.63 (-190 to -164, -3/-3.5)",
-        "Reigning MVP Stafford; Puka Nacua and S Kinchens back",
-        "PHI lost 27-7 to CHI's 3rd-string QB; PHI OUT: DeVonta Smith, Zack Baun, Goedert, Epps + 2 more"
-      ],
-      "negatives": [
-        "2nd straight road game (at DEN in Week 3); 1pm ET body-clock kickoff",
-        "LA OUT: DE Aaron Donald, CB Jaylen Watson, TE Ferguson",
-        "LA's own form is 1-2 at -0.7 pd/g",
-        "56% rain; PHI in a get-right spot at home (soft)"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Rain showers likely (56%) in Philadelphia.",
-      "head_to_head": "Recent meetings have been close; PHI's run game (Barkley, Hurts) has worked against LA before.",
-      "venue_history": "West Coast team at Lincoln Financial for an early kickoff: a historical drag.",
-      "rest_prep": "7 days for both; LA's 2nd straight road game."
-    },
-    {
-      "team": "SF",
-      "opponent": "DEN",
       "home_away": "home",
-      "win_prob": 0.58,
-      "summary": "ALREADY USED (Week 3). Home favorite (-150).",
+      "win_prob": 0.74,
+      "summary": "The Advocate wins. JAX has the best own form on the board (3-1, +12.8 pd/g). PHI is missing Barkley and Smith, with Hollywood Brown DNP and a makeshift OL, so JAX's banged-up secondary has fewer weapons to worry about. The public-driven 4-point move through the 7, plus a healthy Hurts (L11), justify trimming 2 points off the 0.76 market.",
       "positives": [
-        "SF 3-0 at +16.0 pd/g"
+        "Raw Vegas implied ~0.76 (-380/+300, -7.5); moved from -3.5 toward JAX",
+        "JAX 3-1 at +12.8 pd/g (prior +7.5); won 22-17 at CIN",
+        "PHI 2-2 at -4.5 pd/g; RB Saquon Barkley and WR DeVonta Smith OUT",
+        "PHI DNP: WR Hollywood Brown, EDGE Greenard, S Epps, C Kendall; Baun, Goedert, T Fred Johnson limited"
       ],
       "negatives": [
-        "Bosa and DL cluster out"
+        "Line move driven by ~75-82% public tickets and money, so the price may be inflated",
+        "International trip right after a road game at CIN, no bye",
+        "JAX secondary banged up: four CBs limited, S Eric Murray in concussion protocol; RT Harrison limited",
+        "Jalen Hurts healthy (L11); PHI get-right spot (soft)"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Santa Clara, early October; not researched in detail.",
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "CHI",
-      "opponent": "NYJ",
-      "home_away": "home",
-      "win_prob": 0.57,
-      "summary": "The Skeptic's concrete point (Caleb Williams OUT, Bagent starting, on a 6-day short week) outweighs a +12 pd/g inflated by one blowout of a depleted PHI. The market has already slid from -190 toward -170, and CB Gordon's absence takes it a bit further.",
-      "positives": [
-        "Raw Vegas implied ~0.61-0.63 (-190 to -170, -3.5)",
-        "CHI 2-1 at +12.0 pd/g; beat PHI 27-7",
-        "NYJ: RB Breece Hall week-to-week, WR Cooper IR, TE Taylor and WR Mitchell hurt"
-      ],
-      "negatives": [
-        "QB Caleb Williams OUT (grade 2 hamstring); Tyson Bagent starts",
-        "CB Kyler Gordon OUT",
-        "6-day short week after Monday night",
-        "At GB next week (rivalry look-ahead, soft)"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Sunny, 11 mph wind, 0% rain.",
-      "head_to_head": "Infrequent interconference meeting; no meaningful signal.",
-      "venue_history": "NYJ at Soldier Field: no notable trend.",
-      "rest_prep": "CHI on a 6-day short week (MNF in Week 3); NYJ on a normal 7 days."
-    },
-    {
-      "team": "IND",
-      "opponent": "WAS",
-      "home_away": "away",
-      "win_prob": 0.56,
-      "summary": "The L7 profile: a favorite priced up because the opponent's QB is out, which went 1-2 last week. Mariota threw 3 TD / 0 INT. IND's own -6.3 pd/g and leaky pass defense are real negatives (L5), money is moving toward WAS, and the neutral site removes any home edge.",
-      "positives": [
-        "Raw Vegas implied ~0.62-0.65 (-210 to -175, -3/-3.5)",
-        "WAS QB Jayden Daniels OUT; WAS 1-2 at -5.7 pd/g; McLaurin hurt"
-      ],
-      "negatives": [
-        "IND's own form is 1-2 at -6.3 pd/g; 5th-most passing yards allowed",
-        "Mariota threw 3 TD / 0 INT in last week's upset of SEA",
-        "Line and ML moving toward WAS",
-        "Neutral site (London), so no home edge"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "London outdoors, early October; no significant weather flagged.",
-      "head_to_head": "Rare meeting; no meaningful signal.",
-      "venue_history": "Neutral site in London; both teams travel.",
-      "rest_prep": "Both fly to London on a normal week."
+      "weather": "London (Tottenham Hotspur Stadium), 9:30am ET: 59°F, mostly cloudy, 12 mph wind gusting to 19.",
+      "head_to_head": "Rare interconference matchup; no meaningful recent signal.",
+      "venue_history": "JAX plays an annual London game and is the designated home team; both teams travel.",
+      "rest_prep": "Normal week, but JAX flies to London right after a Week 4 road game at CIN; PHI home in Week 4."
     },
     {
       "team": "HOU",
-      "opponent": "DAL",
-      "home_away": "home",
-      "win_prob": 0.55,
-      "summary": "Collins' return is a concrete plus, but HOU's 0-3 at -7.0 pd/g is a real negative per L5. Losing Al-Shaair and Stewart lines up directly with Prescott's hot passing. Moved below both the market (0.60) and the models (0.587).",
+      "opponent": "TEN",
+      "home_away": "away",
+      "win_prob": 0.72,
+      "summary": "The market and the steam toward HOU are real, and TEN is bad on every measure. But HOU is 0-4 at -6.2 pd/g and gave up 34 at home (L5). A winless team laying 7.5 in a 38.5-total division road game is shakier than the price says, so it's shaved 4.5 points, not cratered (L2). Excluded as the week's largest Vegas favorite.",
       "positives": [
-        "Raw Vegas implied ~0.60 (-165/+140, -3)",
-        "WR Nico Collins back (HOU scored 23 points total in the 2 games he missed)",
-        "Stroud: 120 attempts without an INT; DAL secondary injury-depleted"
+        "Raw Vegas implied ~0.765 (-390/+310, -7.5), the week's largest favorite; line moved toward HOU",
+        "TEN 0-4 at -7.0 pd/g (prior -11.4)",
+        "HOU prior season +6.4; Nico Collins back; EDGE Will Anderson upgraded to limited"
       ],
       "negatives": [
-        "HOU 0-3 at -7.0 pd/g",
-        "LB Azeez Al-Shaair and S M.J. Stewart OUT; Clowney and RG Ingram questionable",
-        "Prescott 7 TD / 1 INT with 275+ yds in back-to-back games",
-        "Some books -2.5"
+        "HOU 0-4 at -6.2 pd/g; gave up 34 at home to DAL",
+        "TEN lost only 24-18 at BAL last week",
+        "LB Al-Shaair limited, Anderson's ankle unconfirmed",
+        "38.5 total makes a 7.5 margin noisy; division road game with JAX next (soft)"
       ],
       "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Retractable roof; 12 mph winds gusting to 18 outside (largely moot if closed).",
-      "head_to_head": "Texas rivalry; recent meetings split.",
-      "venue_history": "No notable DAL trend in Houston.",
-      "rest_prep": "7 days for both."
+      "is_largest_vegas_favorite": true,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Division rivals; split recent meetings.",
+      "venue_history": "No notable HOU trend in Nashville.",
+      "rest_prep": "7 days for both; HOU at JAX next week."
     },
     {
-      "team": "NO",
-      "opponent": "ATL",
-      "home_away": "home",
-      "win_prob": 0.54,
-      "summary": "Single-pass: a home Monday-night favorite (~0.56 implied) with a modest edge; ATL just won 35-14 at GB.",
+      "team": "DET",
+      "opponent": "ARI",
+      "home_away": "away",
+      "win_prob": 0.69,
+      "summary": "ALREADY USED (Week 1). Road favorite (-250) in a 54.5 shootout.",
       "positives": [
-        "Raw Vegas implied ~0.56 (-140, -2.5)",
-        "Home dome, Monday night"
+        "Raw Vegas ~0.69"
       ],
       "negatives": [
-        "NO 1-2 at -0.7 pd/g",
-        "ATL won 35-14 at GB last week"
+        "DET 2-2 at -2.0 pd/g; lost at CAR"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
       "weather": null,
       "head_to_head": "Not researched (neither side of this game was shortlisted).",
       "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "7 days for both; Monday-night game."
+      "rest_prep": "7 days for both."
     },
     {
       "team": "CIN",
-      "opponent": "JAX",
-      "home_away": "home",
-      "win_prob": 0.54,
-      "summary": "Single-pass: a slight home favorite (~0.56) in a 51.5-total shootout; power rating actually favors JAX.",
+      "opponent": "MIA",
+      "home_away": "away",
+      "win_prob": 0.67,
+      "summary": "MIA is dreadful (-13.8 pd/g, ≤13 points every game), which keeps CIN a clear favorite. But the Skeptic's case targets CIN's OWN offense: Chase (concussion protocol) and Higgins are both questionable and account for ~42% of receptions. The latest line crossed the 7 toward MIA while the total collapsed. Cut ~6 points. Trap-flagged and excluded.",
       "positives": [
-        "Raw Vegas implied ~0.56 (-140, -2.5)",
-        "Lawrence 0-3 vs CIN; Burrow off a 3-TD game"
+        "Raw Vegas implied ~0.733 (-320/+260, -6.5)",
+        "MIA 0-4 at -13.8 pd/g; ≤13 points every game; Achane out (ACL)",
+        "MIA RT Austin Jackson limited, EDGE Beal DNP; Burrow healthy"
       ],
       "negatives": [
-        "JAX 2-1 at +15.3 pd/g vs CIN +5.7",
-        "RG Risner questionable; secondary injuries"
+        "WR Ja'Marr Chase (concussion protocol) and WR Tee Higgins (adductor) QUESTIONABLE, ~42% of receptions",
+        "Latest line 7.5 -> 6.5, crossing the 7 toward MIA; total collapsed 3-6 points",
+        "CIN own form 2-2 at +3.0 (prior -4.6); lost to JAX last week",
+        "DL hurt (Lawrence wrist, Hill Achilles, Allen); S Cook questionable; road game"
+      ],
+      "trap_flags": [
+        "Favorite's own offense compromised + key-number move (L10): Chase (concussion protocol, must be cleared Saturday) and Higgins (adductor) are both questionable, ~42% of CIN's receptions. The latest line crossed the 7 toward MIA (7.5 -> 6.5) while the total collapsed."
+      ],
+      "is_largest_vegas_favorite": false,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Infrequent meeting; no strong signal.",
+      "venue_history": "Early-October Miami heat is a mild road drag.",
+      "rest_prep": "7 days for both; CIN bye next week (rest vs. look-ahead)."
+    },
+    {
+      "team": "WAS",
+      "opponent": "NYG",
+      "home_away": "home",
+      "win_prob": 0.59,
+      "summary": "Daniels' return drives the price, and WAS's -8.5 pd/g partly reflects games without him, so L5 counts only partially. But it's his first game back in an elbow brace, right after London with no bye, against a 3-1 NYG. A falling total and division familiarity justify a 5-point haircut.",
+      "positives": [
+        "Raw Vegas implied ~0.64 (-200/+165, -3 to -4.5)",
+        "QB Jayden Daniels returns: full go, no restrictions",
+        "Home"
+      ],
+      "negatives": [
+        "WAS 1-3 at -8.5 pd/g",
+        "Daniels' first game back from a dislocated elbow, in a brace",
+        "First game after London, no bye",
+        "NYG 3-1; Nabers and Thomas trending toward playing; division; total down 3-5.5"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Mostly sunny, 5 mph wind.",
-      "head_to_head": "Lawrence is 0-3 vs CIN (the only AFC team he hasn't beaten).",
+      "weather": "Four quarters of rain with a steady 13 mph wind; favors the ground game.",
+      "head_to_head": "Division rivals; recent series roughly even.",
+      "venue_history": "NYG in Landover: no notable trend.",
+      "rest_prep": "WAS back from London (Week 4) with no bye; NYG normal week."
+    },
+    {
+      "team": "LA",
+      "opponent": "BUF",
+      "home_away": "home",
+      "win_prob": 0.59,
+      "summary": "Returning stars (Donald, Watson, Parkinson) and BUF's WR/DT injuries support the price. But LA's own form is flat (+0.5 pd/g) against a 3-1 BUF team with Josh Allen, and a 54.5-total shootout adds variance. Small trim.",
+      "positives": [
+        "Raw Vegas implied ~0.62 (-180/+150, -3.5)",
+        "Home Monday night after a 24-20 win at PHI",
+        "DE Aaron Donald, CB Jaylen Watson, TE Parkinson expected back",
+        "BUF WR DJ Moore doubtful, DT Ed Oliver questionable"
+      ],
+      "negatives": [
+        "LA own form 2-2 at +0.5 vs BUF 3-1 at +5.0",
+        "Returning players carry rust/snap-count uncertainty",
+        "54.5 total, a high-variance shootout"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Infrequent interconference meeting.",
+      "venue_history": "SoFi dome; BUF West Coast trip on Monday night.",
+      "rest_prep": "LA home after two road games; BUF normal week."
+    },
+    {
+      "team": "DEN",
+      "opponent": "LAC",
+      "home_away": "away",
+      "win_prob": 0.58,
+      "summary": "The matchup arguments roughly cancel: LAC losing both starting OTs is a big edge for DEN's pass rush, and DEN losing Surtain and Moss against a healthy Herbert is just as big an edge the other way. The tiebreakers favor the Skeptic: DEN's own form is -5.0 (L5), it's a 2nd straight road game, and it's a division game.",
+      "positives": [
+        "Raw Vegas implied ~0.62 (-183/+153, -3.5)",
+        "LAC 0-4 at -9.8 pd/g; OTs Joe Alt and Rashawn Slater expected OUT",
+        "LAC WR McConkey and S Derwin James DNP"
+      ],
+      "negatives": [
+        "DEN own form 2-2 at -5.0 pd/g",
+        "CBs Patrick Surtain (2-4 weeks) and Riley Moss OUT",
+        "2nd straight road game (at SF in Week 4); SEA next",
+        "Herbert healthy (L11); division"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Division rivals; split recent meetings.",
+      "venue_history": "SoFi dome; short trip.",
+      "rest_prep": "DEN's 2nd straight road game."
+    },
+    {
+      "team": "NE",
+      "opponent": "LV",
+      "home_away": "home",
+      "win_prob": 0.57,
+      "summary": "The Skeptic wins clearly. Four CBs are ruled out against Cousins, who just threw for 365, an injury that directly fits the matchup (L8). LV has better current form, and NE is in a letdown spot after the BUF upset. Home field and the BUF win keep NE a slight favorite.",
+      "positives": [
+        "Raw Vegas implied ~0.64 (-200/+165, -3.5)",
+        "Upset BUF 29-26 on the road (Maye 3 TD)",
+        "Prior season +8.7; home"
+      ],
+      "negatives": [
+        "Four CBs OUT: Gonzalez, Carlton Davis, Prunty, Canada",
+        "Cousins threw for 365 last week; LV 3-1 at +7.8",
+        "Letdown spot after the BUF upset; NE own form -3.0",
+        "Stevenson and Barmore questionable; WR Hollins out"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "LV East Coast 1pm trip.",
+      "rest_prep": "7 days for both."
+    },
+    {
+      "team": "ATL",
+      "opponent": "BAL",
+      "home_away": "home",
+      "win_prob": 0.57,
+      "summary": "Textbook L7: the line swung 6-7 points on Lamar's absence, and that profile has gone 1-2. Huntley plus BAL's run game is not a collapse. ATL's own form is only +1.0, it's on a six-day turnaround, and Matthews and Z. Smith are game-time decisions. Hendrickson out and BAL's interior OL issues stop it from going lower.",
+      "positives": [
+        "Raw Vegas implied ~0.613 (-176/+148, -3)",
+        "BAL QB Lamar Jackson OUT; Tyler Huntley starts",
+        "BAL EDGE Hendrickson OUT; G Vorhees foot; C Jurgens concussion protocol",
+        "ATL won 45-24 at NO and 35-14 at GB"
+      ],
+      "negatives": [
+        "L7 profile: the opponent-QB line swing is fully priced",
+        "Six-day turnaround from Monday night",
+        "LT Jake Matthews and EDGE Za'Darius Smith game-time decisions",
+        "ATL own form 2-2 at +1.0"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "Retractable-roof Mercedes-Benz Stadium; no notable trend.",
+      "rest_prep": "ATL on a 6-day turnaround (Monday night at NO in Week 4); BAL normal week."
+    },
+    {
+      "team": "SEA",
+      "opponent": "SF",
+      "home_away": "home",
+      "win_prob": 0.56,
+      "summary": "SF is 4-0 at +14.5 pd/g, better than SEA on current form. The line drifted toward SF, and Purdy is healthy (L11). SF's losses of Bosa and Thompson up front keep SEA a home favorite, but only barely.",
+      "positives": [
+        "Raw Vegas implied ~0.607 (-170/+145, -3)",
+        "Defending champs 3-1 at +8.0; 2nd straight home game",
+        "SF DE Bosa and DL Thompson likely OUT; FB Juszczyk, S Sigle, WR Mike Evans out/DNP"
+      ],
+      "negatives": [
+        "SF 4-0 at +14.5 pd/g",
+        "Line drifted 3.5 -> 2.5/3 toward SF",
+        "SEA DT Leonard Williams DNP",
+        "Division; Purdy healthy"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Division rivals; SEA has been strong at home in the series.",
+      "venue_history": "Lumen Field noise.",
+      "rest_prep": "SEA home again; SF home in Week 4."
+    },
+    {
+      "team": "CHI",
+      "opponent": "GB",
+      "home_away": "away",
+      "win_prob": 0.55,
+      "summary": "Single-pass: a slight road favorite (-129) with backup QB Bagent likely starting again.",
+      "positives": [
+        "CHI 3-1 at +11.8 pd/g",
+        "GB 2-2 at -8.0 pd/g"
+      ],
+      "negatives": [
+        "Caleb Williams questionable, Bagent likely",
+        "Division road game at Lambeau"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "75°F at Lambeau, 13 mph wind gusting to 22.",
+      "head_to_head": "Division rivals; GB has long dominated at Lambeau.",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "7 days for both."
+    },
+    {
+      "team": "NYJ",
+      "opponent": "CLE",
+      "home_away": "home",
+      "win_prob": 0.55,
+      "summary": "Single-pass: a slight home favorite (-134) in a rain-soaked, low-total (39.5) game.",
+      "positives": [
+        "Home",
+        "CLE -3.5 pd/g despite a 3-1 record"
+      ],
+      "negatives": [
+        "NYJ 1-3",
+        "Rain grind"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Rain showers likely (60% at kickoff, 90% from 2pm ET), ~10 mph wind.",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "7 days for both."
+    },
+    {
+      "team": "MIN",
+      "opponent": "NO",
+      "home_away": "away",
+      "win_prob": 0.55,
+      "summary": "ALREADY USED (Week 4). Slight road favorite (-133).",
+      "positives": [
+        "MIN 4-0"
+      ],
+      "negatives": [
+        "Offense hasn't scored a TD in 2 of 3 games"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "7 days for both."
+    },
+    {
+      "team": "PIT",
+      "opponent": "IND",
+      "home_away": "home",
+      "win_prob": 0.54,
+      "summary": "Neither side has much. PIT's own form is negative, 2.5 points is thin in a projected rain-soaked grind, and the London-return angle is soft. Modest trim toward a coin flip.",
+      "positives": [
+        "Raw Vegas implied ~0.572 (-148/+124, -2.5)",
+        "Home; IND back from London"
+      ],
+      "negatives": [
+        "PIT own form -2.5 pd/g",
+        "IND 2-2",
+        "Sharp under money; rain grind"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Rain with a 12-13 mph crosswind; thunderstorm chance could bring a 2nd-half lightning delay.",
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "No notable trend.",
+      "rest_prep": "IND back from London with no bye; PIT normal week."
+    },
+    {
+      "team": "IND",
+      "opponent": "PIT",
+      "home_away": "away",
+      "win_prob": 0.46,
+      "summary": "Opponent of shortlisted PIT.",
+      "positives": [
+        "Near coin flip"
+      ],
+      "negatives": [
+        "Back from London; rain"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Rain with a 12-13 mph crosswind; thunderstorm chance could bring a 2nd-half lightning delay.",
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "Back from London, no bye."
+    },
+    {
+      "team": "NO",
+      "opponent": "MIN",
+      "home_away": "home",
+      "win_prob": 0.45,
+      "summary": "Single-pass: home dog vs undefeated MIN.",
+      "positives": [
+        "MIN offense stagnant"
+      ],
+      "negatives": [
+        "NO 1-3 at -5.8 pd/g"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
+      "rest_prep": "7 days for both."
+    },
+    {
+      "team": "CLE",
+      "opponent": "NYJ",
+      "home_away": "away",
+      "win_prob": 0.45,
+      "summary": "Single-pass: road dog despite a 3-1 record.",
+      "positives": [
+        "3-1"
+      ],
+      "negatives": [
+        "-3.5 pd/g; rain on the road"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Rain showers likely (60% at kickoff, 90% from 2pm ET), ~10 mph wind.",
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
       "venue_history": "Not researched (neither side of this game was shortlisted).",
       "rest_prep": "7 days for both."
     },
     {
       "team": "GB",
-      "opponent": "TB",
-      "home_away": "away",
-      "win_prob": 0.53,
-      "summary": "The Skeptic dominates. GB's own form is -11.7 pd/g (L5), and four interior linemen are OUT (both starting guards and both DTs), which matters most against a mobile rookie QB. The Mayfield discount is already in the price (L7), and the heat favors TB. Trap-flagged and excluded.",
-      "positives": [
-        "Raw Vegas implied ~0.62 (-185/+155, -3.5)",
-        "TB 0-3; Mayfield OUT, and undrafted rookie Jalon Daniels makes his first start"
-      ],
-      "negatives": [
-        "GB's own form is 1-2 at -11.7 pd/g; lost 35-14 at home to ATL",
-        "G Aaron Banks, G Jacob Monk, DT Warren Brinson and DT Anthony Campbell all OUT",
-        "Daniels is a mobile runner (843 rush yds, 10 TD over his last 2 college seasons) against a gutted DT room",
-        "90°F heat and storms favor the acclimated home team"
-      ],
-      "trap_flags": [
-        "Looks-safe road favorite with a hollowed-out interior (L5/L8): GB is -11.7 pd/g, both starting guards and both starting DTs are OUT, and a mobile rookie QB plays at home in 90°F heat. The Mayfield discount is already priced in (L7)."
-      ],
-      "is_largest_vegas_favorite": false,
-      "weather": "90°F heat with a 50% chance of scattered showers/thunderstorms in Tampa.",
-      "head_to_head": "Infrequent meeting; no meaningful signal.",
-      "venue_history": "GB in Tampa heat: a road-team drag.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "ARI",
-      "opponent": "NYG",
-      "home_away": "away",
-      "win_prob": 0.53,
-      "summary": "Single-pass: a slight road favorite (~0.56) against a Winston-led NYG that just won ugly in a storm.",
-      "positives": [
-        "Raw Vegas implied ~0.56 (-140, -2.5)",
-        "Brissett threw for 280 at SF"
-      ],
-      "negatives": [
-        "ARI 1-2 at -6.0 pd/g; 2nd straight road game (at SF in Week 3)",
-        "East Coast 1pm kickoff"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Mostly cloudy, 36% chance of showers, 12 mph wind.",
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "ARI's 2nd straight road game; NYG home again."
-    },
-    {
-      "team": "NYG",
-      "opponent": "ARI",
-      "home_away": "home",
-      "win_prob": 0.47,
-      "summary": "Single-pass: a home dog that just won 12-7 with Winston; power rating gives NYG a slight edge despite the market.",
-      "positives": [
-        "Home",
-        "ARI on a 2nd straight road trip"
-      ],
-      "negatives": [
-        "Winston at QB (12/18, 117 last week)",
-        "NYG -3.0 pd/g"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Mostly cloudy, 36% chance of showers, 12 mph wind.",
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "NYG 2nd straight home game."
-    },
-    {
-      "team": "TB",
-      "opponent": "GB",
-      "home_away": "home",
-      "win_prob": 0.47,
-      "summary": "ALREADY USED (Week 2). Opponent of trap-flagged GB; rookie QB's first start.",
-      "positives": [
-        "Home in the heat; GB's interior gutted"
-      ],
-      "negatives": [
-        "Mayfield OUT; TB 0-3"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "90°F heat with a 50% chance of scattered showers/thunderstorms in Tampa.",
-      "head_to_head": "Infrequent meeting.",
-      "venue_history": "Home.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "JAX",
-      "opponent": "CIN",
-      "home_away": "away",
-      "win_prob": 0.46,
-      "summary": "Single-pass: road dog with the stronger power rating (+15.3 pd/g); Lawrence 0-3 vs CIN.",
-      "positives": [
-        "JAX 2-1 at +15.3 pd/g",
-        "Lawrence 7 TD / 2 INT"
-      ],
-      "negatives": [
-        "Road dog (+120)",
-        "Lawrence 0-3 vs CIN"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Mostly sunny, 5 mph wind.",
-      "head_to_head": "Lawrence is 0-3 vs CIN.",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "ATL",
-      "opponent": "NO",
-      "home_away": "away",
-      "win_prob": 0.46,
-      "summary": "Single-pass: road dog off a 35-14 win at GB.",
-      "positives": [
-        "Beat GB 35-14 on the road"
-      ],
-      "negatives": [
-        "Road dog (+120); ATL -5.7 pd/g"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": null,
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "7 days; Monday-night road game."
-    },
-    {
-      "team": "DAL",
-      "opponent": "HOU",
-      "home_away": "away",
-      "win_prob": 0.45,
-      "summary": "Opponent of shortlisted HOU: Prescott is hot, and HOU is missing LB and S.",
-      "positives": [
-        "Prescott 7 TD / 1 INT; HOU missing Al-Shaair and Stewart"
-      ],
-      "negatives": [
-        "Road dog (+140)",
-        "Secondary questionables (Thompson, Durant, Hooker)"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Retractable roof; 12 mph winds gusting to 18 outside (largely moot if closed).",
-      "head_to_head": "Texas rivalry; recent meetings split.",
-      "venue_history": "No notable DAL trend in Houston.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "WAS",
-      "opponent": "IND",
-      "home_away": "home",
-      "win_prob": 0.44,
-      "summary": "Opponent of shortlisted IND: Mariota is efficient, and IND's pass defense is leaky.",
-      "positives": [
-        "Mariota 3 TD / 0 INT last week",
-        "Money moving toward WAS"
-      ],
-      "negatives": [
-        "Daniels OUT",
-        "WAS 1-2 at -5.7 pd/g; weapons thin"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "London outdoors, early October; no significant weather flagged.",
-      "head_to_head": "Rare meeting.",
-      "venue_history": "Neutral site in London.",
-      "rest_prep": "Both fly to London."
-    },
-    {
-      "team": "NYJ",
       "opponent": "CHI",
-      "home_away": "away",
-      "win_prob": 0.43,
-      "summary": "Opponent of shortlisted CHI: facing a backup QB on a short week.",
-      "positives": [
-        "CHI starts backup Bagent on a 6-day week"
-      ],
-      "negatives": [
-        "Hall, Cooper, Taylor, Mitchell hurt",
-        "Prior season -11.9 pd/g"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Sunny, 11 mph wind, 0% rain.",
-      "head_to_head": "Infrequent meeting.",
-      "venue_history": "No notable trend.",
-      "rest_prep": "NYJ normal 7 days; CHI short week."
-    },
-    {
-      "team": "PHI",
-      "opponent": "LA",
       "home_away": "home",
-      "win_prob": 0.42,
-      "summary": "Opponent of shortlisted LA: get-right spot at home, but heavily injured.",
+      "win_prob": 0.45,
+      "summary": "Single-pass: home dog vs CHI's backup QB.",
       "positives": [
-        "Home; LA's 2nd straight road trip and body-clock kickoff"
+        "Home at Lambeau"
       ],
       "negatives": [
-        "OUT: Smith, Goedert, Baun, Epps + 2",
-        "Lost 27-7 to CHI's 3rd-stringer"
+        "GB 2-2 at -8.0 pd/g"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Rain showers likely (56%) in Philadelphia.",
-      "head_to_head": "Recent meetings close.",
-      "venue_history": "West Coast team at the Linc early.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "DEN",
-      "opponent": "SF",
-      "home_away": "away",
-      "win_prob": 0.42,
-      "summary": "Single-pass: road dog (+125).",
-      "positives": [
-        "Beat LA in Week 3"
-      ],
-      "negatives": [
-        "DEN -3.3 pd/g"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Santa Clara, early October; not researched in detail.",
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "weather": "75°F at Lambeau, 13 mph wind gusting to 22.",
+      "head_to_head": "Division rivals.",
       "venue_history": "Not researched (neither side of this game was shortlisted).",
       "rest_prep": "7 days for both."
+    },
+    {
+      "team": "SF",
+      "opponent": "SEA",
+      "home_away": "away",
+      "win_prob": 0.44,
+      "summary": "ALREADY USED (Week 3). 4-0 road dog.",
+      "positives": [
+        "4-0 at +14.5 pd/g"
+      ],
+      "negatives": [
+        "Bosa, Thompson out"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Division rivals.",
+      "venue_history": "Lumen Field noise.",
+      "rest_prep": "Normal week."
     },
     {
       "team": "LV",
-      "opponent": "KC",
-      "home_away": "home",
-      "win_prob": 0.4,
-      "summary": "Opponent of trap-flagged KC: a 3-0 peer, with reverse line movement on its side.",
+      "opponent": "NE",
+      "home_away": "away",
+      "win_prob": 0.43,
+      "summary": "Opponent of shortlisted NE: Cousins against four missing NE CBs.",
       "positives": [
-        "LV 3-0 at +11.3 pd/g; reverse line movement toward LV",
-        "KC rookie LT"
+        "3-1 at +7.8; NE secondary gutted"
       ],
       "negatives": [
-        "G Powers-Johnson OUT",
-        "Prior season -11.2 pd/g"
+        "East Coast 1pm trip; Jeanty questionable"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "LV East Coast trip.",
+      "rest_prep": "Normal week."
+    },
+    {
+      "team": "BAL",
+      "opponent": "ATL",
+      "home_away": "away",
+      "win_prob": 0.43,
+      "summary": "Opponent of shortlisted ATL: Huntley starts for Lamar.",
+      "positives": [
+        "BAL run game; veteran backup (L7)"
+      ],
+      "negatives": [
+        "Lamar OUT; Hendrickson OUT; OL dinged"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
       "weather": null,
-      "head_to_head": "KC has owned the series.",
-      "venue_history": "Home dome.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "CAR",
-      "opponent": "DET",
-      "home_away": "home",
-      "win_prob": 0.35,
-      "summary": "Single-pass: Sunday night home dog.",
-      "positives": [
-        "Home; CAR +2.0 pd/g"
-      ],
-      "negatives": [
-        "Dog (+165)"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Charlotte Sunday night; not researched in detail.",
-      "head_to_head": "Not researched (neither side of this game was shortlisted).",
-      "venue_history": "Not researched (neither side of this game was shortlisted).",
-      "rest_prep": "7 days for both."
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "Indoor road game.",
+      "rest_prep": "Normal week; ATL on a 6-day turnaround."
     },
     {
       "team": "LAC",
-      "opponent": "SEA",
-      "home_away": "away",
-      "win_prob": 0.28,
-      "summary": "Opponent of shortlisted SEA: 0-3 and sloppy.",
+      "opponent": "DEN",
+      "home_away": "home",
+      "win_prob": 0.42,
+      "summary": "Opponent of shortlisted DEN: both starting OTs out.",
       "positives": [
-        "Pass rush healthy; SEA RBs out"
+        "Herbert healthy; DEN CBs out"
       ],
       "negatives": [
-        "0-3 at -10.7 pd/g; Herbert 3 TD / 4 INT"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Seattle outdoors, early October; no significant weather flagged.",
-      "head_to_head": "First meeting since 2022.",
-      "venue_history": "Lumen Field noise.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "NE",
-      "opponent": "BUF",
-      "home_away": "away",
-      "win_prob": 0.27,
-      "summary": "Opponent of shortlisted BUF: missing its best player.",
-      "positives": [
-        "Maye healthy"
-      ],
-      "negatives": [
-        "Gonzalez and Barmore OUT; lost 35-6 at JAX"
-      ],
-      "trap_flags": [],
-      "is_largest_vegas_favorite": false,
-      "weather": "Mostly sunny, ~6 mph wind.",
-      "head_to_head": "BUF has dominated at home.",
-      "venue_history": "Orchard Park is a tough road venue.",
-      "rest_prep": "7 days for both."
-    },
-    {
-      "team": "MIA",
-      "opponent": "MIN",
-      "home_away": "away",
-      "win_prob": 0.2,
-      "summary": "Opponent of shortlisted MIN: 0-3 at -16.7 pd/g, Achane done.",
-      "positives": [
-        "MIN without Jefferson; MIN offense last in yards"
-      ],
-      "negatives": [
-        "Achane torn ACL; Willis ≤13 points every game"
+        "0-4; Alt and Slater OUT"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
       "weather": null,
-      "head_to_head": "First meeting of the season.",
-      "venue_history": "Indoor dome for a Miami team.",
+      "head_to_head": "Division rivals.",
+      "venue_history": "Home.",
+      "rest_prep": "Normal week."
+    },
+    {
+      "team": "NYG",
+      "opponent": "WAS",
+      "home_away": "away",
+      "win_prob": 0.41,
+      "summary": "Opponent of shortlisted WAS: 3-1 with Winston, in the rain.",
+      "positives": [
+        "Daniels' first game back; WAS just back from London"
+      ],
+      "negatives": [
+        "Road division dog"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Four quarters of rain with a steady 13 mph wind; favors the ground game.",
+      "head_to_head": "Division rivals.",
+      "venue_history": "No notable trend.",
+      "rest_prep": "Normal week."
+    },
+    {
+      "team": "BUF",
+      "opponent": "LA",
+      "home_away": "away",
+      "win_prob": 0.41,
+      "summary": "Opponent of shortlisted LA: Allen on the road Monday night.",
+      "positives": [
+        "3-1 at +5.0; Allen"
+      ],
+      "negatives": [
+        "DJ Moore doubtful; Oliver questionable"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "West Coast Monday night trip.",
+      "rest_prep": "Normal week."
+    },
+    {
+      "team": "MIA",
+      "opponent": "CIN",
+      "home_away": "home",
+      "win_prob": 0.33,
+      "summary": "Opponent of trap-flagged CIN: 0-4, but CIN's WRs are uncertain.",
+      "positives": [
+        "CIN WRs questionable; line moved toward MIA"
+      ],
+      "negatives": [
+        "0-4 at -13.8 pd/g"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Infrequent meeting.",
+      "venue_history": "Home heat.",
+      "rest_prep": "Normal week."
+    },
+    {
+      "team": "ARI",
+      "opponent": "DET",
+      "home_away": "home",
+      "win_prob": 0.31,
+      "summary": "Single-pass: home dog in a shootout.",
+      "positives": [
+        "Home"
+      ],
+      "negatives": [
+        "1-3 at -7.5 pd/g"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": null,
+      "head_to_head": "Not researched (neither side of this game was shortlisted).",
+      "venue_history": "Not researched (neither side of this game was shortlisted).",
       "rest_prep": "7 days for both."
     },
     {
       "team": "TEN",
-      "opponent": "BAL",
-      "home_away": "away",
-      "win_prob": 0.17,
-      "summary": "Opponent of BAL: 0-3, interior OL on IR.",
+      "opponent": "HOU",
+      "home_away": "home",
+      "win_prob": 0.28,
+      "summary": "Opponent of HOU: 0-4.",
       "positives": [
-        "BAL missing Hendrickson; rain lowers the total"
+        "HOU also 0-4"
       ],
       "negatives": [
-        "0-3 at 12.3 ppg; guards on IR"
+        "-7.0 pd/g"
       ],
       "trap_flags": [],
       "is_largest_vegas_favorite": false,
-      "weather": "Rain likely (69% chance); total down from 47.5 to 42.5.",
-      "head_to_head": "BAL generally handles TEN.",
-      "venue_history": "No notable trend.",
-      "rest_prep": "7 days for both."
+      "weather": "Outdoors; no significant weather flagged in this week's forecast roundup.",
+      "head_to_head": "Division rivals.",
+      "venue_history": "Home.",
+      "rest_prep": "Normal week."
     },
     {
-      "team": "CLE",
-      "opponent": "PIT",
+      "team": "PHI",
+      "opponent": "JAX",
+      "home_away": "away",
+      "win_prob": 0.26,
+      "summary": "Opponent of shortlisted JAX: heavily injured.",
+      "positives": [
+        "Hurts healthy; JAX secondary dinged"
+      ],
+      "negatives": [
+        "Barkley, Smith OUT; makeshift OL"
+      ],
+      "trap_flags": [],
+      "is_largest_vegas_favorite": false,
+      "weather": "London (Tottenham Hotspur Stadium), 9:30am ET: 59°F, mostly cloudy, 12 mph wind gusting to 19.",
+      "head_to_head": "Rare meeting.",
+      "venue_history": "Neutral London venue.",
+      "rest_prep": "Normal week."
+    },
+    {
+      "team": "DAL",
+      "opponent": "TB",
       "home_away": "home",
       "win_prob": null,
-      "summary": "Thursday night game already final before this analysis (CLE 27, PIT 24). Not pickable.",
+      "summary": "Thursday night game already final before this analysis (TB 24, DAL 16). Not pickable.",
       "positives": [],
       "negatives": [],
       "trap_flags": [],
@@ -672,11 +615,11 @@
       "rest_prep": "Thursday game."
     },
     {
-      "team": "PIT",
-      "opponent": "CLE",
+      "team": "TB",
+      "opponent": "DAL",
       "home_away": "away",
       "win_prob": null,
-      "summary": "Thursday night game already final before this analysis (CLE 27, PIT 24). Not pickable.",
+      "summary": "ALREADY USED (Week 2). Thursday night game already final (TB 24, DAL 16).",
       "positives": [],
       "negatives": [],
       "trap_flags": [],

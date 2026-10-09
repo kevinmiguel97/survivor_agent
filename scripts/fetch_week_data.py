@@ -1,5 +1,7 @@
 """Pull structured, free data for one NFL week via nfl_data_py:
-matchups, bye teams, and season-to-date + prior-season team records.
+matchups, bye teams, and season-to-date + prior-season team records, with
+yards differential and turnover differential per game (from play-by-play)
+as the strength signals.
 
 Time-sensitive info (odds, injuries, weather) is NOT here — that's fetched
 live via WebSearch inside the survivor-pick skill.
@@ -15,6 +17,7 @@ Prints JSON to stdout.
 """
 
 import argparse
+import contextlib
 import json
 import math
 import sys
@@ -34,9 +37,51 @@ def _sanitize(obj):
     return obj
 
 
+PBP_COLUMNS = ["season", "week", "game_id", "posteam", "defteam", "play_type",
+               "yards_gained", "interception", "fumble_lost"]
+
+
+def load_pbp(seasons: list) -> pd.DataFrame:
+    """Play-by-play for yards/turnover differentials. Returns an empty frame
+    (so the yards/turnover fields come out null) if a season isn't published."""
+    frames = []
+    for s in seasons:
+        try:
+            # import_pbp_data prints progress to stdout, which would corrupt the JSON output
+            with contextlib.redirect_stdout(sys.stderr):
+                frames.append(nfl.import_pbp_data([s], columns=PBP_COLUMNS, downcast=True, cache=False))
+        except Exception as e:
+            print(f"warning: no play-by-play for {s}: {e}", file=sys.stderr)
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=PBP_COLUMNS)
+
+
+def yards_turnovers_through(pbp: pd.DataFrame, season: int, team: str, upto_week: int) -> dict:
+    """Yards and turnover differentials for `team` in `season`, over games
+    strictly before `upto_week`. Yards = net yards on pass/run plays (sacks
+    included); turnovers = interceptions + lost fumbles on live plays."""
+    plays = pbp[(pbp["season"] == season) & (pbp["week"] < upto_week) & (pbp["play_type"] != "no_play")]
+    off = plays[plays["posteam"] == team]
+    dfn = plays[plays["defteam"] == team]
+    games = off["game_id"].nunique()
+    scrimmage = ("pass", "run")
+    yards_for = float(off.loc[off["play_type"].isin(scrimmage), "yards_gained"].sum())
+    yards_against = float(dfn.loc[dfn["play_type"].isin(scrimmage), "yards_gained"].sum())
+    giveaways = int(off["interception"].fillna(0).sum() + off["fumble_lost"].fillna(0).sum())
+    takeaways = int(dfn["interception"].fillna(0).sum() + dfn["fumble_lost"].fillna(0).sum())
+    return {
+        "yards_for": yards_for if games else None,
+        "yards_against": yards_against if games else None,
+        "yards_diff_per_game": round((yards_for - yards_against) / games, 1) if games else None,
+        "takeaways": takeaways if games else None,
+        "giveaways": giveaways if games else None,
+        "turnover_diff_per_game": round((takeaways - giveaways) / games, 2) if games else None,
+    }
+
+
 def team_record_through(schedules: pd.DataFrame, season: int, team: str, upto_week: int) -> dict:
     """Wins/losses/points for/against for `team` in `season`, only counting
-    completed games (both scores present) strictly before `upto_week`."""
+    completed games (both scores present) strictly before `upto_week`.
+    Points are kept for the W/L record; strength comes from yards/turnovers."""
     played = schedules[
         (schedules["season"] == season)
         & (schedules["week"] < upto_week)
@@ -65,12 +110,12 @@ def team_record_through(schedules: pd.DataFrame, season: int, team: str, upto_we
         "ties": ties,
         "points_for": pf,
         "points_against": pa,
-        "point_diff_per_game": round((pf - pa) / games, 2) if games else None,
     }
 
 
-def full_season_record(schedules: pd.DataFrame, season: int, team: str) -> dict:
-    return team_record_through(schedules, season, team, upto_week=99)
+def strength_through(schedules: pd.DataFrame, pbp: pd.DataFrame, season: int, team: str, upto_week: int) -> dict:
+    return {**team_record_through(schedules, season, team, upto_week),
+            **yards_turnovers_through(pbp, season, team, upto_week)}
 
 
 def main():
@@ -141,12 +186,13 @@ def main():
             "overtime": bool(g["overtime"]) if is_final and pd.notna(g.get("overtime")) else None,
         })
 
+    pbp = load_pbp([prior_season, season])
     team_stats = {}
     for team in playing_teams:
         team_stats[team] = {
             "meta": teams_meta.get(team, {}),
-            "current_season_record_before_this_week": team_record_through(schedules, season, team, week),
-            "prior_season_full_record": full_season_record(schedules, prior_season, team),
+            "current_season_record_before_this_week": strength_through(schedules, pbp, season, team, week),
+            "prior_season_full_record": strength_through(schedules, pbp, prior_season, team, upto_week=99),
         }
 
     output = {

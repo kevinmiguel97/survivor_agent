@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "current_week": 4,
+  "current_week": 5,
   "status": "eliminated",
   "mistake_count": 1,
   "picks": [
@@ -33,7 +33,7 @@
       "team": "MIN",
       "opponent": "MIA",
       "home_away": "home",
-      "result": "pending",
+      "result": "win",
       "win_prob_estimate": 0.8
     }
   ]
