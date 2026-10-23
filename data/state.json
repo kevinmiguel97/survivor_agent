@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "current_week": 5,
+  "current_week": 7,
   "status": "eliminated",
   "mistake_count": 1,
   "picks": [
@@ -35,6 +35,30 @@
       "home_away": "home",
       "result": "win",
       "win_prob_estimate": 0.8
+    },
+    {
+      "week": 5,
+      "team": "JAX",
+      "opponent": "PHI",
+      "home_away": "home",
+      "result": "win",
+      "win_prob_estimate": 0.74
+    },
+    {
+      "week": 6,
+      "team": "KC",
+      "opponent": "LAC",
+      "home_away": "home",
+      "result": "win",
+      "win_prob_estimate": 0.75
+    },
+    {
+      "week": 7,
+      "team": "NYJ",
+      "opponent": "MIA",
+      "home_away": "home",
+      "result": "pending",
+      "win_prob_estimate": 0.62
     }
   ]
 }

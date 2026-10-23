@@ -26,7 +26,7 @@ Recommends this week's survivor pick for the user's private/office pool tracked 
    ```
    This returns matchups, bye teams, and each playing team's current-season record-so-far plus full prior-season record. The strength signals are **yards differential per game** (`yards_diff_per_game`: net pass+run yards gained minus allowed) and **turnover differential per game** (`turnover_diff_per_game`: takeaways minus giveaways). Point differential is deliberately *not* used as a strength signal — points are only kept for the W/L record. Early in the season the current-season sample is small, so blend toward the prior season early and toward the current season as games accumulate: current-season weight `w = games_played / (games_played + 3)`, prior-season weight `1 - w`.
 
-4. **Determine eligible candidates**: all teams in this week's matchups that have already kicked off or finished are no longer pickable this week — exclude them. From what's left, exclude teams already in `picks[].team` and `bye_teams`.
+4. **Determine eligible candidates**: all teams in this week's matchups that have already kicked off or finished are no longer pickable this week — exclude them, along with `bye_teams`. **Do not drop teams already in `picks[].team`** — the user plays other survivor pools too and uses this board there, so used teams are ranked in step 5 on merit and get the same full treatment (including the step 6-9 debate if they make the shortlist) as everyone else. They're marked `used_in_this_pool: true` in step 14 and are excluded only from `recommendation` (step 10).
 
 5. **Shortlist**: rank eligible teams by a rough power score built from yards and turnover differential (each blended prior/current season per step 3), expressed in points-equivalent so the two combine on one scale:
    `team_rating = yards_diff_per_game / 15 + 2 * turnover_diff_per_game` (~15 yards ≈ 1 point; a turnover is worth ~4 points, but only about half of turnover margin carries forward week to week, so it's weighted at 2).
@@ -61,7 +61,8 @@ Recommends this week's survivor pick for the user's private/office pool tracked 
 10. **Apply the no-lazy-favorite and no-trap-recommendation rules, then pick the recommendation.** Apply any `vegas_favorite_bias`-tagged lesson from step 2 here specifically — this is the literal policy such a lesson would target.
     - Among the shortlisted teams, identify whichever had the single highest *raw Vegas-implied* win probability from step 6 (before any debate/adjustment) — call this the **largest Vegas favorite**.
     - Take the 1-2 teams that survived the step-7 curation with non-empty `trap_flags`.
-    - Neither group is ever assigned as `recommendation`, regardless of Arbiter probability — they still appear fully in the board with their Arbiter probability, Positives, Negatives, and (respectively) the favorite note or trap flags, so the user can see the case for/against them. The `recommendation` is the highest Arbiter-probability team among everyone else. (The largest favorite and a trap-flagged team are very often the same team or two of the same handful of top favorites — that's expected, not a bug; don't force them to be different teams.)
+    - Teams already used in this pool (`picks[].team`) are likewise never `recommendation` — they're on the board only for the user's other pools.
+    - None of these groups is ever assigned as `recommendation`, regardless of Arbiter probability — they still appear fully in the board with their Arbiter probability, Positives, Negatives, and (respectively) the favorite note or trap flags, so the user can see the case for/against them. The `recommendation` is the highest Arbiter-probability team among everyone else. (The largest favorite and a trap-flagged team are very often the same team or two of the same handful of top favorites — that's expected, not a bug; don't force them to be different teams.)
 
 11. **Branch on `status` for the recommendation:** Apply any `opportunity_cost`-tagged lessons from step 2.
     - **`alive`**: Before finalizing, check the rest-of-season schedule (`scripts\fetch_full_schedule.py` / `data/full_schedule.json`) for the top remaining candidates. If a team has a much rarer/easier matchup in a specific future week and its edge THIS week is only marginal vs. the next choice, prefer saving it and recommend the next-best team instead. Only override for a meaningful, explainable future opportunity-cost reason.
@@ -95,6 +96,7 @@ Recommends this week's survivor pick for the user's private/office pool tracked 
           "negatives": ["<bullet>", "..."],
           "trap_flags": ["<short tag naming which step-7 trap category applies, e.g. 'new-system uncertainty (...)'>"],
           "is_largest_vegas_favorite": <true|false>,
+          "used_in_this_pool": <true|false — team already in state.json picks[]; still fully analyzed, never the recommendation>,
           "weather": "<1-2 sentence forecast, or null for a dome/fixed-roof game — see note below>",
           "head_to_head": "<1-2 sentences: home-adjusted historic head-to-head from step 6>",
           "venue_history": "<1-2 sentences: away team's/QB's history at this stadium/city from step 6, or 'No notable trend found' if genuinely nothing turned up>",
