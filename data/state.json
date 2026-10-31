@@ -59,6 +59,14 @@
       "home_away": "home",
       "result": "loss",
       "win_prob_estimate": 0.62
+    },
+    {
+      "week": 8,
+      "team": "CIN",
+      "opponent": "TEN",
+      "home_away": "home",
+      "result": "pending",
+      "win_prob_estimate": 0.76
     }
   ]
 }
