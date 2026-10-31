@@ -2458,36 +2458,413 @@
           "trap_flags": []
         }
       ]
+    },
+    {
+      "week": 7,
+      "reviewed_at": "2026-10-29T17:51:48-04:00",
+      "board_source": "data/history/week_analysis_2026_wk07.json",
+      "games_final_count": 14,
+      "games_pending_count": 0,
+      "recommendation": "NYJ",
+      "recommendation_result": "loss",
+      "largest_vegas_favorite": {
+        "team": "HOU",
+        "raw_vegas_prob": 0.804,
+        "actual_result": "loss"
+      },
+      "trap_flags_grading": [
+        {
+          "team": "LA",
+          "flags": [
+            "Favorite's own offense confirmed compromised (L10/L12/L14): WR Davante Adams on IR and the new K Grupe out for the season (ACL), on top of a kicking/red-zone dysfunction that already cost LA an outright loss as a 12.5-pt favorite last week, with Nacua questionable. A 2-4 team whose record trails its efficiency is priced like a 61% road favorite."
+          ],
+          "actual_result": "win",
+          "validated": false
+        }
+      ],
+      "no_lazy_favorite_policy_outcome": "no_cost",
+      "brier_score": 0.2457,
+      "teams_graded": 26,
+      "bucket_calibration": [
+        {
+          "bucket": "<50%",
+          "predicted_avg": 0.415,
+          "actual_win_rate": 0.308,
+          "n": 13
+        },
+        {
+          "bucket": "50-59%",
+          "predicted_avg": 0.554,
+          "actual_win_rate": 0.8,
+          "n": 10
+        },
+        {
+          "bucket": "60-69%",
+          "predicted_avg": 0.62,
+          "actual_win_rate": 0.0,
+          "n": 1
+        },
+        {
+          "bucket": "70-79%",
+          "predicted_avg": 0.72,
+          "actual_win_rate": 0.5,
+          "n": 2
+        },
+        {
+          "bucket": "80-89%",
+          "predicted_avg": null,
+          "actual_win_rate": null,
+          "n": 0
+        },
+        {
+          "bucket": "90-100%",
+          "predicted_avg": null,
+          "actual_win_rate": null,
+          "n": 0
+        }
+      ],
+      "team_results": [
+        {
+          "team": "HOU",
+          "opponent": "NYG",
+          "predicted_win_prob": 0.72,
+          "actual_result": "loss",
+          "brier_component": 0.5184,
+          "recap_tier": "deep",
+          "recap": "The excluded largest favorite lost 27-21 in OT to NYG in J.J. McCarthy's first Giants start (20/28, 252 yds, no TD/INT); Singletary's 30-yd TD run won it. HOU fell to 0-4 at home. The Skeptic's 0-3-at-home and already-priced-QB-change points held up. The policy cost nothing, because NYJ also lost.",
+          "is_largest_vegas_favorite": true,
+          "trap_flags": []
+        },
+        {
+          "team": "MIN",
+          "opponent": "IND",
+          "predicted_win_prob": 0.72,
+          "actual_result": "win",
+          "brier_component": 0.0784,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NYJ",
+          "opponent": "MIA",
+          "predicted_win_prob": 0.62,
+          "actual_result": "loss",
+          "brier_component": 0.3844,
+          "recap_tier": "deep",
+          "recap": "Our pick lost 28-25 at home to previously winless MIA. Malik Willis (14/21, 208 yds) threw 2 TDs and ran for one; his 63-yd TD to rookie Caleb Douglas made it 28-17 with 4:44 left. NYJ rallied with 10 4th-quarter points (two 2-pt tries wiped out by penalties before one converted), but ran out of time and fell to 2-5. A sub-.500 favorite with a negative own yards diff, against a winless division rival off a bye: the get-right spot the Skeptic flagged as a negative but not a trap.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "DAL",
+          "opponent": "PHI",
+          "predicted_win_prob": 0.58,
+          "actual_result": "win",
+          "brier_component": 0.1764,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "SEA",
+          "opponent": "KC",
+          "predicted_win_prob": 0.58,
+          "actual_result": "win",
+          "brier_component": 0.1764,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "PIT",
+          "opponent": "NO",
+          "predicted_win_prob": 0.57,
+          "actual_result": "win",
+          "brier_component": 0.1849,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "DEN",
+          "opponent": "ARI",
+          "predicted_win_prob": 0.56,
+          "actual_result": "win",
+          "brier_component": 0.1936,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CAR",
+          "opponent": "TB",
+          "predicted_win_prob": 0.56,
+          "actual_result": "loss",
+          "brier_component": 0.3136,
+          "recap_tier": "deep",
+          "recap": "CAR (0.56) was routed 43-13 at home by TB in Baker Mayfield's return. TB ran for 258 yds (Irving 106, 2 TD), forced 4 turnovers, and led 33-6 at the half while Mayfield threw only 11 passes. The Skeptic's point was right but undersized: a starting QB returning from injury who practiced in FULL all week should be graded as playing.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "DET",
+          "opponent": "GB",
+          "predicted_win_prob": 0.55,
+          "actual_result": "win",
+          "brier_component": 0.2025,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "SF",
+          "opponent": "ATL",
+          "predicted_win_prob": 0.55,
+          "actual_result": "loss",
+          "brier_component": 0.3025,
+          "recap_tier": "deep",
+          "recap": "SF (used here, 0.55) lost its unbeaten record 29-20 at ATL. Penix threw 3 TDs and ATL forced 4 turnovers, including a late Kendal Daniels INT. The short week, cross-country early kickoff and confirmed OUTs (Bosa, Deebo, Evans) were correctly weighted toward a coin flip.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "LA",
+          "opponent": "LV",
+          "predicted_win_prob": 0.54,
+          "actual_result": "win",
+          "brier_component": 0.2116,
+          "recap_tier": "deep",
+          "recap": "Trap flag false alarm. LA won 35-21 at LV, leading 21-3 at the half; Stafford threw 3 TDs and broke the Rams' career TD record. Adams on IR and the kicker change didn't matter against a LV team on a 4-game skid. A trap flag built on a non-QB 'own offense compromised' reading failed, while the only validated template stays the favorite's own starting QB confirmed OUT.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": [
+            "Favorite's own offense confirmed compromised (L10/L12/L14): WR Davante Adams on IR and the new K Grupe out for the season (ACL), on top of a kicking/red-zone dysfunction that already cost LA an outright loss as a 12.5-pt favorite last week, with Nacua questionable. A 2-4 team whose record trails its efficiency is priced like a 61% road favorite."
+          ]
+        },
+        {
+          "team": "CIN",
+          "opponent": "BAL",
+          "predicted_win_prob": 0.53,
+          "actual_result": "win",
+          "brier_component": 0.2209,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CLE",
+          "opponent": "TEN",
+          "predicted_win_prob": 0.52,
+          "actual_result": "win",
+          "brier_component": 0.2304,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "TEN",
+          "opponent": "CLE",
+          "predicted_win_prob": 0.48,
+          "actual_result": "loss",
+          "brier_component": 0.2304,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "BAL",
+          "opponent": "CIN",
+          "predicted_win_prob": 0.47,
+          "actual_result": "loss",
+          "brier_component": 0.2209,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "LV",
+          "opponent": "LA",
+          "predicted_win_prob": 0.46,
+          "actual_result": "loss",
+          "brier_component": 0.2116,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "GB",
+          "opponent": "DET",
+          "predicted_win_prob": 0.45,
+          "actual_result": "loss",
+          "brier_component": 0.2025,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "ATL",
+          "opponent": "SF",
+          "predicted_win_prob": 0.45,
+          "actual_result": "win",
+          "brier_component": 0.3025,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "TB",
+          "opponent": "CAR",
+          "predicted_win_prob": 0.44,
+          "actual_result": "win",
+          "brier_component": 0.3136,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "ARI",
+          "opponent": "DEN",
+          "predicted_win_prob": 0.44,
+          "actual_result": "loss",
+          "brier_component": 0.1936,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NO",
+          "opponent": "PIT",
+          "predicted_win_prob": 0.43,
+          "actual_result": "loss",
+          "brier_component": 0.1849,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "KC",
+          "opponent": "SEA",
+          "predicted_win_prob": 0.42,
+          "actual_result": "loss",
+          "brier_component": 0.1764,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "PHI",
+          "opponent": "DAL",
+          "predicted_win_prob": 0.42,
+          "actual_result": "loss",
+          "brier_component": 0.1764,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "MIA",
+          "opponent": "NYJ",
+          "predicted_win_prob": 0.38,
+          "actual_result": "win",
+          "brier_component": 0.3844,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NYG",
+          "opponent": "HOU",
+          "predicted_win_prob": 0.28,
+          "actual_result": "win",
+          "brier_component": 0.5184,
+          "recap_tier": "deep",
+          "recap": "NYG (0.28) won 27-21 in OT at HOU, the week's biggest upset by our board. McCarthy managed the game cleanly, and Skattebo's 42-yd OT run set up Singletary's walk-off TD. Evidence for L7: a line inflated on an opponent's QB change was the wrong place to stack confidence.",
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "IND",
+          "opponent": "MIN",
+          "predicted_win_prob": 0.28,
+          "actual_result": "loss",
+          "brier_component": 0.0784,
+          "recap_tier": "numeric_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "CHI",
+          "opponent": "NE",
+          "predicted_win_prob": null,
+          "actual_result": "win",
+          "brier_component": null,
+          "recap_tier": "outcome_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        },
+        {
+          "team": "NE",
+          "opponent": "CHI",
+          "predicted_win_prob": null,
+          "actual_result": "loss",
+          "brier_component": null,
+          "recap_tier": "outcome_only",
+          "recap": null,
+          "is_largest_vegas_favorite": false,
+          "trap_flags": []
+        }
+      ]
     }
   ],
   "season_summary": {
-    "weeks_reviewed": 6,
-    "total_teams_graded": 170,
-    "running_brier_score": 0.2259,
+    "weeks_reviewed": 7,
+    "total_teams_graded": 196,
+    "running_brier_score": 0.2285,
     "running_bucket_calibration": [
       {
         "bucket": "<50%",
-        "predicted_avg": 0.373,
-        "actual_win_rate": 0.349,
-        "n": 83
+        "predicted_avg": 0.379,
+        "actual_win_rate": 0.344,
+        "n": 96
       },
       {
         "bucket": "50-59%",
-        "predicted_avg": 0.545,
-        "actual_win_rate": 0.596,
-        "n": 47
+        "predicted_avg": 0.546,
+        "actual_win_rate": 0.632,
+        "n": 57
       },
       {
         "bucket": "60-69%",
-        "predicted_avg": 0.64,
-        "actual_win_rate": 0.667,
-        "n": 21
+        "predicted_avg": 0.639,
+        "actual_win_rate": 0.636,
+        "n": 22
       },
       {
         "bucket": "70-79%",
-        "predicted_avg": 0.736,
-        "actual_win_rate": 0.75,
-        "n": 12
+        "predicted_avg": 0.734,
+        "actual_win_rate": 0.714,
+        "n": 14
       },
       {
         "bucket": "80-89%",
@@ -2503,13 +2880,13 @@
       }
     ],
     "no_lazy_favorite_policy_record": {
-      "no_cost": 3,
+      "no_cost": 4,
       "cost_a_pick": 1,
       "saved_a_pick": 2
     },
     "trap_flag_policy_record": {
       "validated": 4,
-      "false_alarm": 6
+      "false_alarm": 7
     }
   },
   "lessons_learned": [
@@ -2624,6 +3001,27 @@
       "added_at": "2026-10-22T15:29:27-04:00",
       "criteria_area": "other",
       "lesson": "L5 validated again. IND, favored at -7 but with own-form yards differential (-90.8/g) no better than its opponent's, lost outright to 0-5 TEN even after the Arbiter cut it from 0.74 to 0.64. When a favorite's own yards differential is negative and no better than the opponent's, cap its probability near 0.55-0.58 regardless of the spread. The market is pricing the opponent's record, not the favorite's quality."
+    },
+    {
+      "id": "L17",
+      "added_week": 7,
+      "added_at": "2026-10-29T17:51:48-04:00",
+      "criteria_area": "injury_weighting",
+      "lesson": "A starting QB returning from injury who practiced FULL all week should be graded as PLAYING, not as a questionable tag. L12's skepticism toward 'questionable' applies to tags used to downgrade a favorite, not to an opponent's QB return. CAR (0.56) was routed 43-13 by TB in Mayfield's return (full practice Wednesday onward), and the Arbiter's ~2-pt haircut was far too small. When an opponent's starter returns, re-grade that opponent on its full-strength form, not on its record with the backup."
+    },
+    {
+      "id": "L18",
+      "added_week": 7,
+      "added_at": "2026-10-29T17:51:48-04:00",
+      "criteria_area": "other",
+      "lesson": "Extend L16 to sub-.500 favorites generally. NYJ (0.62, our recommendation), 2-4 with a negative own yards diff (-17.0) and skill-position OUTs, lost at home to winless MIA, which was off a bye in a division game. Even when a favorite's yards diff is better than its opponent's, a sub-.500 favorite with a NEGATIVE own yards diff should be capped near 0.58. A winless/one-win division opponent coming off a bye is a real get-right spot that belongs as a weighted negative. Back-to-back weeks (IND in Week 6, NYJ in Week 7), the sub-.500 favorite has lost outright."
+    },
+    {
+      "id": "L19",
+      "added_week": 7,
+      "added_at": "2026-10-29T17:51:48-04:00",
+      "criteria_area": "trap_flag_criteria",
+      "lesson": "LA's Week 7 trap flag, built on 'own offense compromised' via non-QB absences (WR on IR, kicker change) plus last week's upset, was a false alarm: LA won 35-21. Season trap record: 4 validated / 7 false alarms. The ONLY validated template remains the favorite's own starting QB confirmed OUT plus a line moving against it onto/through a key number (BAL in Week 6). Don't trap-flag on non-QB personnel losses or prior-week results. Leave the week with no trap flag rather than stretch."
     }
   ]
 }
